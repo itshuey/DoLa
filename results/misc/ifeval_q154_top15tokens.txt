@@ -1,0 +1,1216 @@
+MODE: DoLa decoding with mature layer: 24 and premature layers: [2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22]
+  0% 0/1 [00:00<?, ?it/s]Selected layer 8, token tensor([350], device='cuda:0')
+Selected layer 20, token tensor([5033], device='cuda:0')
+Selected layer 20, token tensor([7], device='cuda:0')
+Selected layer 20, token tensor([54], device='cuda:0')
+Selected layer 20, token tensor([36], device='cuda:0')
+Selected layer 20, token tensor([2930], device='cuda:0')
+Selected layer 20, token tensor([12], device='cuda:0')
+Selected layer 18, token tensor([4648], device='cuda:0')
+Selected layer 20, token tensor([11], device='cuda:0')
+Selected layer 18, token tensor([821], device='cuda:0')
+Selected layer 20, token tensor([463], device='cuda:0')
+Selected layer 20, token tensor([15905], device='cuda:0')
+Selected layer 20, token tensor([224], device='cuda:0')
+Selected layer 20, token tensor([38], device='cuda:0')
+Selected layer 20, token tensor([7828], device='cuda:0')
+Selected layer 20, token tensor([17313], device='cuda:0')
+Selected layer 20, token tensor([42], device='cuda:0')
+Selected layer 20, token tensor([190], device='cuda:0')
+Selected layer 20, token tensor([2562], device='cuda:0')
+Selected layer 20, token tensor([6], device='cuda:0')
+Selected layer 20, token tensor([84], device='cuda:0')
+Selected layer 20, token tensor([33], device='cuda:0')
+Selected layer 18, token tensor([16914], device='cuda:0')
+Selected layer 20, token tensor([28], device='cuda:0')
+Selected layer 18, token tensor([2250], device='cuda:0')
+Selected layer 20, token tensor([224], device='cuda:0')
+Selected layer 20, token tensor([38], device='cuda:0')
+Selected layer 20, token tensor([28050], device='cuda:0')
+Selected layer 22, token tensor([1036], device='cuda:0')
+Selected layer 20, token tensor([42], device='cuda:0')
+Selected layer 20, token tensor([1659], device='cuda:0')
+Selected layer 20, token tensor([1036], device='cuda:0')
+Selected layer 20, token tensor([5], device='cuda:0')
+Selected layer 20, token tensor([1], device='cuda:0')
+JS DIVERGENCES:
+tensor([0.0103, 0.0369, 0.0970,    nan,    nan,    nan,    nan,    nan,    nan,
+           nan,    nan], device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+2024-04-11 20:57:24.242092: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:9261] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2024-04-11 20:57:24.242146: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:607] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2024-04-11 20:57:24.243639: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1515] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2024-04-11 20:57:25.269102: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Token "": 1555.0, Token "superioara": 1398.0, Token "adanc": 1337.0, Token "gasest": 1279.0, Token "modificari": 1262.0
+Token "": 5472.0, Token "superioara": 5312.0, Token "locuinte": 5084.0, Token "adanc": 4996.0, Token "Județean": 4904.0
+Token "": 14264.0, Token "superioara": 14072.0, Token "locuinte": 13912.0, Token "Județean": 13736.0, Token "insotit": 13320.0
+Token "supprimer": -2564.0, Token "•": -3274.0, Token "": -3382.0, Token "rivers": -3732.0, Token "Verpflichtung": -4040.0
+Token "supprimer": -3112.0, Token "": -3470.0, Token "•": -3596.0, Token "rivers": -4044.0, Token "Verpflichtung": -4432.0
+Token "supprimer": -3534.0, Token "": -3542.0, Token "•": -3818.0, Token "rivers": -4268.0, Token "Verpflichtung": -4704.0
+Token "": -3632.0, Token "supprimer": -3758.0, Token "•": -3922.0, Token "rivers": -4380.0, Token "Verpflichtung": -4860.0
+Token "": -3656.0, Token "supprimer": -4328.0, Token "•": -4328.0, Token "rivers": -4688.0, Token "Verpflichtung": -5236.0
+Token "": -3586.0, Token "•": -4816.0, Token "rivers": -5228.0, Token "supprimer": -5232.0, Token "Verpflichtung": -5956.0
+Token "": -3396.0, Token "•": -5820.0, Token "rivers": -6096.0, Token """: -6920.0, Token "supprimer": -6936.0
+Token "": -2448.0, Token "•": -4924.0, Token "The": -5516.0, Token """: -5932.0, Token "rivers": -5948.0
+Token "G": 2.18359375, Token "The": 0.50341796875, Token "This": -0.340087890625, Token "A": -0.398681640625, Token "": -0.5029296875
+Token "G": 7940.0, Token "The": 3994.0, Token "": -inf, Token "": -inf, Token "": -inf
+
+TRACKING TOKEN INDICES
+Token "G" Position 17816, Token "The" Position 6230, Token "" Position 31892, Token "" Position 30219, Token "" Position 214
+Token "G" Position 30353, Token "The" Position 21973, Token "" Position 32091, Token "" Position 32119, Token "" Position 228
+Token "G" Position 31546, Token "The" Position 29724, Token "" Position 32112, Token "" Position 32124, Token "" Position 231
+Token "G" Position 3408, Token "The" Position 17, Token "" Position 248, Token "" Position 1241, Token "" Position 32118
+Token "G" Position 3223, Token "The" Position 17, Token "" Position 209, Token "" Position 1067, Token "" Position 32108
+Token "G" Position 3115, Token "The" Position 18, Token "" Position 198, Token "" Position 937, Token "" Position 32084
+Token "G" Position 3129, Token "The" Position 18, Token "" Position 192, Token "" Position 895, Token "" Position 32070
+Token "G" Position 2859, Token "The" Position 16, Token "" Position 189, Token "" Position 720, Token "" Position 32023
+Token "G" Position 2038, Token "The" Position 10, Token "" Position 186, Token "" Position 463, Token "" Position 31950
+Token "G" Position 935, Token "The" Position 7, Token "" Position 152, Token "" Position 203, Token "" Position 31907
+Token "G" Position 18, Token "The" Position 2, Token "" Position 175, Token "" Position 95, Token "" Position 31914
+Token "G" Position 0, Token "The" Position 1, Token "" Position 2020, Token "" Position 64, Token "" Position 32127
+Token "G" Position 0, Token "The" Position 1, Token "" Position 4, Token "" Position 3, Token "" Position 2
+
+JS DIVERGENCES:
+tensor([0.0018, 0.0021, 0.0075, 0.0189, 0.0230, 0.0269, 0.0330, 0.0361, 0.0353,
+           nan,    nan], device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "LAS": 364.25, Token "eek": 364.0, Token "ML": 353.0, Token "lor": 346.5, Token "RAF": 326.75
+Token "RO": 108.75, Token "eck": 50.1875, Token "CM": 45.65625, Token "oji": 42.875, Token "lor": 40.4375
+Token "": -370.5, Token "s": -520.0, Token "": -607.0, Token "a": -631.5, Token "'": -642.5
+Token "": -766.0, Token "s": -1263.0, Token "a": -1539.0, Token "'": -1557.0, Token "-": -1586.0
+Token "": -931.5, Token "s": -1688.0, Token "-": -1922.0, Token "'": -2016.0, Token "a": -2068.0
+Token "": -1026.0, Token "s": -2128.0, Token "-": -2340.0, Token "a": -2376.0, Token "'": -2518.0
+Token "": -1162.0, Token "s": -2642.0, Token "-": -2868.0, Token "a": -2902.0, Token "'": -2956.0
+Token "": -1238.0, Token "s": -2940.0, Token "-": -3452.0, Token "'": -3494.0, Token "a": -3684.0
+Token "": -1333.0, Token "s": -3960.0, Token "-": -3964.0, Token "n": -4240.0, Token ".": -4460.0
+Token "": -1580.0, Token "AN": -3594.0, Token "-": -4624.0, Token "n": -4692.0, Token "s": -5232.0
+Token "": -1561.0, Token "AN": -2822.0, Token "-": -5200.0, Token ",": -6492.0, Token "s": -6536.0
+Token "AN": 2.087890625, Token "ANS": -5.171875, Token "an": -6.875, Token "ans": -7.37890625, Token "AM": -7.76171875
+Token "AN": 2014.0, Token "": -inf, Token "": -inf, Token "": -inf, Token "": -inf
+
+TRACKING TOKEN INDICES
+Token "AN" Position 274, Token "" Position 644, Token "" Position 32127, Token "" Position 8063, Token "" Position 5022
+Token "AN" Position 228, Token "" Position 31, Token "" Position 32127, Token "" Position 804, Token "" Position 996
+Token "AN" Position 842, Token "" Position 2, Token "" Position 32127, Token "" Position 0, Token "" Position 14
+Token "AN" Position 2173, Token "" Position 5, Token "" Position 32127, Token "" Position 0, Token "" Position 11
+Token "AN" Position 1430, Token "" Position 5, Token "" Position 32127, Token "" Position 0, Token "" Position 7
+Token "AN" Position 1018, Token "" Position 5, Token "" Position 32127, Token "" Position 0, Token "" Position 7
+Token "AN" Position 1153, Token "" Position 10, Token "" Position 32127, Token "" Position 0, Token "" Position 5
+Token "AN" Position 370, Token "" Position 12, Token "" Position 32127, Token "" Position 0, Token "" Position 6
+Token "AN" Position 34, Token "" Position 13, Token "" Position 32127, Token "" Position 0, Token "" Position 9
+Token "AN" Position 1, Token "" Position 12, Token "" Position 32120, Token "" Position 0, Token "" Position 15
+Token "AN" Position 1, Token "" Position 17, Token "" Position 31893, Token "" Position 0, Token "" Position 11
+Token "AN" Position 0, Token "" Position 70, Token "" Position 32127, Token "" Position 38, Token "" Position 66
+Token "AN" Position 0, Token "" Position 3, Token "" Position 1, Token "" Position 4, Token "" Position 2
+
+JS DIVERGENCES:
+tensor([0.0025, 0.0024, 0.0024, 0.0052, 0.0053, 0.0038, 0.0042, 0.0030, 0.0038,
+           nan,    nan], device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "net": 151.75, Token "ISH": 141.625, Token "OL": 132.0, Token "Z": 126.625, Token "ZA": 123.3125
+Token "_": 32.5, Token "'": -37.5, Token "net": -94.25, Token "ITY": -107.5, Token "": -118.375
+Token "": -231.625, Token "'": -401.25, Token "s": -491.5, Token """: -544.0, Token ",": -574.5
+Token "": -537.0, Token "s": -1086.0, Token "'": -1254.0, Token """: -1369.0, Token ",": -1374.0
+Token "": -631.0, Token "s": -1140.0, Token "'": -1587.0, Token "-": -1740.0, Token ",": -1749.0
+Token "": -708.5, Token "s": -952.0, Token "'": -1931.0, Token "-": -2084.0, Token ",": -2170.0
+Token "": -777.0, Token "s": -1032.0, Token "'": -2262.0, Token "is": -2364.0, Token "-": -2540.0
+Token "s": -372.0, Token "": -1086.0, Token "'": -2160.0, Token "is": -2458.0, Token "-": -3172.0
+Token "s": 363.0, Token "": -796.0, Token "is": -2072.0, Token "'": -2410.0, Token "can": -3136.0
+Token "s": 2722.0, Token "": -654.5, Token "'": -1559.0, Token "is": -2354.0, Token ",": -4148.0
+Token "s": 2810.0, Token "": 320.75, Token "'": -2276.0, Token "is": -2796.0, Token ",": -4020.0
+Token "s": 2.7109375, Token "is": -0.51318359375, Token "are": -1.4677734375, Token "'": -2.232421875, Token "architecture": -2.416015625
+Token "s": -0.11407470703125, Token "": -inf, Token "": -inf, Token "": -inf, Token "": -inf
+
+TRACKING TOKEN INDICES
+Token "s" Position 1748, Token "" Position 4129, Token "" Position 32127, Token "" Position 243, Token "" Position 110
+Token "s" Position 181, Token "" Position 532, Token "" Position 32127, Token "" Position 4, Token "" Position 25
+Token "s" Position 2, Token "" Position 25, Token "" Position 32127, Token "" Position 0, Token "" Position 5
+Token "s" Position 1, Token "" Position 19, Token "" Position 32127, Token "" Position 0, Token "" Position 7
+Token "s" Position 1, Token "" Position 22, Token "" Position 32127, Token "" Position 0, Token "" Position 9
+Token "s" Position 1, Token "" Position 26, Token "" Position 32127, Token "" Position 0, Token "" Position 9
+Token "s" Position 1, Token "" Position 43, Token "" Position 32127, Token "" Position 0, Token "" Position 11
+Token "s" Position 0, Token "" Position 52, Token "" Position 32127, Token "" Position 1, Token "" Position 15
+Token "s" Position 0, Token "" Position 58, Token "" Position 32127, Token "" Position 1, Token "" Position 35
+Token "s" Position 0, Token "" Position 36, Token "" Position 31928, Token "" Position 1, Token "" Position 25
+Token "s" Position 0, Token "" Position 29, Token "" Position 31836, Token "" Position 1, Token "" Position 22
+Token "s" Position 0, Token "" Position 91, Token "" Position 32127, Token "" Position 13, Token "" Position 161
+Token "s" Position 0, Token "" Position 3, Token "" Position 1, Token "" Position 4, Token "" Position 2
+
+JS DIVERGENCES:
+tensor([0.0009, 0.0014, 0.0046, 0.0109, 0.0146, 0.0175, 0.0196, 0.0198, 0.0193,
+           nan,    nan], device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "": 3.830078125, Token "igh": -8.3671875, Token "kir": -26.8125, Token "ever": -33.40625, Token "trug": -41.1875
+Token "": -56.59375, Token "'": -115.625, Token "no": -159.25, Token "_": -163.5, Token "]": -165.75
+Token "": -129.625, Token "'": -409.75, Token ",": -472.0, Token """: -481.5, Token "in": -503.5
+Token "": -293.0, Token ",": -1071.0, Token "'": -1091.0, Token "in": -1122.0, Token """: -1143.0
+Token "": -338.25, Token ",": -1380.0, Token "in": -1411.0, Token "'": -1550.0, Token "is": -1611.0
+Token "": -350.25, Token ",": -1626.0, Token "in": -1763.0, Token "is": -1892.0, Token """: -2052.0
+Token "": -338.5, Token ",": -1999.0, Token "in": -2050.0, Token "are": -2236.0, Token "is": -2280.0
+Token "": -138.875, Token "are": -1568.0, Token "can": -2190.0, Token ",": -2244.0, Token "is": -2366.0
+Token "": 187.625, Token "are": -552.5, Token "can": -1976.0, Token "have": -2136.0, Token ",": -2338.0
+Token "": 705.5, Token "are": -1004.0, Token "have": -2270.0, Token ",": -2646.0, Token "can": -2674.0
+Token "": 1053.0, Token "are": -2062.0, Token ",": -2822.0, Token "have": -3284.0, Token "can": -3450.0
+Token "are": 3.076171875, Token "can": 1.333984375, Token "have": 0.955078125, Token "use": 0.5185546875, Token ",": 0.282470703125
+Token "can": 3378.0, Token "have": 2974.0, Token "are": 1709.0, Token "": -inf, Token "": -inf
+
+TRACKING TOKEN INDICES
+Token "can" Position 85, Token "have" Position 247, Token "are" Position 7, Token "" Position 46, Token "" Position 32127
+Token "can" Position 41, Token "have" Position 56, Token "are" Position 7, Token "" Position 8, Token "" Position 32127
+Token "can" Position 14, Token "have" Position 22, Token "are" Position 9, Token "" Position 5, Token "" Position 32127
+Token "can" Position 16, Token "have" Position 25, Token "are" Position 13, Token "" Position 6, Token "" Position 32127
+Token "can" Position 11, Token "have" Position 18, Token "are" Position 12, Token "" Position 7, Token "" Position 32127
+Token "can" Position 8, Token "have" Position 15, Token "are" Position 7, Token "" Position 12, Token "" Position 32127
+Token "can" Position 5, Token "have" Position 9, Token "are" Position 3, Token "" Position 17, Token "" Position 32127
+Token "can" Position 2, Token "have" Position 6, Token "are" Position 1, Token "" Position 29, Token "" Position 32127
+Token "can" Position 2, Token "have" Position 3, Token "are" Position 1, Token "" Position 75, Token "" Position 32127
+Token "can" Position 4, Token "have" Position 2, Token "are" Position 1, Token "" Position 63, Token "" Position 31907
+Token "can" Position 4, Token "have" Position 3, Token "are" Position 1, Token "" Position 37, Token "" Position 31824
+Token "can" Position 1, Token "have" Position 2, Token "are" Position 0, Token "" Position 329, Token "" Position 32127
+Token "can" Position 0, Token "have" Position 1, Token "are" Position 2, Token "" Position 4, Token "" Position 3
+
+JS DIVERGENCES:
+tensor([0.0008, 0.0008, 0.0034, 0.0091, 0.0116, 0.0145, 0.0180, 0.0167, 0.0182,
+           nan,    nan], device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "find": 143.0, Token "sign": 133.75, Token "replace": 132.0, Token "see": 122.0625, Token "produce": 119.875
+Token "be": 41.84375, Token "find": -0.359130859375, Token "see": -40.9375, Token "sign": -46.1875, Token "use": -48.875
+Token "": -98.5625, Token "be": -299.5, Token "de": -456.0, Token "'": -456.75, Token "do": -469.25
+Token "": -208.875, Token "be": -905.5, Token "'": -1071.0, Token "the": -1078.0, Token "in": -1095.0
+Token "": -243.875, Token "be": -1083.0, Token "in": -1366.0, Token "'": -1435.0, Token "the": -1438.0
+Token "": -254.75, Token "be": -1199.0, Token "in": -1801.0, Token ",": -1882.0, Token "'": -1889.0
+Token "": -242.625, Token "be": -1408.0, Token "in": -2098.0, Token "'": -2272.0, Token ",": -2432.0
+Token "": -123.25, Token "be": -650.0, Token "'": -2302.0, Token "in": -2554.0, Token "have": -2754.0
+Token "": 76.1875, Token "be": -164.0, Token "help": -2706.0, Token "'": -2956.0, Token "in": -3266.0
+Token "": 386.5, Token "be": -279.0, Token "'": -3612.0, Token "help": -3624.0, Token "have": -3944.0
+Token "": 1063.0, Token "be": -530.5, Token "'": -4704.0, Token "in": -4720.0, Token "help": -4872.0
+Token "be": 4.19140625, Token "help": 1.361328125, Token "provide": 0.7861328125, Token "perform": 0.59326171875, Token "have": 0.397705078125
+Token "be": 665.0, Token "": -inf, Token "": -inf, Token "": -inf, Token "": -inf
+
+TRACKING TOKEN INDICES
+Token "be" Position 6, Token "" Position 2801, Token "" Position 32127, Token "" Position 364, Token "" Position 1270
+Token "be" Position 0, Token "" Position 1049, Token "" Position 32127, Token "" Position 20, Token "" Position 346
+Token "be" Position 1, Token "" Position 71, Token "" Position 32127, Token "" Position 0, Token "" Position 33
+Token "be" Position 1, Token "" Position 27, Token "" Position 32127, Token "" Position 0, Token "" Position 10
+Token "be" Position 1, Token "" Position 22, Token "" Position 32127, Token "" Position 0, Token "" Position 14
+Token "be" Position 1, Token "" Position 28, Token "" Position 32127, Token "" Position 0, Token "" Position 29
+Token "be" Position 1, Token "" Position 29, Token "" Position 32127, Token "" Position 0, Token "" Position 26
+Token "be" Position 1, Token "" Position 61, Token "" Position 32127, Token "" Position 0, Token "" Position 47
+Token "be" Position 1, Token "" Position 85, Token "" Position 32127, Token "" Position 0, Token "" Position 86
+Token "be" Position 1, Token "" Position 104, Token "" Position 31922, Token "" Position 0, Token "" Position 75
+Token "be" Position 1, Token "" Position 77, Token "" Position 31853, Token "" Position 0, Token "" Position 47
+Token "be" Position 0, Token "" Position 720, Token "" Position 32127, Token "" Position 35, Token "" Position 767
+Token "be" Position 0, Token "" Position 3, Token "" Position 1, Token "" Position 4, Token "" Position 2
+
+JS DIVERGENCES:
+tensor([0.0012, 0.0014, 0.0057, 0.0127, 0.0160, 0.0210, 0.0258, 0.0312, 0.0316,
+           nan,    nan], device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "replaced": 136.75, Token "used": 127.5625, Token "seen": 124.875, Token "found": 93.5625, Token "sold": 74.5
+Token "used": 41.1875, Token "": -17.359375, Token "considered": -38.3125, Token "seen": -44.3125, Token "found": -53.875
+Token "": -22.515625, Token "used": -450.75, Token "the": -460.25, Token "in": -470.0, Token "de": -501.25
+Token "": -144.25, Token "the": -1001.0, Token "in": -1026.0, Token """: -1120.0, Token "de": -1224.0
+Token "": -187.0, Token "in": -1248.0, Token "the": -1318.0, Token ",": -1515.0, Token "used": -1531.0
+Token "": -151.0, Token "in": -1629.0, Token "the": -1751.0, Token "used": -1826.0, Token ",": -1962.0
+Token "": -8.1640625, Token "used": -1926.0, Token "in": -1979.0, Token "the": -2298.0, Token "made": -2540.0
+Token "": 286.0, Token "used": -1936.0, Token "in": -2190.0, Token "the": -2862.0, Token """: -2864.0
+Token "": 544.0, Token "used": -1039.0, Token "made": -2706.0, Token "in": -2892.0, Token "created": -3248.0
+Token "": 1581.0, Token "used": -1702.0, Token "made": -3268.0, Token "created": -3652.0, Token "in": -3660.0
+Token "": 2720.0, Token "used": -3018.0, Token "the": -4572.0, Token "in": -4644.0, Token """: -5044.0
+Token "used": 4.7578125, Token "constructed": 3.560546875, Token "built": 3.169921875, Token "applied": 2.76953125, Token "": 2.765625
+Token "applied": 6856.0, Token "built": 5744.0, Token "constructed": 5688.0, Token "used": 3282.0, Token "": -3.06640625
+
+TRACKING TOKEN INDICES
+Token "applied" Position 392, Token "built" Position 37, Token "constructed" Position 63, Token "used" Position 1, Token "" Position 32
+Token "applied" Position 386, Token "built" Position 35, Token "constructed" Position 47, Token "used" Position 0, Token "" Position 1
+Token "applied" Position 730, Token "built" Position 188, Token "constructed" Position 422, Token "used" Position 1, Token "" Position 0
+Token "applied" Position 937, Token "built" Position 298, Token "constructed" Position 655, Token "used" Position 5, Token "" Position 0
+Token "applied" Position 819, Token "built" Position 184, Token "constructed" Position 462, Token "used" Position 4, Token "" Position 0
+Token "applied" Position 473, Token "built" Position 138, Token "constructed" Position 353, Token "used" Position 3, Token "" Position 0
+Token "applied" Position 183, Token "built" Position 81, Token "constructed" Position 158, Token "used" Position 1, Token "" Position 0
+Token "applied" Position 81, Token "built" Position 86, Token "constructed" Position 105, Token "used" Position 1, Token "" Position 0
+Token "applied" Position 17, Token "built" Position 12, Token "constructed" Position 11, Token "used" Position 1, Token "" Position 0
+Token "applied" Position 17, Token "built" Position 6, Token "constructed" Position 5, Token "used" Position 1, Token "" Position 0
+Token "applied" Position 30, Token "built" Position 9, Token "constructed" Position 11, Token "used" Position 1, Token "" Position 0
+Token "applied" Position 3, Token "built" Position 2, Token "constructed" Position 1, Token "used" Position 0, Token "" Position 4
+Token "applied" Position 0, Token "built" Position 1, Token "constructed" Position 2, Token "used" Position 3, Token "" Position 4
+
+JS DIVERGENCES:
+tensor([0.0014, 0.0013, 0.0030, 0.0076, 0.0082, 0.0096, 0.0066, 0.0020, 0.0029,
+           nan,    nan], device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "forces": 92.5, Token "masculin": 82.5, Token "attention": 59.40625, Token "philosophy": 56.84375, Token "drama": 46.3125
+Token "masculin": -49.84375, Token "drama": -58.0625, Token "philosophy": -125.75, Token "worldwide": -139.875, Token "weight": -140.875
+Token "": -185.875, Token "in": -506.5, Token "to": -547.0, Token "the": -602.5, Token ",": -665.0
+Token "": -424.0, Token "in": -1167.0, Token "to": -1363.0, Token "the": -1417.0, Token ",": -1476.0
+Token "": -493.5, Token "in": -1379.0, Token "to": -1486.0, Token "the": -1676.0, Token ",": -1719.0
+Token "": -455.25, Token "in": -1581.0, Token "to": -1595.0, Token "the": -1973.0, Token ",": -2136.0
+Token "": -600.0, Token "to": -1290.0, Token "in": -1623.0, Token "the": -2550.0, Token "for": -2586.0
+Token "to": -575.5, Token "": -637.5, Token "in": -1475.0, Token "for": -2584.0, Token "as": -2776.0
+Token "to": 388.0, Token "": -396.0, Token "in": -1066.0, Token "for": -2282.0, Token "as": -2906.0
+Token "to": 703.0, Token "": -376.0, Token "in": -596.0, Token "for": -2560.0, Token "as": -3542.0
+Token "": 512.5, Token "to": 510.75, Token "in": -702.0, Token "for": -3252.0, Token "as": -4392.0
+Token "to": 1.958984375, Token "in": -0.689453125, Token "for": -1.6669921875, Token "either": -3.392578125, Token "across": -3.40234375
+Token "to": -0.1326904296875, Token "": -inf, Token "": -inf, Token "": -inf, Token "": -inf
+
+TRACKING TOKEN INDICES
+Token "to" Position 165, Token "" Position 6209, Token "" Position 32127, Token "" Position 116, Token "" Position 2594
+Token "to" Position 21, Token "" Position 2653, Token "" Position 32127, Token "" Position 6, Token "" Position 424
+Token "to" Position 2, Token "" Position 68, Token "" Position 32127, Token "" Position 0, Token "" Position 18
+Token "to" Position 2, Token "" Position 25, Token "" Position 32127, Token "" Position 0, Token "" Position 15
+Token "to" Position 2, Token "" Position 23, Token "" Position 32127, Token "" Position 0, Token "" Position 17
+Token "to" Position 2, Token "" Position 22, Token "" Position 32127, Token "" Position 0, Token "" Position 20
+Token "to" Position 1, Token "" Position 21, Token "" Position 32127, Token "" Position 0, Token "" Position 24
+Token "to" Position 0, Token "" Position 27, Token "" Position 32127, Token "" Position 1, Token "" Position 24
+Token "to" Position 0, Token "" Position 52, Token "" Position 32127, Token "" Position 1, Token "" Position 26
+Token "to" Position 0, Token "" Position 105, Token "" Position 31941, Token "" Position 1, Token "" Position 20
+Token "to" Position 1, Token "" Position 75, Token "" Position 31859, Token "" Position 0, Token "" Position 20
+Token "to" Position 0, Token "" Position 553, Token "" Position 32127, Token "" Position 9, Token "" Position 253
+Token "to" Position 0, Token "" Position 3, Token "" Position 1, Token "" Position 4, Token "" Position 2
+
+JS DIVERGENCES:
+tensor([0.0019, 0.0020, 0.0063, 0.0139, 0.0177, 0.0236, 0.0311, 0.0386,    nan,
+           nan,    nan], device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "limit": 87.6875, Token "reduce": 64.0625, Token "form": 60.40625, Token "see": 55.4375, Token "construct": 53.34375
+Token "": -25.828125, Token "do": -44.28125, Token "find": -48.3125, Token "make": -48.53125, Token "see": -60.625
+Token "": -24.96875, Token "the": -239.125, Token """: -360.0, Token "do": -461.5, Token ",": -463.25
+Token "": -128.25, Token "the": -772.0, Token """: -909.5, Token "in": -1041.0, Token ",": -1070.0
+Token "": -161.5, Token "the": -997.0, Token "in": -1303.0, Token """: -1342.0, Token ",": -1366.0
+Token "": -85.6875, Token "the": -1224.0, Token "in": -1586.0, Token """: -1618.0, Token ",": -1677.0
+Token "": 67.9375, Token "the": -1481.0, Token "in": -2021.0, Token """: -2062.0, Token ",": -2108.0
+Token "": 356.0, Token "the": -1558.0, Token """: -2204.0, Token "in": -2486.0, Token ",": -2538.0
+Token "": 1514.0, Token "the": -1328.0, Token "in": -2490.0, Token """: -2774.0, Token ",": -3228.0
+Token "": 2470.0, Token "the": -1167.0, Token "in": -3430.0, Token """: -4086.0, Token "many": -4524.0
+Token "": 3936.0, Token "the": -1228.0, Token "in": -3876.0, Token """: -5104.0, Token ",": -5464.0
+Token "": 3.33203125, Token "many": 3.0234375, Token "any": 2.970703125, Token "the": 2.87109375, Token "models": 2.623046875
+Token "architecture": 10168.0, Token "models": 8800.0, Token "learning": 8528.0, Token "model": 8052.0, Token "improve": 7884.0
+
+TRACKING TOKEN INDICES
+Token "architecture" Position 10802, Token "models" Position 15123, Token "learning" Position 8358, Token "model" Position 821, Token "improve" Position 209
+Token "architecture" Position 8170, Token "models" Position 12436, Token "learning" Position 2851, Token "model" Position 432, Token "improve" Position 164
+Token "architecture" Position 6150, Token "models" Position 6464, Token "learning" Position 2171, Token "model" Position 293, Token "improve" Position 990
+Token "architecture" Position 7764, Token "models" Position 6347, Token "learning" Position 1753, Token "model" Position 493, Token "improve" Position 2064
+Token "architecture" Position 5784, Token "models" Position 3798, Token "learning" Position 727, Token "model" Position 342, Token "improve" Position 2074
+Token "architecture" Position 5277, Token "models" Position 3242, Token "learning" Position 844, Token "model" Position 387, Token "improve" Position 1772
+Token "architecture" Position 4502, Token "models" Position 2355, Token "learning" Position 646, Token "model" Position 393, Token "improve" Position 859
+Token "architecture" Position 5170, Token "models" Position 1285, Token "learning" Position 1107, Token "model" Position 536, Token "improve" Position 461
+Token "architecture" Position 1872, Token "models" Position 604, Token "learning" Position 470, Token "model" Position 273, Token "improve" Position 214
+Token "architecture" Position 1025, Token "models" Position 213, Token "learning" Position 343, Token "model" Position 78, Token "improve" Position 181
+Token "architecture" Position 847, Token "models" Position 94, Token "learning" Position 131, Token "model" Position 24, Token "improve" Position 307
+Token "architecture" Position 6, Token "models" Position 4, Token "learning" Position 11, Token "model" Position 7, Token "improve" Position 9
+Token "architecture" Position 0, Token "models" Position 1, Token "learning" Position 2, Token "model" Position 3, Token "improve" Position 4
+
+JS DIVERGENCES:
+tensor([0.0023, 0.0016, 0.0053, 0.0096, 0.0117, 0.0117, 0.0117, 0.0106, 0.0114,
+           nan,    nan], device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "design": 239.5, Token "firm": 171.125, Token "Design": 171.125, Token "style": 127.625, Token "group": 114.8125
+Token "": 102.875, Token "design": 20.953125, Token "Design": 4.015625, Token "block": -6.43359375, Token "firm": -18.234375
+Token "": 54.21875, Token "s": -515.5, Token ",": -555.5, Token ".": -606.0, Token "and": -623.5
+Token "": -136.75, Token "s": -1139.0, Token ",": -1257.0, Token "in": -1379.0, Token "and": -1379.0
+Token "": -83.8125, Token "s": -1189.0, Token ",": -1557.0, Token "and": -1646.0, Token "in": -1649.0
+Token "": -139.375, Token "s": -1013.0, Token ",": -1677.0, Token "and": -1873.0, Token "in": -1908.0
+Token "": -75.3125, Token "s": -722.5, Token ",": -1639.0, Token "and": -1780.0, Token "in": -2001.0
+Token "s": -24.828125, Token "": -182.5, Token ",": -1642.0, Token "and": -2058.0, Token "in": -2340.0
+Token "": 157.75, Token "s": 141.375, Token ",": -1141.0, Token "and": -2106.0, Token "in": -2406.0
+Token "s": 531.0, Token "": 232.625, Token ",": -1213.0, Token "and": -2506.0, Token "in": -2680.0
+Token "": 1023.5, Token "s": 911.5, Token ",": -1083.0, Token "and": -2822.0, Token "in": -2886.0
+Token "s": 1.8427734375, Token ",": 0.916015625, Token "and": 0.3076171875, Token "of": -0.96923828125, Token "problems": -1.021484375
+Token "and": 3142.0, Token ",": 1848.0, Token "s": -0.72607421875, Token "": -inf, Token "": -inf
+
+TRACKING TOKEN INDICES
+Token "and" Position 124, Token "," Position 61, Token "s" Position 103, Token "" Position 240, Token "" Position 32127
+Token "and" Position 13, Token "," Position 8, Token "s" Position 6, Token "" Position 86, Token "" Position 32127
+Token "and" Position 4, Token "," Position 2, Token "s" Position 1, Token "" Position 11, Token "" Position 32127
+Token "and" Position 3, Token "," Position 2, Token "s" Position 1, Token "" Position 12, Token "" Position 32127
+Token "and" Position 3, Token "," Position 2, Token "s" Position 1, Token "" Position 12, Token "" Position 32127
+Token "and" Position 3, Token "," Position 2, Token "s" Position 1, Token "" Position 12, Token "" Position 32127
+Token "and" Position 3, Token "," Position 2, Token "s" Position 1, Token "" Position 12, Token "" Position 32127
+Token "and" Position 3, Token "," Position 2, Token "s" Position 0, Token "" Position 14, Token "" Position 32127
+Token "and" Position 3, Token "," Position 2, Token "s" Position 1, Token "" Position 14, Token "" Position 32127
+Token "and" Position 3, Token "," Position 2, Token "s" Position 0, Token "" Position 16, Token "" Position 32008
+Token "and" Position 3, Token "," Position 2, Token "s" Position 1, Token "" Position 15, Token "" Position 31877
+Token "and" Position 2, Token "," Position 1, Token "s" Position 0, Token "" Position 129, Token "" Position 32127
+Token "and" Position 0, Token "," Position 1, Token "s" Position 2, Token "" Position 4, Token "" Position 3
+
+JS DIVERGENCES:
+tensor([0.0016, 0.0024, 0.0072, 0.0147, 0.0202, 0.0256, 0.0321, 0.0410,    nan,
+           nan,    nan], device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "": 48.34375, Token "the": 25.84375, Token "then": 21.5, Token "vice": -19.53125, Token "do": -26.34375
+Token "": 12.203125, Token "the": -37.03125, Token "vice": -77.3125, Token "then": -95.625, Token "no": -116.5
+Token "": 18.234375, Token "the": -283.75, Token """: -404.0, Token "in": -462.25, Token ",": -478.75
+Token "": -66.75, Token "the": -783.0, Token "in": -957.0, Token """: -975.0, Token ",": -1014.5
+Token "": -54.5625, Token "the": -1096.0, Token "in": -1290.0, Token ",": -1377.0, Token """: -1449.0
+Token "": -62.21875, Token "the": -1463.0, Token "in": -1594.0, Token ",": -1686.0, Token """: -1929.0
+Token "": 5.828125, Token "the": -1944.0, Token "in": -2013.0, Token ",": -2286.0, Token """: -2350.0
+Token "": 99.6875, Token "the": -2254.0, Token "in": -2416.0, Token "to": -2542.0, Token """: -2828.0
+Token "": 954.5, Token "the": -2394.0, Token "in": -2468.0, Token "to": -2876.0, Token """: -3282.0
+Token "": 1446.0, Token "the": -2640.0, Token "in": -3174.0, Token "to": -3852.0, Token ",": -4328.0
+Token "": 2368.0, Token "the": -2810.0, Token "in": -3758.0, Token "to": -4696.0, Token ",": -4904.0
+Token "performance": 5.11328125, Token "design": 2.568359375, Token "quality": 2.359375, Token "model": 2.3125, Token "modeling": 1.1982421875
+Token "performance": 6112.0, Token "": -inf, Token "": -inf, Token "": -inf, Token "": -inf
+
+TRACKING TOKEN INDICES
+Token "performance" Position 1328, Token "" Position 4117, Token "" Position 32127, Token "" Position 0, Token "" Position 210
+Token "performance" Position 1264, Token "" Position 2827, Token "" Position 32127, Token "" Position 0, Token "" Position 51
+Token "performance" Position 548, Token "" Position 479, Token "" Position 32127, Token "" Position 0, Token "" Position 8
+Token "performance" Position 552, Token "" Position 133, Token "" Position 32127, Token "" Position 0, Token "" Position 6
+Token "performance" Position 381, Token "" Position 116, Token "" Position 32127, Token "" Position 0, Token "" Position 7
+Token "performance" Position 258, Token "" Position 43, Token "" Position 32127, Token "" Position 0, Token "" Position 9
+Token "performance" Position 129, Token "" Position 63, Token "" Position 32127, Token "" Position 0, Token "" Position 17
+Token "performance" Position 111, Token "" Position 46, Token "" Position 32127, Token "" Position 0, Token "" Position 14
+Token "performance" Position 47, Token "" Position 63, Token "" Position 32127, Token "" Position 0, Token "" Position 19
+Token "performance" Position 11, Token "" Position 107, Token "" Position 31905, Token "" Position 0, Token "" Position 29
+Token "performance" Position 5, Token "" Position 72, Token "" Position 31839, Token "" Position 0, Token "" Position 26
+Token "performance" Position 0, Token "" Position 1717, Token "" Position 32127, Token "" Position 9, Token "" Position 872
+Token "performance" Position 0, Token "" Position 3, Token "" Position 1, Token "" Position 4, Token "" Position 2
+
+JS DIVERGENCES:
+tensor([0.0021, 0.0026, 0.0086, 0.0210, 0.0255, 0.0283, 0.0329, 0.0376, 0.0411,
+           nan,    nan], device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "rating": 165.875, Token "evaluation": 154.125, Token "ratings": 141.5, Token "Rating": 131.875, Token "analysis": 121.5625
+Token "rating": 61.71875, Token "ratings": 39.0, Token "evaluation": 18.953125, Token "measurement": 13.4765625, Token "awards": -36.53125
+Token "": -54.15625, Token ",": -542.5, Token "in": -591.0, Token """: -592.5, Token ".": -614.0
+Token "": -141.375, Token ",": -1273.0, Token "in": -1342.0, Token """: -1366.0, Token "-": -1498.0
+Token "": -203.625, Token ",": -1579.0, Token "in": -1678.0, Token "-": -1792.0, Token """: -1876.0
+Token "": -243.375, Token ",": -1630.0, Token "in": -1852.0, Token "-": -1995.0, Token ".": -2064.0
+Token "": -194.75, Token ",": -1697.0, Token "in": -2098.0, Token "-": -2212.0, Token ".": -2246.0
+Token "": -232.0, Token ",": -1757.0, Token "in": -2260.0, Token ".": -2528.0, Token "-": -2560.0
+Token "": 228.0, Token ",": -1970.0, Token "in": -2462.0, Token "-": -2778.0, Token ".": -2900.0
+Token "": 995.5, Token ",": -1796.0, Token "in": -2098.0, Token "-": -2458.0, Token ".": -3120.0
+Token "": 2068.0, Token ",": -1470.0, Token "in": -1950.0, Token "-": -2142.0, Token ".": -3104.0
+Token "problems": 2.861328125, Token "analysis": 2.802734375, Token ",": 2.791015625, Token "modeling": 2.74609375, Token "prediction": 2.1640625
+Token "quality": 9960.0, Token "modeling": 9328.0, Token "metrics": 9200.0, Token "modelling": 8808.0, Token "models": 8224.0
+
+TRACKING TOKEN INDICES
+Token "quality" Position 1977, Token "modeling" Position 759, Token "metrics" Position 46, Token "modelling" Position 1787, Token "models" Position 597
+Token "quality" Position 1230, Token "modeling" Position 1756, Token "metrics" Position 22, Token "modelling" Position 5449, Token "models" Position 1401
+Token "quality" Position 803, Token "modeling" Position 6441, Token "metrics" Position 1895, Token "modelling" Position 7266, Token "models" Position 1852
+Token "quality" Position 1061, Token "modeling" Position 10915, Token "metrics" Position 6976, Token "modelling" Position 10486, Token "models" Position 1641
+Token "quality" Position 1533, Token "modeling" Position 10049, Token "metrics" Position 5605, Token "modelling" Position 9088, Token "models" Position 1251
+Token "quality" Position 1119, Token "modeling" Position 8305, Token "metrics" Position 2519, Token "modelling" Position 7105, Token "models" Position 1094
+Token "quality" Position 1615, Token "modeling" Position 6583, Token "metrics" Position 2613, Token "modelling" Position 5305, Token "models" Position 929
+Token "quality" Position 2472, Token "modeling" Position 5052, Token "metrics" Position 2431, Token "modelling" Position 3891, Token "models" Position 418
+Token "quality" Position 1514, Token "modeling" Position 1184, Token "metrics" Position 440, Token "modelling" Position 692, Token "models" Position 94
+Token "quality" Position 473, Token "modeling" Position 262, Token "metrics" Position 240, Token "modelling" Position 161, Token "models" Position 92
+Token "quality" Position 315, Token "modeling" Position 213, Token "metrics" Position 287, Token "modelling" Position 183, Token "models" Position 56
+Token "quality" Position 23, Token "modeling" Position 3, Token "metrics" Position 5, Token "modelling" Position 6, Token "models" Position 7
+Token "quality" Position 0, Token "modeling" Position 1, Token "metrics" Position 2, Token "modelling" Position 3, Token "models" Position 4
+
+JS DIVERGENCES:
+tensor([0.0036, 0.0033, 0.0085, 0.0188, 0.0232, 0.0263, 0.0301, 0.0328, 0.0370,
+           nan,    nan], device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "assurance": 276.75, Token "governance": 155.0, Token "score": 131.25, Token "ISO": 126.625, Token "standards": 115.625
+Token "score": 69.0, Token "assurance": 19.90625, Token "factor": -3.7890625, Token "chain": -29.40625, Token "film": -31.65625
+Token "": -47.9375, Token ",": -592.5, Token "in": -611.5, Token ".": -621.5, Token "of": -693.5
+Token "": -164.125, Token ",": -1288.0, Token "in": -1334.0, Token """: -1411.0, Token ".": -1427.0
+Token "": -117.8125, Token ",": -1525.0, Token "in": -1576.0, Token ".": -1741.0, Token """: -1817.0
+Token "": -113.5, Token ",": -1605.0, Token "in": -1747.0, Token ".": -1870.0, Token "the": -2174.0
+Token "": -82.3125, Token ",": -1626.0, Token "in": -1903.0, Token ".": -2031.0, Token "and": -2422.0
+Token "": -112.375, Token ",": -1762.0, Token "in": -1985.0, Token ".": -2254.0, Token "s": -2780.0
+Token "": 370.5, Token ",": -1676.0, Token "in": -2104.0, Token ".": -2312.0, Token "of": -3124.0
+Token "": 1116.0, Token ",": -1641.0, Token "in": -2126.0, Token ".": -2628.0, Token "issues": -3460.0
+Token "": 2082.0, Token ",": -1408.0, Token "in": -2198.0, Token ".": -2758.0, Token "of": -3768.0
+Token "problems": 3.806640625, Token ",": 3.025390625, Token ".": 2.20703125, Token "issues": 2.19921875, Token "and": 2.103515625
+Token "metrics": 10032.0, Token "models": 8288.0, Token "analysis": 5252.0, Token "control": 4940.0, Token "problems": 4916.0
+
+TRACKING TOKEN INDICES
+Token "metrics" Position 80, Token "models" Position 4314, Token "analysis" Position 25, Token "control" Position 9, Token "problems" Position 3170
+Token "metrics" Position 942, Token "models" Position 9380, Token "analysis" Position 162, Token "control" Position 12, Token "problems" Position 2811
+Token "metrics" Position 8931, Token "models" Position 5757, Token "analysis" Position 1303, Token "control" Position 46, Token "problems" Position 886
+Token "metrics" Position 12485, Token "models" Position 4041, Token "analysis" Position 1949, Token "control" Position 81, Token "problems" Position 691
+Token "metrics" Position 11085, Token "models" Position 3877, Token "analysis" Position 1127, Token "control" Position 37, Token "problems" Position 399
+Token "metrics" Position 6952, Token "models" Position 2337, Token "analysis" Position 1178, Token "control" Position 26, Token "problems" Position 186
+Token "metrics" Position 7496, Token "models" Position 1953, Token "analysis" Position 803, Token "control" Position 23, Token "problems" Position 103
+Token "metrics" Position 5322, Token "models" Position 1002, Token "analysis" Position 539, Token "control" Position 21, Token "problems" Position 35
+Token "metrics" Position 918, Token "models" Position 243, Token "analysis" Position 24, Token "control" Position 9, Token "problems" Position 16
+Token "metrics" Position 411, Token "models" Position 87, Token "analysis" Position 13, Token "control" Position 8, Token "problems" Position 7
+Token "metrics" Position 461, Token "models" Position 51, Token "analysis" Position 19, Token "control" Position 20, Token "problems" Position 10
+Token "metrics" Position 7, Token "models" Position 6, Token "analysis" Position 5, Token "control" Position 10, Token "problems" Position 0
+Token "metrics" Position 0, Token "models" Position 1, Token "analysis" Position 2, Token "control" Position 3, Token "problems" Position 4
+
+JS DIVERGENCES:
+tensor([0.0022, 0.0021, 0.0058, 0.0110, 0.0133, 0.0149, 0.0158, 0.0157, 0.0167,
+           nan,    nan], device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "grades": 146.25, Token "analysis": 123.75, Token "scale": 82.6875, Token "audit": 68.75, Token "level": 67.9375
+Token "": 4.76953125, Token """: -147.375, Token ",": -159.0, Token ".": -173.625, Token "audit": -206.125
+Token "": -4.828125, Token """: -500.5, Token ",": -511.75, Token ".": -561.0, Token "in": -613.5
+Token "": -165.375, Token ",": -1121.0, Token """: -1230.0, Token ".": -1272.0, Token "in": -1280.0
+Token "": -213.375, Token ",": -1349.0, Token """: -1501.0, Token ".": -1522.0, Token "in": -1626.0
+Token "": -342.0, Token ",": -1565.0, Token ".": -1738.0, Token "in": -1908.0, Token """: -1919.0
+Token "": -478.5, Token ",": -1691.0, Token ".": -1878.0, Token "in": -2088.0, Token """: -2420.0
+Token "": -561.0, Token ",": -1711.0, Token ".": -1863.0, Token "in": -2270.0, Token "to": -2774.0
+Token "": -352.25, Token ",": -1400.0, Token ".": -1479.0, Token "in": -2218.0, Token "to": -2568.0
+Token "": 303.75, Token ",": -1090.0, Token ".": -1484.0, Token "in": -2062.0, Token "to": -2118.0
+Token "": 1062.0, Token ",": -1142.0, Token ".": -1538.0, Token "in": -2340.0, Token "to": -2402.0
+Token ".": -0.417724609375, Token ",": -0.68212890625, Token "to": -1.115234375, Token "such": -1.6455078125, Token "and": -2.216796875
+Token "such": 5424.0, Token "that": 5152.0, Token "for": 3734.0, Token "and": 2810.0, Token "in": 2362.0
+
+TRACKING TOKEN INDICES
+Token "such" Position 341, Token "that" Position 195, Token "for" Position 138, Token "and" Position 153, Token "in" Position 445
+Token "such" Position 338, Token "that" Position 92, Token "for" Position 8, Token "and" Position 17, Token "in" Position 31
+Token "such" Position 140, Token "that" Position 25, Token "for" Position 5, Token "and" Position 10, Token "in" Position 4
+Token "such" Position 174, Token "that" Position 26, Token "for" Position 6, Token "and" Position 10, Token "in" Position 4
+Token "such" Position 143, Token "that" Position 23, Token "for" Position 5, Token "and" Position 13, Token "in" Position 4
+Token "such" Position 105, Token "that" Position 28, Token "for" Position 5, Token "and" Position 16, Token "in" Position 3
+Token "such" Position 69, Token "that" Position 31, Token "for" Position 5, Token "and" Position 9, Token "in" Position 3
+Token "such" Position 17, Token "that" Position 28, Token "for" Position 6, Token "and" Position 11, Token "in" Position 3
+Token "such" Position 11, Token "that" Position 17, Token "for" Position 5, Token "and" Position 7, Token "in" Position 3
+Token "such" Position 17, Token "that" Position 13, Token "for" Position 5, Token "and" Position 6, Token "in" Position 3
+Token "such" Position 21, Token "that" Position 10, Token "for" Position 5, Token "and" Position 6, Token "in" Position 3
+Token "such" Position 3, Token "that" Position 7, Token "for" Position 5, Token "and" Position 4, Token "in" Position 6
+Token "such" Position 0, Token "that" Position 1, Token "for" Position 2, Token "and" Position 3, Token "in" Position 4
+
+JS DIVERGENCES:
+tensor([6.4039e-04, 2.8491e-04, 2.8648e-03, 7.8049e-03, 9.7351e-03, 1.1833e-02,
+        7.8125e-03, 9.8765e-05, 1.4865e-04,        nan,        nan],
+       device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "actors": 109.5625, Token "organ": 50.34375, Token "statute": 45.0, Token "as": 42.5, Token "dramatic": 41.71875
+Token """: -36.8125, Token "actors": -49.03125, Token "motion": -61.75, Token "as": -63.34375, Token "": -69.0625
+Token "": -72.125, Token """: -361.75, Token "as": -434.5, Token "in": -438.5, Token "the": -538.5
+Token "": -235.5, Token """: -1075.0, Token "in": -1201.0, Token "as": -1232.0, Token "the": -1309.0
+Token "": -236.625, Token """: -1359.0, Token "as": -1482.0, Token "in": -1530.0, Token "the": -1784.0
+Token "": -298.75, Token """: -1499.0, Token "as": -1813.0, Token "in": -1842.0, Token "the": -2078.0
+Token "": -483.25, Token "as": -1477.0, Token """: -2102.0, Token "in": -2198.0, Token "the": -2706.0
+Token "as": 473.5, Token "": -495.0, Token """: -2348.0, Token "in": -2740.0, Token "As": -3020.0
+Token "as": 1793.0, Token "": -788.0, Token """: -3460.0, Token "As": -3490.0, Token "in": -3622.0
+Token "as": 1372.0, Token "": -359.5, Token "in": -4224.0, Token "the": -4548.0, Token """: -4932.0
+Token "as": 600.5, Token "": -48.40625, Token "in": -4992.0, Token "the": -5004.0, Token ",": -5836.0
+Token "as": -0.28271484375, Token "that": -7.765625, Token "": -7.86328125, Token "the": -9.3671875, Token "in": -9.6953125
+Token "as": -0.0029201507568359375, Token "": -inf, Token "": -inf, Token "": -inf, Token "": -inf
+
+TRACKING TOKEN INDICES
+Token "as" Position 3, Token "" Position 19421, Token "" Position 32127, Token "" Position 92, Token "" Position 2669
+Token "as" Position 3, Token "" Position 15663, Token "" Position 32127, Token "" Position 4, Token "" Position 688
+Token "as" Position 2, Token "" Position 809, Token "" Position 32127, Token "" Position 0, Token "" Position 22
+Token "as" Position 3, Token "" Position 103, Token "" Position 32127, Token "" Position 0, Token "" Position 17
+Token "as" Position 2, Token "" Position 62, Token "" Position 32127, Token "" Position 0, Token "" Position 25
+Token "as" Position 2, Token "" Position 37, Token "" Position 32127, Token "" Position 0, Token "" Position 23
+Token "as" Position 1, Token "" Position 64, Token "" Position 32127, Token "" Position 0, Token "" Position 26
+Token "as" Position 0, Token "" Position 103, Token "" Position 32127, Token "" Position 1, Token "" Position 12
+Token "as" Position 0, Token "" Position 84, Token "" Position 32127, Token "" Position 1, Token "" Position 9
+Token "as" Position 0, Token "" Position 70, Token "" Position 31947, Token "" Position 1, Token "" Position 8
+Token "as" Position 0, Token "" Position 49, Token "" Position 31859, Token "" Position 1, Token "" Position 8
+Token "as" Position 0, Token "" Position 532, Token "" Position 32127, Token "" Position 2, Token "" Position 20
+Token "as" Position 0, Token "" Position 3, Token "" Position 1, Token "" Position 4, Token "" Position 2
+
+JS DIVERGENCES:
+tensor([0.0021, 0.0033, 0.0079, 0.0174, 0.0212, 0.0255, 0.0338, 0.0404, 0.0527,
+           nan,    nan], device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "the": 76.5, Token "": 63.46875, Token """: 37.5, Token "bra": 10.1953125, Token "Lisa": -0.98828125
+Token "": 46.6875, Token "the": -32.90625, Token """: -71.5625, Token "part": -106.875, Token "an": -132.25
+Token "": 32.875, Token "the": -298.75, Token """: -302.75, Token "in": -422.0, Token ",": -490.5
+Token "": -4.98828125, Token """: -791.5, Token "the": -865.0, Token "in": -974.0, Token ",": -1137.0
+Token "": -154.25, Token """: -1068.0, Token "the": -1283.0, Token "in": -1395.0, Token ",": -1491.0
+Token "": -180.5, Token """: -1285.0, Token "the": -1536.0, Token "in": -1688.0, Token ",": -1791.0
+Token "": -117.3125, Token """: -1712.0, Token "the": -2046.0, Token "in": -2262.0, Token ",": -2312.0
+Token "": 178.25, Token """: -1610.0, Token "the": -2025.0, Token ",": -2474.0, Token "in": -2512.0
+Token "": 913.0, Token """: -2118.0, Token "the": -2212.0, Token ",": -2722.0, Token "in": -2824.0
+Token "": 1793.0, Token "the": -2338.0, Token """: -2798.0, Token ",": -3138.0, Token "in": -3272.0
+Token "": 2966.0, Token "the": -2290.0, Token ",": -3234.0, Token "in": -3688.0, Token """: -3740.0
+Token "the": 1.4140625, Token "performance": 1.3662109375, Token "quality": 1.349609375, Token "model": 1.2900390625, Token "": 1.23046875
+Token "fault": 10384.0, Token "through": 10328.0, Token "machine": 9920.0, Token "error": 9912.0, Token "network": 9888.0
+
+TRACKING TOKEN INDICES
+Token "fault" Position 7896, Token "through" Position 10144, Token "machine" Position 3947, Token "error" Position 10659, Token "network" Position 6644
+Token "fault" Position 9834, Token "through" Position 6722, Token "machine" Position 2849, Token "error" Position 12742, Token "network" Position 5120
+Token "fault" Position 8931, Token "through" Position 4082, Token "machine" Position 1887, Token "error" Position 10806, Token "network" Position 2677
+Token "fault" Position 6904, Token "through" Position 2814, Token "machine" Position 2476, Token "error" Position 7940, Token "network" Position 2498
+Token "fault" Position 7727, Token "through" Position 2006, Token "machine" Position 2105, Token "error" Position 6642, Token "network" Position 1289
+Token "fault" Position 6772, Token "through" Position 1105, Token "machine" Position 2345, Token "error" Position 5795, Token "network" Position 1127
+Token "fault" Position 6485, Token "through" Position 1381, Token "machine" Position 2045, Token "error" Position 5498, Token "network" Position 1045
+Token "fault" Position 3988, Token "through" Position 1867, Token "machine" Position 2014, Token "error" Position 2646, Token "network" Position 631
+Token "fault" Position 1676, Token "through" Position 1172, Token "machine" Position 2003, Token "error" Position 1174, Token "network" Position 637
+Token "fault" Position 511, Token "through" Position 489, Token "machine" Position 337, Token "error" Position 340, Token "network" Position 333
+Token "fault" Position 396, Token "through" Position 287, Token "machine" Position 34, Token "error" Position 82, Token "network" Position 130
+Token "fault" Position 12, Token "through" Position 17, Token "machine" Position 7, Token "error" Position 14, Token "network" Position 9
+Token "fault" Position 0, Token "through" Position 1, Token "machine" Position 2, Token "error" Position 3, Token "network" Position 4
+
+JS DIVERGENCES:
+tensor([0.0017, 0.0019, 0.0131, 0.0285, 0.0334, 0.0366, 0.0402, 0.0415, 0.0472,
+           nan,    nan], device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "Kreis": 219.375, Token "-": 210.5, Token "wave": 197.0, Token "smith": 196.375, Token "zone": 191.375
+Token "-": 66.6875, Token "zone": 61.125, Token "management": 54.65625, Token "lines": 47.625, Token "": 5.08203125
+Token "": -1.109375, Token "-": -468.0, Token "s": -574.5, Token "in": -652.0, Token ",": -733.0
+Token "": -124.25, Token "-": -1224.0, Token "s": -1262.0, Token "in": -1377.0, Token ",": -1480.0
+Token "": -158.625, Token "-": -1393.0, Token "s": -1482.0, Token "in": -1691.0, Token ",": -1796.0
+Token "": -266.25, Token "s": -1556.0, Token "-": -1594.0, Token "in": -2090.0, Token ",": -2180.0
+Token "": -171.875, Token "s": -1622.0, Token "-": -1746.0, Token "in": -2304.0, Token ",": -2470.0
+Token "": 95.9375, Token "s": -1742.0, Token "-": -1824.0, Token ",": -2346.0, Token "in": -2502.0
+Token "": 796.5, Token "s": -1471.0, Token "-": -1782.0, Token ",": -2198.0, Token "in": -2660.0
+Token "": 1501.0, Token "s": -1216.0, Token "-": -1228.0, Token ",": -1746.0, Token "rate": -2552.0
+Token "": 1757.0, Token ",": -1356.0, Token "s": -1778.0, Token "-": -2090.0, Token "rate": -2680.0
+Token "tolerance": 4.7734375, Token "detection": 1.359375, Token ",": 1.12109375, Token "and": 0.94580078125, Token "rates": 0.7568359375
+Token "tolerance": 5888.0, Token "": -inf, Token "": -inf, Token "": -inf, Token "": -inf
+
+TRACKING TOKEN INDICES
+Token "tolerance" Position 35, Token "" Position 1335, Token "" Position 32127, Token "" Position 64, Token "" Position 1039
+Token "tolerance" Position 24, Token "" Position 637, Token "" Position 32127, Token "" Position 4, Token "" Position 295
+Token "tolerance" Position 1122, Token "" Position 37, Token "" Position 32127, Token "" Position 0, Token "" Position 23
+Token "tolerance" Position 3666, Token "" Position 23, Token "" Position 32127, Token "" Position 0, Token "" Position 13
+Token "tolerance" Position 1965, Token "" Position 27, Token "" Position 32127, Token "" Position 0, Token "" Position 14
+Token "tolerance" Position 1267, Token "" Position 30, Token "" Position 32127, Token "" Position 0, Token "" Position 17
+Token "tolerance" Position 766, Token "" Position 39, Token "" Position 32127, Token "" Position 0, Token "" Position 17
+Token "tolerance" Position 177, Token "" Position 70, Token "" Position 32127, Token "" Position 0, Token "" Position 19
+Token "tolerance" Position 68, Token "" Position 78, Token "" Position 32127, Token "" Position 0, Token "" Position 18
+Token "tolerance" Position 18, Token "" Position 122, Token "" Position 32102, Token "" Position 0, Token "" Position 20
+Token "tolerance" Position 10, Token "" Position 125, Token "" Position 31917, Token "" Position 0, Token "" Position 22
+Token "tolerance" Position 0, Token "" Position 545, Token "" Position 32127, Token "" Position 10, Token "" Position 374
+Token "tolerance" Position 0, Token "" Position 3, Token "" Position 1, Token "" Position 4, Token "" Position 2
+
+JS DIVERGENCES:
+tensor([0.0024, 0.0019, 0.0044, 0.0100, 0.0129, 0.0128, 0.0132, 0.0105, 0.0099,
+           nan,    nan], device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "Glas": 219.5, Token "bre": 211.0, Token "lent": 173.5, Token "limits": 166.125, Token "levels": 140.25
+Token "s": 53.4375, Token "limits": -13.7421875, Token "limit": -43.0, Token "levels": -56.53125, Token "": -57.6875
+Token "": -86.5, Token "s": -220.25, Token ",": -512.0, Token ".": -620.5, Token "in": -676.0
+Token "": -182.125, Token "s": -995.5, Token ",": -1163.0, Token "in": -1378.0, Token ".": -1467.0
+Token "": -197.5, Token "s": -1408.0, Token ",": -1489.0, Token "in": -1767.0, Token ".": -1864.0
+Token "": -240.75, Token ",": -1445.0, Token "s": -1448.0, Token "in": -1904.0, Token ".": -1951.0
+Token "": -147.5, Token ",": -1360.0, Token "s": -1504.0, Token ".": -1965.0, Token "in": -2045.0
+Token "": -175.875, Token ",": -1006.0, Token "and": -1464.0, Token "s": -1501.0, Token ".": -1786.0
+Token "": 60.09375, Token ",": -271.5, Token ".": -1500.0, Token "and": -1548.0, Token "s": -1804.0
+Token "": 791.0, Token ",": 263.5, Token ".": -1367.0, Token "and": -1674.0, Token "in": -2440.0
+Token "": 1343.0, Token ",": 585.0, Token ".": -1468.0, Token "and": -1951.0, Token "in": -2530.0
+Token ",": 0.701171875, Token "and": -0.00415802001953125, Token ".": -0.58935546875, Token "or": -1.06640625, Token "to": -2.91796875
+Token "or": 3862.0, Token ".": 2156.0, Token "and": 1820.0, Token ",": 526.5, Token "": -inf
+
+TRACKING TOKEN INDICES
+Token "or" Position 1669, Token "." Position 426, Token "and" Position 403, Token "," Position 105, Token "" Position 32126
+Token "or" Position 270, Token "." Position 25, Token "and" Position 73, Token "," Position 8, Token "" Position 32127
+Token "or" Position 38, Token "." Position 3, Token "and" Position 16, Token "," Position 2, Token "" Position 32127
+Token "or" Position 22, Token "." Position 4, Token "and" Position 9, Token "," Position 2, Token "" Position 32127
+Token "or" Position 22, Token "." Position 4, Token "and" Position 9, Token "," Position 2, Token "" Position 32127
+Token "or" Position 16, Token "." Position 4, Token "and" Position 5, Token "," Position 1, Token "" Position 32127
+Token "or" Position 10, Token "." Position 3, Token "and" Position 5, Token "," Position 1, Token "" Position 32127
+Token "or" Position 6, Token "." Position 4, Token "and" Position 2, Token "," Position 1, Token "" Position 32127
+Token "or" Position 6, Token "." Position 2, Token "and" Position 3, Token "," Position 1, Token "" Position 32127
+Token "or" Position 6, Token "." Position 2, Token "and" Position 3, Token "," Position 1, Token "" Position 31968
+Token "or" Position 8, Token "." Position 2, Token "and" Position 3, Token "," Position 1, Token "" Position 31863
+Token "or" Position 3, Token "." Position 2, Token "and" Position 1, Token "," Position 0, Token "" Position 32127
+Token "or" Position 0, Token "." Position 1, Token "and" Position 2, Token "," Position 3, Token "" Position 4
+
+JS DIVERGENCES:
+tensor([0.0023, 0.0030, 0.0091, 0.0173, 0.0220, 0.0267, 0.0356, 0.0448, 0.0582,
+           nan,    nan], device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "phan": 108.5, Token "": 67.0625, Token "vice": 52.25, Token "un": 40.25, Token "the": 3.18359375
+Token "": 43.40625, Token "vice": -44.9375, Token "the": -62.40625, Token "phan": -74.25, Token "un": -92.0
+Token "": 49.09375, Token "the": -341.5, Token "in": -423.0, Token """: -428.25, Token ",": -486.25
+Token "": -29.5, Token "the": -831.5, Token "in": -935.5, Token """: -953.5, Token ",": -1022.0
+Token "": -30.890625, Token "the": -1097.0, Token """: -1148.0, Token "in": -1180.0, Token ",": -1240.0
+Token "": -69.9375, Token "in": -1450.0, Token "the": -1451.0, Token ",": -1490.0, Token """: -1574.0
+Token "": 34.875, Token "the": -1852.0, Token "in": -1946.0, Token """: -2052.0, Token ",": -2078.0
+Token "": 388.5, Token "the": -2100.0, Token "in": -2234.0, Token """: -2312.0, Token ",": -2636.0
+Token "": 1203.0, Token "the": -2298.0, Token "in": -2482.0, Token """: -2770.0, Token ",": -2910.0
+Token "": 1816.0, Token "the": -2554.0, Token "in": -2922.0, Token """: -3640.0, Token ",": -3656.0
+Token "": 2850.0, Token "the": -2866.0, Token "in": -3402.0, Token """: -4456.0, Token ",": -4500.0
+Token "reliability": 2.765625, Token "fault": 2.6875, Token "": 2.3828125, Token "error": 2.11328125, Token "performance": 2.068359375
+Token "through": 10672.0, Token "network": 9976.0, Token "architecture": 9816.0, Token "model": 9224.0, Token "deviation": 9160.0
+
+TRACKING TOKEN INDICES
+Token "through" Position 1929, Token "network" Position 2171, Token "architecture" Position 7472, Token "model" Position 4147, Token "deviation" Position 10713
+Token "through" Position 1699, Token "network" Position 1301, Token "architecture" Position 10959, Token "model" Position 2037, Token "deviation" Position 9385
+Token "through" Position 1316, Token "network" Position 2528, Token "architecture" Position 14817, Token "model" Position 797, Token "deviation" Position 11031
+Token "through" Position 1375, Token "network" Position 1990, Token "architecture" Position 16726, Token "model" Position 950, Token "deviation" Position 12864
+Token "through" Position 1146, Token "network" Position 1737, Token "architecture" Position 15050, Token "model" Position 828, Token "deviation" Position 11376
+Token "through" Position 1026, Token "network" Position 1431, Token "architecture" Position 13996, Token "model" Position 1170, Token "deviation" Position 9216
+Token "through" Position 1368, Token "network" Position 1110, Token "architecture" Position 12873, Token "model" Position 1752, Token "deviation" Position 4111
+Token "through" Position 1736, Token "network" Position 742, Token "architecture" Position 11938, Token "model" Position 935, Token "deviation" Position 1544
+Token "through" Position 1278, Token "network" Position 421, Token "architecture" Position 7614, Token "model" Position 475, Token "deviation" Position 335
+Token "through" Position 604, Token "network" Position 342, Token "architecture" Position 4097, Token "model" Position 168, Token "deviation" Position 161
+Token "through" Position 320, Token "network" Position 124, Token "architecture" Position 2627, Token "model" Position 24, Token "deviation" Position 126
+Token "through" Position 18, Token "network" Position 15, Token "architecture" Position 21, Token "model" Position 6, Token "deviation" Position 14
+Token "through" Position 0, Token "network" Position 1, Token "architecture" Position 2, Token "model" Position 3, Token "deviation" Position 4
+
+JS DIVERGENCES:
+tensor([0.0004, 0.0004, 0.0050, 0.0118, 0.0137, 0.0186, 0.0246, 0.0255, 0.0292,
+           nan,    nan], device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "put": 131.75, Token "adult": 51.59375, Token "the": 38.625, Token "Hart": 34.03125, Token "educational": 29.765625
+Token "put": -7.64453125, Token "the": -21.453125, Token "": -28.015625, Token "de": -124.0625, Token "transition": -125.6875
+Token "": -25.84375, Token "the": -268.25, Token """: -415.5, Token "de": -447.5, Token "in": -567.0
+Token "": -159.25, Token "the": -836.5, Token """: -1089.0, Token "in": -1136.0, Token "de": -1187.0
+Token "": -164.125, Token "the": -1126.0, Token "in": -1497.0, Token """: -1527.0, Token "-": -1547.0
+Token "": -145.625, Token "the": -1532.0, Token "-": -1838.0, Token "in": -1846.0, Token ",": -1951.0
+Token "": -8.4765625, Token "the": -1736.0, Token "-": -2182.0, Token "in": -2184.0, Token ",": -2342.0
+Token "": 117.875, Token "the": -1683.0, Token "-": -2190.0, Token "in": -2494.0, Token "t": -2586.0
+Token "": 516.0, Token "the": -1705.0, Token "-": -2218.0, Token "put": -2804.0, Token "in": -2830.0
+Token "": 1362.0, Token "the": -1497.0, Token "-": -1992.0, Token "in": -3258.0, Token "put": -3350.0
+Token "": 1949.0, Token "the": -1065.0, Token "-": -1832.0, Token "in": -3236.0, Token """: -3366.0
+Token "put": 5.4296875, Token "the": 1.5693359375, Token "": 0.9375, Token "fault": 0.73291015625, Token "flow": 0.490478515625
+Token "put": 4712.0, Token "": -inf, Token "": -inf, Token "": -inf, Token "": -inf
+
+TRACKING TOKEN INDICES
+Token "put" Position 0, Token "" Position 15086, Token "" Position 32127, Token "" Position 60, Token "" Position 4391
+Token "put" Position 0, Token "" Position 7035, Token "" Position 32127, Token "" Position 2, Token "" Position 459
+Token "put" Position 10, Token "" Position 470, Token "" Position 32127, Token "" Position 0, Token "" Position 28
+Token "put" Position 23, Token "" Position 102, Token "" Position 32127, Token "" Position 0, Token "" Position 15
+Token "put" Position 7, Token "" Position 57, Token "" Position 32127, Token "" Position 0, Token "" Position 23
+Token "put" Position 11, Token "" Position 76, Token "" Position 32127, Token "" Position 0, Token "" Position 22
+Token "put" Position 16, Token "" Position 74, Token "" Position 32127, Token "" Position 0, Token "" Position 20
+Token "put" Position 7, Token "" Position 98, Token "" Position 32127, Token "" Position 0, Token "" Position 24
+Token "put" Position 3, Token "" Position 125, Token "" Position 32127, Token "" Position 0, Token "" Position 17
+Token "put" Position 4, Token "" Position 176, Token "" Position 32121, Token "" Position 0, Token "" Position 19
+Token "put" Position 5, Token "" Position 122, Token "" Position 31934, Token "" Position 0, Token "" Position 20
+Token "put" Position 0, Token "" Position 2407, Token "" Position 32127, Token "" Position 2, Token "" Position 629
+Token "put" Position 0, Token "" Position 3, Token "" Position 1, Token "" Position 4, Token "" Position 2
+
+JS DIVERGENCES:
+tensor([0.0031, 0.0024, 0.0050, 0.0104, 0.0142, 0.0188, 0.0196, 0.0189, 0.0207,
+           nan,    nan], device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "generation": 194.375, Token "cycle": 186.75, Token "numerical": 176.125, Token "relative": 171.25, Token "grid": 166.25
+Token "relative": -5.9140625, Token "generation": -30.890625, Token "streams": -53.6875, Token "stream": -55.625, Token "": -78.5625
+Token "": -95.4375, Token ",": -523.5, Token "s": -557.0, Token """: -558.5, Token "in": -624.5
+Token "": -241.5, Token ",": -1172.0, Token "s": -1271.0, Token "in": -1319.0, Token """: -1348.0
+Token "": -294.5, Token ",": -1547.0, Token "in": -1770.0, Token ".": -1817.0, Token "-": -1861.0
+Token "": -143.0, Token ",": -1930.0, Token "s": -2050.0, Token "in": -2132.0, Token ".": -2162.0
+Token "": 173.875, Token ".": -1627.0, Token ",": -1706.0, Token "s": -1782.0, Token "in": -2156.0
+Token "": 297.5, Token ".": -995.0, Token ",": -1690.0, Token "s": -1759.0, Token "in": -2196.0
+Token "": 555.0, Token ".": -678.5, Token ",": -1569.0, Token "s": -1940.0, Token "in": -2504.0
+Token "": 1306.0, Token ".": -421.25, Token ",": -1172.0, Token "s": -2234.0, Token "in": -2350.0
+Token "": 2062.0, Token ".": -618.5, Token ",": -958.0, Token "in": -2470.0, Token "s": -2596.0
+Token ".": 1.7880859375, Token ",": 0.288330078125, Token "and": -1.1142578125, Token "to": -1.291015625, Token "performance": -1.4189453125
+Token ",": 2476.0, Token ".": 1726.0, Token "": -inf, Token "": -inf, Token "": -inf
+
+TRACKING TOKEN INDICES
+Token "," Position 1946, Token "." Position 2438, Token "" Position 4873, Token "" Position 2418, Token "" Position 32127
+Token "," Position 90, Token "." Position 337, Token "" Position 609, Token "" Position 702, Token "" Position 32127
+Token "," Position 1, Token "." Position 8, Token "" Position 55, Token "" Position 37, Token "" Position 32127
+Token "," Position 1, Token "." Position 6, Token "" Position 26, Token "" Position 18, Token "" Position 32127
+Token "," Position 1, Token "." Position 3, Token "" Position 27, Token "" Position 15, Token "" Position 32127
+Token "," Position 1, Token "." Position 4, Token "" Position 29, Token "" Position 13, Token "" Position 32127
+Token "," Position 2, Token "." Position 1, Token "" Position 28, Token "" Position 12, Token "" Position 32127
+Token "," Position 2, Token "." Position 1, Token "" Position 26, Token "" Position 13, Token "" Position 32127
+Token "," Position 2, Token "." Position 1, Token "" Position 31, Token "" Position 15, Token "" Position 32127
+Token "," Position 2, Token "." Position 1, Token "" Position 43, Token "" Position 15, Token "" Position 31918
+Token "," Position 2, Token "." Position 1, Token "" Position 36, Token "" Position 8, Token "" Position 31846
+Token "," Position 1, Token "." Position 0, Token "" Position 171, Token "" Position 47, Token "" Position 32127
+Token "," Position 0, Token "." Position 1, Token "" Position 4, Token "" Position 3, Token "" Position 2
+
+JS DIVERGENCES:
+tensor([0.0008, 0.0013, 0.0043, 0.0088, 0.0107, 0.0137, 0.0182, 0.0223, 0.0291,
+           nan,    nan], device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "": 11.9296875, Token "but": -6.1875, Token "however": -8.9296875, Token "the": -27.484375, Token "including": -31.4375
+Token "": -15.71875, Token "but": -71.3125, Token "the": -90.625, Token "however": -113.6875, Token "don": -119.8125
+Token "": -27.484375, Token "the": -317.75, Token "but": -376.0, Token """: -378.75, Token "in": -420.5
+Token "": -158.0, Token "the": -803.5, Token "in": -896.5, Token """: -919.0, Token "but": -956.0
+Token "": -222.25, Token "but": -1081.0, Token "the": -1093.0, Token "in": -1152.0, Token """: -1175.0
+Token "": -219.125, Token "but": -1210.0, Token "in": -1415.0, Token "the": -1453.0, Token """: -1499.0
+Token "": -168.875, Token "but": -1336.0, Token "in": -1796.0, Token "the": -1900.0, Token ".": -2092.0
+Token "": -20.265625, Token "but": -1140.0, Token "in": -2170.0, Token "and": -2282.0, Token "as": -2390.0
+Token "": 416.0, Token "but": -1052.0, Token "and": -2314.0, Token "in": -2518.0, Token "as": -2700.0
+Token "": 1043.0, Token "but": -1894.0, Token "in": -2470.0, Token "and": -3036.0, Token "the": -3326.0
+Token "": 2422.0, Token "in": -2710.0, Token "but": -3152.0, Token "and": -3226.0, Token "the": -3450.0
+Token "but": 2.822265625, Token "and": 2.03515625, Token "or": 1.49609375, Token "which": 1.4384765625, Token "as": 1.4287109375
+Token "which": 5696.0, Token "or": 4140.0, Token "as": 3378.0, Token "to": 3314.0, Token "and": 2976.0
+
+TRACKING TOKEN INDICES
+Token "which" Position 37, Token "or" Position 1286, Token "as" Position 10, Token "to" Position 1299, Token "and" Position 70
+Token "which" Position 12, Token "or" Position 314, Token "as" Position 19, Token "to" Position 522, Token "and" Position 14
+Token "which" Position 22, Token "or" Position 101, Token "as" Position 16, Token "to" Position 50, Token "and" Position 7
+Token "which" Position 22, Token "or" Position 198, Token "as" Position 20, Token "to" Position 25, Token "and" Position 8
+Token "which" Position 12, Token "or" Position 145, Token "as" Position 19, Token "to" Position 17, Token "and" Position 10
+Token "which" Position 10, Token "or" Position 67, Token "as" Position 13, Token "to" Position 16, Token "and" Position 7
+Token "which" Position 9, Token "or" Position 38, Token "as" Position 11, Token "to" Position 12, Token "and" Position 5
+Token "which" Position 12, Token "or" Position 11, Token "as" Position 4, Token "to" Position 14, Token "and" Position 3
+Token "which" Position 6, Token "or" Position 12, Token "as" Position 4, Token "to" Position 11, Token "and" Position 2
+Token "which" Position 10, Token "or" Position 11, Token "as" Position 6, Token "to" Position 5, Token "and" Position 3
+Token "which" Position 12, Token "or" Position 13, Token "as" Position 5, Token "to" Position 6, Token "and" Position 3
+Token "which" Position 3, Token "or" Position 2, Token "as" Position 4, Token "to" Position 6, Token "and" Position 1
+Token "which" Position 0, Token "or" Position 1, Token "as" Position 2, Token "to" Position 3, Token "and" Position 4
+
+JS DIVERGENCES:
+tensor([0.0018, 0.0018, 0.0047, 0.0101, 0.0126, 0.0161, 0.0207, 0.0249, 0.0306,
+           nan,    nan], device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "leads": 146.25, Token "leaves": 61.8125, Token "means": 60.8125, Token "causes": 24.328125, Token "allows": 19.28125
+Token "leads": 43.875, Token "is": -73.875, Token "leaves": -76.1875, Token "means": -91.9375, Token "causes": -104.8125
+Token "": -94.25, Token "is": -415.25, Token """: -466.5, Token "the": -468.0, Token "de": -500.5
+Token "": -212.75, Token "the": -960.5, Token """: -962.0, Token "in": -1020.5, Token "is": -1045.0
+Token "": -246.25, Token """: -1202.0, Token "in": -1212.0, Token "is": -1302.0, Token "the": -1320.0
+Token "": -275.25, Token "in": -1552.0, Token "is": -1649.0, Token """: -1679.0, Token "the": -1735.0
+Token "": -286.75, Token "in": -2016.0, Token "is": -2192.0, Token "the": -2370.0, Token "are": -2398.0
+Token "": -269.0, Token "are": -2552.0, Token "is": -2580.0, Token "in": -2640.0, Token "can": -2720.0
+Token "": 300.25, Token "can": -2230.0, Token "are": -2238.0, Token "is": -2442.0, Token "in": -2536.0
+Token "": 867.0, Token "in": -2406.0, Token "can": -2498.0, Token "is": -2520.0, Token "are": -2616.0
+Token "": 1492.0, Token "in": -2972.0, Token "is": -3092.0, Token "can": -3192.0, Token "are": -3288.0
+Token "are": 2.900390625, Token "can": 2.19140625, Token "is": 1.8837890625, Token "all": -0.04119873046875, Token "may": -0.063232421875
+Token "are": 3482.0, Token "is": 3386.0, Token "can": 2456.0, Token "": -inf, Token "": -inf
+
+TRACKING TOKEN INDICES
+Token "are" Position 117, Token "is" Position 11, Token "can" Position 95, Token "" Position 3236, Token "" Position 32127
+Token "are" Position 23, Token "is" Position 1, Token "can" Position 28, Token "" Position 1527, Token "" Position 32127
+Token "are" Position 19, Token "is" Position 1, Token "can" Position 18, Token "" Position 34, Token "" Position 32127
+Token "are" Position 25, Token "is" Position 4, Token "can" Position 34, Token "" Position 21, Token "" Position 32127
+Token "are" Position 13, Token "is" Position 3, Token "can" Position 11, Token "" Position 26, Token "" Position 32127
+Token "are" Position 7, Token "is" Position 2, Token "can" Position 6, Token "" Position 38, Token "" Position 32127
+Token "are" Position 4, Token "is" Position 2, Token "can" Position 6, Token "" Position 43, Token "" Position 32127
+Token "are" Position 1, Token "is" Position 2, Token "can" Position 4, Token "" Position 41, Token "" Position 32127
+Token "are" Position 2, Token "is" Position 3, Token "can" Position 1, Token "" Position 51, Token "" Position 32127
+Token "are" Position 4, Token "is" Position 3, Token "can" Position 2, Token "" Position 48, Token "" Position 31920
+Token "are" Position 4, Token "is" Position 2, Token "can" Position 3, Token "" Position 45, Token "" Position 31846
+Token "are" Position 0, Token "is" Position 2, Token "can" Position 1, Token "" Position 912, Token "" Position 32127
+Token "are" Position 0, Token "is" Position 1, Token "can" Position 2, Token "" Position 4, Token "" Position 3
+
+JS DIVERGENCES:
+tensor([0.0014, 0.0020, 0.0061, 0.0125, 0.0166, 0.0202, 0.0280, 0.0343,    nan,
+           nan,    nan], device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "still": 77.75, Token "currently": 71.625, Token "used": 41.125, Token "": 39.78125, Token "not": 21.859375
+Token "": 38.125, Token "still": -3.326171875, Token "used": -45.03125, Token """: -49.96875, Token "currently": -53.75
+Token "": 21.765625, Token """: -326.0, Token "the": -371.5, Token "n": -377.5, Token "in": -415.75
+Token "": -86.875, Token """: -800.5, Token "the": -858.0, Token "in": -888.5, Token "n": -1041.0
+Token "": -146.875, Token """: -1098.0, Token "in": -1175.0, Token "the": -1180.0, Token "de": -1477.0
+Token "": -252.875, Token """: -1420.0, Token "in": -1466.0, Token "the": -1499.0, Token "de": -1888.0
+Token "": -8.1875, Token "in": -1761.0, Token "the": -1901.0, Token """: -2088.0, Token "n": -2386.0
+Token "": 121.125, Token "in": -1984.0, Token "the": -2278.0, Token "not": -2544.0, Token """: -2594.0
+Token "": 718.0, Token "not": -2464.0, Token "in": -2602.0, Token "the": -2772.0, Token "all": -2960.0
+Token "": 1433.0, Token "all": -2620.0, Token "the": -2786.0, Token "not": -2938.0, Token "in": -3528.0
+Token "": 2540.0, Token "the": -2694.0, Token "all": -3774.0, Token "not": -3780.0, Token "in": -4112.0
+Token "all": 2.72265625, Token "not": 2.28515625, Token "": 1.9306640625, Token "often": 1.845703125, Token "lacking": 1.408203125
+Token "lacking": 6908.0, Token "generally": 6516.0, Token "both": 6276.0, Token "missing": 5972.0, Token "critical": 5444.0
+
+TRACKING TOKEN INDICES
+Token "lacking" Position 191, Token "generally" Position 404, Token "both" Position 1314, Token "missing" Position 238, Token "critical" Position 3019
+Token "lacking" Position 851, Token "generally" Position 184, Token "both" Position 660, Token "missing" Position 419, Token "critical" Position 1157
+Token "lacking" Position 4133, Token "generally" Position 484, Token "both" Position 767, Token "missing" Position 817, Token "critical" Position 775
+Token "lacking" Position 5584, Token "generally" Position 493, Token "both" Position 413, Token "missing" Position 1251, Token "critical" Position 925
+Token "lacking" Position 4831, Token "generally" Position 385, Token "both" Position 167, Token "missing" Position 696, Token "critical" Position 566
+Token "lacking" Position 3991, Token "generally" Position 209, Token "both" Position 204, Token "missing" Position 565, Token "critical" Position 367
+Token "lacking" Position 3349, Token "generally" Position 284, Token "both" Position 119, Token "missing" Position 281, Token "critical" Position 144
+Token "lacking" Position 1155, Token "generally" Position 121, Token "both" Position 107, Token "missing" Position 172, Token "critical" Position 89
+Token "lacking" Position 163, Token "generally" Position 110, Token "both" Position 87, Token "missing" Position 58, Token "critical" Position 28
+Token "lacking" Position 107, Token "generally" Position 96, Token "both" Position 42, Token "missing" Position 36, Token "critical" Position 22
+Token "lacking" Position 179, Token "generally" Position 105, Token "both" Position 65, Token "missing" Position 52, Token "critical" Position 32
+Token "lacking" Position 4, Token "generally" Position 11, Token "both" Position 7, Token "missing" Position 10, Token "critical" Position 8
+Token "lacking" Position 0, Token "generally" Position 1, Token "both" Position 2, Token "missing" Position 3, Token "critical" Position 4
+
+JS DIVERGENCES:
+tensor([0.0016, 0.0025, 0.0060, 0.0112, 0.0139, 0.0152, 0.0174, 0.0160, 0.0162,
+           nan,    nan], device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "": 109.0, Token "holes": 59.28125, Token "luster": 47.53125, Token "fear": 42.0, Token "in": 40.09375
+Token "": 97.0, Token "in": -64.25, Token "the": -103.0, Token "character": -146.625, Token "due": -148.0
+Token "": 41.40625, Token "in": -432.0, Token "the": -515.0, Token ".": -673.0, Token """: -688.0
+Token "": -100.375, Token "in": -1034.0, Token "the": -1156.0, Token """: -1338.0, Token ".": -1442.0
+Token "": -74.6875, Token "in": -1229.0, Token "the": -1393.0, Token """: -1617.0, Token ".": -1711.0
+Token "": 85.6875, Token "in": -1014.5, Token "the": -1571.0, Token ".": -1773.0, Token """: -1884.0
+Token "": 213.25, Token "in": -900.5, Token "the": -1916.0, Token ".": -1942.0, Token "for": -2252.0
+Token "": 311.5, Token "in": -125.0625, Token "for": -2228.0, Token ".": -2488.0, Token "the": -2564.0
+Token "": 865.5, Token "in": 760.5, Token "for": -1869.0, Token "the": -2720.0, Token "with": -2904.0
+Token "": 1077.0, Token "in": 980.5, Token "for": -1722.0, Token "the": -3396.0, Token "with": -3416.0
+Token "": 1647.0, Token "in": 964.0, Token "for": -2064.0, Token "the": -3364.0, Token ".": -3782.0
+Token "in": 2.337890625, Token "for": 1.451171875, Token "with": 1.0947265625, Token "when": -0.35400390625, Token "from": -0.3544921875
+Token "with": 4492.0, Token "for": 2798.0, Token "in": 95.75, Token "": -inf, Token "": -inf
+
+TRACKING TOKEN INDICES
+Token "with" Position 3140, Token "for" Position 557, Token "in" Position 4, Token "" Position 315, Token "" Position 32127
+Token "with" Position 612, Token "for" Position 96, Token "in" Position 1, Token "" Position 51, Token "" Position 32127
+Token "with" Position 54, Token "for" Position 8, Token "in" Position 1, Token "" Position 11, Token "" Position 32127
+Token "with" Position 50, Token "for" Position 8, Token "in" Position 1, Token "" Position 9, Token "" Position 32127
+Token "with" Position 65, Token "for" Position 9, Token "in" Position 1, Token "" Position 6, Token "" Position 32127
+Token "with" Position 44, Token "for" Position 8, Token "in" Position 1, Token "" Position 9, Token "" Position 32127
+Token "with" Position 35, Token "for" Position 4, Token "in" Position 1, Token "" Position 10, Token "" Position 32127
+Token "with" Position 20, Token "for" Position 2, Token "in" Position 1, Token "" Position 12, Token "" Position 32127
+Token "with" Position 4, Token "for" Position 2, Token "in" Position 1, Token "" Position 16, Token "" Position 32127
+Token "with" Position 4, Token "for" Position 2, Token "in" Position 1, Token "" Position 15, Token "" Position 31936
+Token "with" Position 5, Token "for" Position 2, Token "in" Position 1, Token "" Position 15, Token "" Position 31859
+Token "with" Position 2, Token "for" Position 1, Token "in" Position 0, Token "" Position 56, Token "" Position 32127
+Token "with" Position 0, Token "for" Position 1, Token "in" Position 2, Token "" Position 4, Token "" Position 3
+
+JS DIVERGENCES:
+tensor([0.0024, 0.0024, 0.0068, 0.0145, 0.0180, 0.0232, 0.0289, 0.0345,    nan,
+           nan,    nan], device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "regard": 160.125, Token "respect": 120.9375, Token "regards": 75.0, Token "no": 30.59375, Token "minimal": 0.623046875
+Token "regard": 14.4375, Token "no": -0.71728515625, Token "": -5.375, Token "respect": -6.52734375, Token "regards": -43.1875
+Token "": 11.03125, Token "the": -295.75, Token "no": -387.5, Token """: -439.25, Token "respect": -458.25
+Token "": -56.4375, Token "the": -745.0, Token """: -915.0, Token "no": -949.5, Token "in": -1080.0
+Token "": -97.25, Token "the": -1050.0, Token """: -1138.0, Token "no": -1268.0, Token "respect": -1334.0
+Token "": -9.5078125, Token "respect": -1349.0, Token "the": -1378.0, Token """: -1476.0, Token "in": -1529.0
+Token "": 146.75, Token "the": -1462.0, Token """: -1500.0, Token "in": -1821.0, Token "no": -2308.0
+Token "": 517.5, Token "the": -1391.0, Token """: -1938.0, Token "normal": -2302.0, Token "in": -2350.0
+Token "": 1518.0, Token "the": -1185.0, Token "traditional": -1949.0, Token "conventional": -2182.0, Token "standard": -2364.0
+Token "": 2526.0, Token "the": -1190.0, Token "traditional": -2676.0, Token "standard": -2716.0, Token "conventional": -3402.0
+Token "": 3646.0, Token "the": -827.5, Token "in": -3826.0, Token """: -4384.0, Token "un": -5120.0
+Token "traditional": 2.998046875, Token "the": 2.287109375, Token "models": 1.7060546875, Token "other": 1.6884765625, Token "": 1.48046875
+Token "models": 7236.0, Token "model": 6764.0, Token "more": 6580.0, Token "linear": 6292.0, Token "existing": 5948.0
+
+TRACKING TOKEN INDICES
+Token "models" Position 10716, Token "model" Position 5974, Token "more" Position 272, Token "linear" Position 2792, Token "existing" Position 295
+Token "models" Position 5447, Token "model" Position 2011, Token "more" Position 95, Token "linear" Position 824, Token "existing" Position 337
+Token "models" Position 6105, Token "model" Position 890, Token "more" Position 70, Token "linear" Position 2565, Token "existing" Position 539
+Token "models" Position 6165, Token "model" Position 715, Token "more" Position 117, Token "linear" Position 3110, Token "existing" Position 959
+Token "models" Position 4250, Token "model" Position 491, Token "more" Position 168, Token "linear" Position 2063, Token "existing" Position 664
+Token "models" Position 3694, Token "model" Position 452, Token "more" Position 234, Token "linear" Position 1323, Token "existing" Position 724
+Token "models" Position 1757, Token "model" Position 240, Token "more" Position 201, Token "linear" Position 524, Token "existing" Position 391
+Token "models" Position 530, Token "model" Position 132, Token "more" Position 105, Token "linear" Position 112, Token "existing" Position 108
+Token "models" Position 129, Token "model" Position 76, Token "more" Position 65, Token "linear" Position 46, Token "existing" Position 28
+Token "models" Position 52, Token "model" Position 23, Token "more" Position 12, Token "linear" Position 39, Token "existing" Position 17
+Token "models" Position 35, Token "model" Position 7, Token "more" Position 22, Token "linear" Position 87, Token "existing" Position 32
+Token "models" Position 2, Token "model" Position 9, Token "more" Position 11, Token "linear" Position 6, Token "existing" Position 7
+Token "models" Position 0, Token "model" Position 1, Token "more" Position 2, Token "linear" Position 3, Token "existing" Position 4
+
+JS DIVERGENCES:
+tensor([0.0011, 0.0025, 0.0069, 0.0138, 0.0166, 0.0186, 0.0219, 0.0246, 0.0256,
+           nan,    nan], device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "": 101.5625, Token "input": 79.4375, Token "that": 56.21875, Token "+": 54.03125, Token "@": 43.21875
+Token "": 110.625, Token ",": -74.3125, Token "de": -92.125, Token "and": -113.375, Token ".": -125.625
+Token "": 133.75, Token "in": -473.5, Token ",": -526.5, Token ".": -538.5, Token "the": -559.0
+Token "": -24.265625, Token "in": -1176.0, Token ".": -1347.0, Token "the": -1357.0, Token "-": -1417.0
+Token "": -111.125, Token "in": -1542.0, Token ".": -1723.0, Token "-": -1773.0, Token ",": -1800.0
+Token "": -183.125, Token "in": -1652.0, Token ".": -1987.0, Token "-": -2008.0, Token "of": -2122.0
+Token "": -93.125, Token "in": -1773.0, Token ".": -2004.0, Token "-": -2266.0, Token "and": -2312.0
+Token "": 158.5, Token "in": -1566.0, Token ".": -2144.0, Token "of": -2198.0, Token "and": -2480.0
+Token "": 596.0, Token "in": -1441.0, Token ".": -1750.0, Token "of": -2082.0, Token "for": -2544.0
+Token "": 1107.0, Token "in": -1490.0, Token "of": -1663.0, Token ".": -1892.0, Token "that": -2374.0
+Token "": 2514.0, Token "in": -1933.0, Token ".": -2027.0, Token "of": -2488.0, Token "that": -3024.0
+Token "that": 1.5888671875, Token ".": 0.93994140625, Token "of": 0.6494140625, Token "": 0.295654296875, Token "and": -0.0099639892578125
+Token "such": 5400.0, Token "with": 4484.0, Token "like": 4320.0, Token "that": 3478.0, Token "and": 3038.0
+
+TRACKING TOKEN INDICES
+Token "such" Position 2369, Token "with" Position 213, Token "like" Position 1471, Token "that" Position 2, Token "and" Position 9
+Token "such" Position 3071, Token "with" Position 110, Token "like" Position 850, Token "that" Position 18, Token "and" Position 3
+Token "such" Position 2706, Token "with" Position 78, Token "like" Position 72, Token "that" Position 15, Token "and" Position 8
+Token "such" Position 2903, Token "with" Position 170, Token "like" Position 74, Token "that" Position 19, Token "and" Position 9
+Token "such" Position 2100, Token "with" Position 439, Token "like" Position 52, Token "that" Position 17, Token "and" Position 8
+Token "such" Position 958, Token "with" Position 359, Token "like" Position 25, Token "that" Position 19, Token "and" Position 7
+Token "such" Position 557, Token "with" Position 556, Token "like" Position 27, Token "that" Position 19, Token "and" Position 4
+Token "such" Position 136, Token "with" Position 105, Token "like" Position 10, Token "that" Position 13, Token "and" Position 4
+Token "such" Position 40, Token "with" Position 33, Token "like" Position 5, Token "that" Position 7, Token "and" Position 6
+Token "such" Position 53, Token "with" Position 22, Token "like" Position 7, Token "that" Position 4, Token "and" Position 6
+Token "such" Position 48, Token "with" Position 16, Token "like" Position 9, Token "that" Position 4, Token "and" Position 7
+Token "such" Position 5, Token "with" Position 8, Token "like" Position 6, Token "that" Position 0, Token "and" Position 4
+Token "such" Position 0, Token "with" Position 1, Token "like" Position 2, Token "that" Position 3, Token "and" Position 4
+
+JS DIVERGENCES:
+tensor([5.7220e-04, 2.1815e-04, 3.0956e-03, 7.5111e-03, 8.8196e-03, 1.1230e-02,
+        1.1337e-02, 8.7500e-05, 1.5986e-04,        nan,        nan],
+       device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "actors": 100.375, Token "dates": 62.03125, Token "dramatic": 37.0625, Token "old": 36.0, Token "as": 34.125
+Token "": -61.40625, Token "actors": -61.4375, Token """: -67.3125, Token "motion": -75.25, Token "as": -96.0625
+Token "": -54.25, Token """: -379.25, Token "in": -446.0, Token "as": -536.5, Token "the": -541.0
+Token "": -245.75, Token """: -1091.0, Token "in": -1178.0, Token "the": -1282.0, Token "as": -1447.0
+Token "": -317.25, Token """: -1433.0, Token "in": -1552.0, Token "the": -1682.0, Token "as": -1734.0
+Token "": -346.25, Token """: -1415.0, Token "in": -1886.0, Token "the": -2086.0, Token "as": -2140.0
+Token "": -316.0, Token """: -1679.0, Token "as": -2120.0, Token "in": -2156.0, Token "the": -2492.0
+Token "as": 172.75, Token "": -347.5, Token """: -1893.0, Token "in": -2604.0, Token "As": -2650.0
+Token "as": 2003.0, Token "": -585.0, Token "As": -2696.0, Token """: -3038.0, Token "in": -3340.0
+Token "as": 1337.0, Token "": -37.21875, Token "in": -4400.0, Token "the": -4564.0, Token """: -4852.0
+Token "as": 754.5, Token "": 468.5, Token "the": -4892.0, Token "in": -5064.0, Token """: -6428.0
+Token "as": -0.480712890625, Token "": -7.44140625, Token "that": -8.359375, Token "the": -9.0703125, Token "in": -9.8046875
+Token "as": -0.003856658935546875, Token "": -inf, Token "": -inf, Token "": -inf, Token "": -inf
+
+TRACKING TOKEN INDICES
+Token "as" Position 4, Token "" Position 18662, Token "" Position 32127, Token "" Position 45, Token "" Position 2316
+Token "as" Position 4, Token "" Position 15183, Token "" Position 32127, Token "" Position 0, Token "" Position 672
+Token "as" Position 3, Token "" Position 1466, Token "" Position 32127, Token "" Position 0, Token "" Position 22
+Token "as" Position 4, Token "" Position 139, Token "" Position 32127, Token "" Position 0, Token "" Position 13
+Token "as" Position 4, Token "" Position 65, Token "" Position 32127, Token "" Position 0, Token "" Position 15
+Token "as" Position 4, Token "" Position 81, Token "" Position 32127, Token "" Position 0, Token "" Position 16
+Token "as" Position 2, Token "" Position 107, Token "" Position 32127, Token "" Position 0, Token "" Position 12
+Token "as" Position 0, Token "" Position 176, Token "" Position 32127, Token "" Position 1, Token "" Position 10
+Token "as" Position 0, Token "" Position 151, Token "" Position 32127, Token "" Position 1, Token "" Position 6
+Token "as" Position 0, Token "" Position 122, Token "" Position 31928, Token "" Position 1, Token "" Position 6
+Token "as" Position 0, Token "" Position 80, Token "" Position 31848, Token "" Position 1, Token "" Position 5
+Token "as" Position 0, Token "" Position 750, Token "" Position 32127, Token "" Position 1, Token "" Position 6
+Token "as" Position 0, Token "" Position 3, Token "" Position 1, Token "" Position 4, Token "" Position 2
+
+JS DIVERGENCES:
+tensor([0.0020, 0.0033, 0.0081, 0.0177, 0.0216, 0.0254, 0.0349, 0.0417, 0.0574,
+           nan,    nan], device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "the": 76.0, Token "": 64.5625, Token """: 32.78125, Token "64": -3.099609375, Token "we": -8.8984375
+Token "": 49.4375, Token "the": -33.34375, Token """: -77.0, Token "an": -126.6875, Token "part": -131.625
+Token "": 70.0, Token "the": -249.25, Token """: -288.25, Token "in": -391.75, Token "one": -517.0
+Token "": -3.298828125, Token "the": -808.0, Token """: -866.0, Token "in": -943.5, Token ".": -1325.0
+Token "": -184.375, Token """: -1210.0, Token "the": -1222.0, Token "in": -1422.0, Token ".": -1745.0
+Token "": -205.625, Token """: -1313.0, Token "the": -1445.0, Token "in": -1648.0, Token ".": -2114.0
+Token "": 83.0, Token """: -1401.0, Token "the": -1667.0, Token "in": -1999.0, Token ".": -2556.0
+Token "": 316.0, Token """: -1156.0, Token "the": -1545.0, Token "in": -2216.0, Token ".": -3010.0
+Token "": 1205.0, Token """: -1374.0, Token "the": -1606.0, Token "in": -2808.0, Token ".": -3492.0
+Token "": 2412.0, Token "the": -1432.0, Token """: -2324.0, Token "in": -3106.0, Token "S": -3684.0
+Token "": 3544.0, Token "the": -1162.0, Token """: -3298.0, Token "in": -3374.0, Token "un": -4332.0
+Token "the": 2.28515625, Token "": 2.01171875, Token "Bay": 1.9501953125, Token "linear": 1.6845703125, Token "fault": 1.6044921875
+Token "reinforcement": 13560.0, Token "logistic": 13128.0, Token "continuous": 12120.0, Token "regression": 10760.0, Token "class": 10616.0
+
+TRACKING TOKEN INDICES
+Token "reinforcement" Position 13779, Token "logistic" Position 8864, Token "continuous" Position 11880, Token "regression" Position 11468, Token "class" Position 11038
+Token "reinforcement" Position 7430, Token "logistic" Position 10497, Token "continuous" Position 10400, Token "regression" Position 11080, Token "class" Position 6988
+Token "reinforcement" Position 9958, Token "logistic" Position 11500, Token "continuous" Position 7287, Token "regression" Position 14385, Token "class" Position 2553
+Token "reinforcement" Position 12060, Token "logistic" Position 11122, Token "continuous" Position 10737, Token "regression" Position 15962, Token "class" Position 2188
+Token "reinforcement" Position 10061, Token "logistic" Position 10232, Token "continuous" Position 11478, Token "regression" Position 15464, Token "class" Position 2362
+Token "reinforcement" Position 9018, Token "logistic" Position 8621, Token "continuous" Position 10494, Token "regression" Position 14228, Token "class" Position 2976
+Token "reinforcement" Position 11302, Token "logistic" Position 9271, Token "continuous" Position 9220, Token "regression" Position 13609, Token "class" Position 2373
+Token "reinforcement" Position 11256, Token "logistic" Position 7932, Token "continuous" Position 5564, Token "regression" Position 9633, Token "class" Position 2124
+Token "reinforcement" Position 7987, Token "logistic" Position 7105, Token "continuous" Position 2147, Token "regression" Position 3214, Token "class" Position 658
+Token "reinforcement" Position 4105, Token "logistic" Position 3278, Token "continuous" Position 1662, Token "regression" Position 587, Token "class" Position 498
+Token "reinforcement" Position 1282, Token "logistic" Position 932, Token "continuous" Position 632, Token "regression" Position 634, Token "class" Position 195
+Token "reinforcement" Position 16, Token "logistic" Position 23, Token "continuous" Position 19, Token "regression" Position 14, Token "class" Position 20
+Token "reinforcement" Position 0, Token "logistic" Position 1, Token "continuous" Position 2, Token "regression" Position 3, Token "class" Position 4
+
+JS DIVERGENCES:
+tensor([3.0279e-04, 7.9274e-05, 6.0539e-03, 1.9348e-02, 2.2507e-02, 2.2751e-02,
+        2.6337e-02, 2.9694e-02, 2.8320e-02, 3.1281e-02,        nan],
+       device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "wall": 276.25, Token "grade": 271.0, Token "learning": 255.75, Token "tolerance": 189.375, Token "management": 165.25
+Token "learning": 309.75, Token "tolerance": 124.6875, Token "management": 113.75, Token "grade": 89.0625, Token "wall": 71.5625
+Token "": -151.625, Token "learning": -918.5, Token "in": -919.5, Token "-": -936.0, Token """: -953.0
+Token "": -343.0, Token "in": -1775.0, Token "-": -1840.0, Token """: -1872.0, Token "the": -1957.0
+Token "": -485.75, Token "-": -2274.0, Token """: -2288.0, Token "s": -2344.0, Token "in": -2360.0
+Token "": -551.0, Token "-": -2422.0, Token "s": -2572.0, Token """: -2636.0, Token "in": -2696.0
+Token "": -377.25, Token "-": -2554.0, Token "in": -2806.0, Token "s": -2834.0, Token "the": -2984.0
+Token "": -272.75, Token "-": -2734.0, Token ".": -3054.0, Token "s": -3064.0, Token "in": -3072.0
+Token "": -126.9375, Token "-": -3150.0, Token ".": -3170.0, Token "in": -3190.0, Token "the": -3468.0
+Token "": 4.38671875, Token ".": -3108.0, Token "in": -3326.0, Token "-": -3480.0, Token ",": -3610.0
+Token "": 194.375, Token ".": -3170.0, Token "in": -3394.0, Token ",": -3396.0, Token "-": -3584.0
+Token "learning": 0.98681640625, Token ".": -5.1640625, Token "or": -5.74609375, Token "Learning": -5.84375, Token ",": -6.09375
+Token "learning": 4144.0, Token "": -inf, Token "": -inf, Token "": -inf, Token "": -inf
+
+TRACKING TOKEN INDICES
+Token "learning" Position 2, Token "" Position 6709, Token "" Position 32126, Token "" Position 94, Token "" Position 1159
+Token "learning" Position 0, Token "" Position 5268, Token "" Position 32127, Token "" Position 71, Token "" Position 968
+Token "learning" Position 1, Token "" Position 336, Token "" Position 32127, Token "" Position 0, Token "" Position 14
+Token "learning" Position 34, Token "" Position 49, Token "" Position 32127, Token "" Position 0, Token "" Position 13
+Token "learning" Position 22, Token "" Position 49, Token "" Position 32127, Token "" Position 0, Token "" Position 11
+Token "learning" Position 13, Token "" Position 74, Token "" Position 32127, Token "" Position 0, Token "" Position 10
+Token "learning" Position 12, Token "" Position 50, Token "" Position 32127, Token "" Position 0, Token "" Position 9
+Token "learning" Position 14, Token "" Position 81, Token "" Position 32127, Token "" Position 0, Token "" Position 10
+Token "learning" Position 7, Token "" Position 168, Token "" Position 32127, Token "" Position 0, Token "" Position 9
+Token "learning" Position 6, Token "" Position 154, Token "" Position 32127, Token "" Position 0, Token "" Position 9
+Token "learning" Position 5, Token "" Position 69, Token "" Position 32111, Token "" Position 0, Token "" Position 9
+Token "learning" Position 0, Token "" Position 646, Token "" Position 32127, Token "" Position 6, Token "" Position 28
+Token "learning" Position 0, Token "" Position 3, Token "" Position 1, Token "" Position 4, Token "" Position 2
+
+JS DIVERGENCES:
+tensor([0.0017, 0.0023, 0.0058, 0.0118, 0.0141, 0.0142, 0.0153, 0.0119, 0.0109,
+           nan,    nan], device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "grades": 129.625, Token "sets": 129.25, Token "teams": 113.75, Token "status": 112.625, Token "processes": 97.5
+Token "algorithms": 116.6875, Token "sets": 88.3125, Token "": 26.109375, Token "programs": 25.671875, Token "processes": 22.5
+Token "": -9.0859375, Token ".": -646.5, Token ",": -691.0, Token "the": -693.0, Token """: -711.5
+Token "": -134.125, Token "in": -1388.0, Token ".": -1418.0, Token "the": -1424.0, Token """: -1471.0
+Token "": -245.625, Token ".": -1730.0, Token """: -1767.0, Token "in": -1861.0, Token ",": -1862.0
+Token "": -366.5, Token ".": -1824.0, Token """: -2040.0, Token ",": -2066.0, Token "in": -2116.0
+Token "": -283.25, Token ".": -1861.0, Token ",": -2226.0, Token "in": -2292.0, Token "'": -2576.0
+Token "": -316.75, Token ".": -1329.0, Token "or": -2368.0, Token ",": -2440.0, Token "in": -2536.0
+Token "": -190.875, Token ".": -721.0, Token ",": -2248.0, Token "and": -2386.0, Token "or": -2566.0
+Token "": 491.0, Token ".": -482.0, Token ",": -2618.0, Token "and": -2686.0, Token "or": -2876.0
+Token "": 1831.0, Token ".": -478.25, Token ",": -2198.0, Token "and": -2914.0, Token "in": -3654.0
+Token ".": 1.3662109375, Token "or": 0.49853515625, Token "and": -0.355712890625, Token ",": -1.30078125, Token "": -1.7587890625
+Token "or": 2404.0, Token "and": 2272.0, Token ".": 972.5, Token "": -inf, Token "": -inf
+
+TRACKING TOKEN INDICES
+Token "or" Position 1792, Token "and" Position 93, Token "." Position 242, Token "" Position 4509, Token "" Position 32127
+Token "or" Position 676, Token "and" Position 51, Token "." Position 63, Token "" Position 1588, Token "" Position 32127
+Token "or" Position 176, Token "and" Position 7, Token "." Position 1, Token "" Position 22, Token "" Position 32127
+Token "or" Position 144, Token "and" Position 10, Token "." Position 2, Token "" Position 14, Token "" Position 32127
+Token "or" Position 107, Token "and" Position 9, Token "." Position 1, Token "" Position 11, Token "" Position 32127
+Token "or" Position 33, Token "and" Position 8, Token "." Position 1, Token "" Position 12, Token "" Position 32127
+Token "or" Position 12, Token "and" Position 7, Token "." Position 1, Token "" Position 11, Token "" Position 32127
+Token "or" Position 2, Token "and" Position 5, Token "." Position 1, Token "" Position 12, Token "" Position 32127
+Token "or" Position 4, Token "and" Position 3, Token "." Position 1, Token "" Position 9, Token "" Position 32127
+Token "or" Position 4, Token "and" Position 3, Token "." Position 1, Token "" Position 7, Token "" Position 32024
+Token "or" Position 5, Token "and" Position 3, Token "." Position 1, Token "" Position 7, Token "" Position 31870
+Token "or" Position 1, Token "and" Position 2, Token "." Position 0, Token "" Position 23, Token "" Position 32127
+Token "or" Position 0, Token "and" Position 1, Token "." Position 2, Token "" Position 4, Token "" Position 3
+
+JS DIVERGENCES:
+tensor([0.0023, 0.0028, 0.0090, 0.0172, 0.0216, 0.0265, 0.0359, 0.0439, 0.0556,
+           nan,    nan], device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "phan": 108.625, Token "": 62.96875, Token "un": 28.09375, Token "vice": 12.34375, Token "the": 1.9619140625
+Token "": 37.125, Token "phan": -58.8125, Token "vice": -62.21875, Token "the": -76.875, Token "un": -95.125
+Token "": 54.78125, Token "the": -333.25, Token """: -413.25, Token "in": -426.0, Token "un": -497.5
+Token "": -19.375, Token "the": -815.5, Token "in": -926.5, Token """: -933.5, Token "un": -1147.0
+Token "": -101.125, Token "the": -1075.0, Token """: -1149.0, Token "in": -1238.0, Token ".": -1465.0
+Token "": -65.75, Token "the": -1364.0, Token "in": -1444.0, Token """: -1466.0, Token ".": -1691.0
+Token "": -5.625, Token "the": -1762.0, Token "in": -1950.0, Token """: -2152.0, Token ".": -2252.0
+Token "": 157.875, Token "the": -2011.0, Token "in": -2252.0, Token """: -2600.0, Token ".": -2794.0
+Token "": 964.0, Token "the": -2260.0, Token "in": -2426.0, Token """: -2596.0, Token ".": -3162.0
+Token "": 1911.0, Token "in": -2200.0, Token "the": -2494.0, Token """: -3382.0, Token "simulation": -3720.0
+Token "": 2522.0, Token "in": -2300.0, Token "the": -2552.0, Token "model": -3864.0, Token "stoc": -3868.0
+Token "reinforcement": 2.45703125, Token "neural": 2.181640625, Token "": 1.9423828125, Token "learning": 1.3984375, Token "random": 1.3896484375
+Token "deep": 9216.0, Token "artificial": 9024.0, Token "reinforcement": 8792.0, Token "architecture": 8672.0, Token "Bay": 8496.0
+
+TRACKING TOKEN INDICES
+Token "deep" Position 692, Token "artificial" Position 644, Token "reinforcement" Position 10141, Token "architecture" Position 4296, Token "Bay" Position 4712
+Token "deep" Position 542, Token "artificial" Position 2485, Token "reinforcement" Position 9516, Token "architecture" Position 9074, Token "Bay" Position 6654
+Token "deep" Position 1447, Token "artificial" Position 3777, Token "reinforcement" Position 17737, Token "architecture" Position 15013, Token "Bay" Position 3049
+Token "deep" Position 2261, Token "artificial" Position 4749, Token "reinforcement" Position 19224, Token "architecture" Position 15978, Token "Bay" Position 2232
+Token "deep" Position 2737, Token "artificial" Position 3239, Token "reinforcement" Position 19303, Token "architecture" Position 14117, Token "Bay" Position 2400
+Token "deep" Position 3410, Token "artificial" Position 3003, Token "reinforcement" Position 18358, Token "architecture" Position 13724, Token "Bay" Position 2531
+Token "deep" Position 2308, Token "artificial" Position 1550, Token "reinforcement" Position 16265, Token "architecture" Position 11947, Token "Bay" Position 2257
+Token "deep" Position 1264, Token "artificial" Position 540, Token "reinforcement" Position 16641, Token "architecture" Position 10222, Token "Bay" Position 1131
+Token "deep" Position 665, Token "artificial" Position 299, Token "reinforcement" Position 8284, Token "architecture" Position 4505, Token "Bay" Position 695
+Token "deep" Position 331, Token "artificial" Position 271, Token "reinforcement" Position 3451, Token "architecture" Position 3144, Token "Bay" Position 158
+Token "deep" Position 64, Token "artificial" Position 341, Token "reinforcement" Position 467, Token "architecture" Position 1943, Token "Bay" Position 12
+Token "deep" Position 8, Token "artificial" Position 9, Token "reinforcement" Position 0, Token "architecture" Position 11, Token "Bay" Position 12
+Token "deep" Position 0, Token "artificial" Position 1, Token "reinforcement" Position 2, Token "architecture" Position 3, Token "Bay" Position 4
+
+JS DIVERGENCES:
+tensor([0.0003, 0.0004, 0.0070, 0.0207, 0.0243, 0.0257, 0.0301, 0.0344, 0.0346,
+           nan,    nan], device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "hole": 271.5, Token "learning": 263.5, Token "est": 244.125, Token "breath": 203.25, Token "ika": 203.125
+Token "est": 117.625, Token "hip": 96.1875, Token "voice": 95.3125, Token "learning": 94.5, Token "vein": 86.125
+Token "": -92.4375, Token "-": -386.75, Token "in": -632.0, Token "man": -753.0, Token "plot": -776.5
+Token "": -221.125, Token "-": -1268.0, Token "in": -1623.0, Token "the": -1851.0, Token "de": -1853.0
+Token "": -259.0, Token "-": -1570.0, Token "in": -2184.0, Token "the": -2270.0, Token "de": -2382.0
+Token "": -318.0, Token "-": -1599.0, Token "in": -2464.0, Token "en": -2510.0, Token ".": -2662.0
+Token "": -86.0, Token "-": -1648.0, Token "en": -2602.0, Token "in": -2624.0, Token ".": -2844.0
+Token "": 57.75, Token "-": -1895.0, Token "en": -2794.0, Token "in": -3040.0, Token ".": -3198.0
+Token "": 525.0, Token "-": -1935.0, Token "en": -2228.0, Token "in": -3454.0, Token "er": -3546.0
+Token "": 1003.0, Token "-": -2130.0, Token "neural": -2140.0, Token "learning": -2962.0, Token "in": -3336.0
+Token "": 1431.0, Token "learning": 646.0, Token "neural": -502.25, Token "-": -1404.0, Token "in": -3080.0
+Token "learning": 4.86328125, Token "reinforcement": 2.708984375, Token "neural": 1.8466796875, Token "networks": -0.052093505859375, Token "learning": -0.464111328125
+Token "learning": 2894.0, Token "": -inf, Token "": -inf, Token "": -inf, Token "": -inf
+
+TRACKING TOKEN INDICES
+Token "learning" Position 1, Token "" Position 10551, Token "" Position 32124, Token "" Position 1750, Token "" Position 3626
+Token "learning" Position 3, Token "" Position 4436, Token "" Position 32127, Token "" Position 150, Token "" Position 887
+Token "learning" Position 128, Token "" Position 231, Token "" Position 32127, Token "" Position 0, Token "" Position 33
+Token "learning" Position 943, Token "" Position 38, Token "" Position 32127, Token "" Position 0, Token "" Position 9
+Token "learning" Position 404, Token "" Position 66, Token "" Position 32127, Token "" Position 0, Token "" Position 10
+Token "learning" Position 229, Token "" Position 60, Token "" Position 32127, Token "" Position 0, Token "" Position 9
+Token "learning" Position 97, Token "" Position 40, Token "" Position 32127, Token "" Position 0, Token "" Position 7
+Token "learning" Position 73, Token "" Position 56, Token "" Position 32127, Token "" Position 0, Token "" Position 6
+Token "learning" Position 12, Token "" Position 88, Token "" Position 32127, Token "" Position 0, Token "" Position 10
+Token "learning" Position 3, Token "" Position 86, Token "" Position 32114, Token "" Position 0, Token "" Position 24
+Token "learning" Position 1, Token "" Position 71, Token "" Position 31904, Token "" Position 0, Token "" Position 29
+Token "learning" Position 0, Token "" Position 575, Token "" Position 32127, Token "" Position 10, Token "" Position 295
+Token "learning" Position 0, Token "" Position 3, Token "" Position 1, Token "" Position 4, Token "" Position 2
+
+JS DIVERGENCES:
+tensor([0.0026, 0.0024, 0.0055, 0.0110, 0.0127, 0.0124, 0.0125, 0.0087, 0.0049,
+           nan,    nan], device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "Academy": 222.375, Token "academy": 160.75, Token "connections": 141.25, Token "science": 127.8125, Token "experiences": 127.375
+Token "algorithms": 166.75, Token "sets": 113.0, Token "": 20.9375, Token "programs": 6.96875, Token "programming": -8.6171875
+Token "": -5.31640625, Token ".": -676.0, Token "in": -684.0, Token ",": -707.5, Token "-": -727.5
+Token "": -172.875, Token "in": -1440.0, Token ".": -1510.0, Token ",": -1597.0, Token "the": -1606.0
+Token "": -276.0, Token ".": -1792.0, Token "in": -1841.0, Token """: -1995.0, Token ",": -2027.0
+Token "": -307.0, Token ".": -1741.0, Token "in": -2022.0, Token ",": -2172.0, Token """: -2294.0
+Token "": -150.375, Token ".": -1527.0, Token "in": -2160.0, Token ",": -2180.0, Token "the": -2630.0
+Token "": -70.0, Token ".": -784.0, Token "in": -2372.0, Token ",": -2426.0, Token "-": -2814.0
+Token "": -53.875, Token ".": -122.25, Token ",": -2440.0, Token "in": -3128.0, Token "that": -3460.0
+Token "": 719.0, Token ".": 193.625, Token ",": -2652.0, Token "in": -3780.0, Token "that": -3812.0
+Token "": 1977.0, Token ".": -160.375, Token ",": -2726.0, Token "in": -4256.0, Token "that": -4752.0
+Token ".": 0.927734375, Token "that": -2.283203125, Token "": -2.5078125, Token ",": -2.83203125, Token "and": -4.3125
+Token ".": 525.5, Token "": -inf, Token "": -inf, Token "": -inf, Token "": -inf
+
+TRACKING TOKEN INDICES
+Token "." Position 438, Token "" Position 5157, Token "" Position 32125, Token "" Position 87, Token "" Position 4504
+Token "." Position 50, Token "" Position 1471, Token "" Position 32127, Token "" Position 2, Token "" Position 1037
+Token "." Position 1, Token "" Position 58, Token "" Position 32127, Token "" Position 0, Token "" Position 32
+Token "." Position 2, Token "" Position 47, Token "" Position 32127, Token "" Position 0, Token "" Position 17
+Token "." Position 1, Token "" Position 50, Token "" Position 32127, Token "" Position 0, Token "" Position 8
+Token "." Position 1, Token "" Position 51, Token "" Position 32127, Token "" Position 0, Token "" Position 10
+Token "." Position 1, Token "" Position 40, Token "" Position 32127, Token "" Position 0, Token "" Position 9
+Token "." Position 1, Token "" Position 43, Token "" Position 32127, Token "" Position 0, Token "" Position 10
+Token "." Position 1, Token "" Position 69, Token "" Position 32127, Token "" Position 0, Token "" Position 6
+Token "." Position 1, Token "" Position 53, Token "" Position 31944, Token "" Position 0, Token "" Position 5
+Token "." Position 1, Token "" Position 36, Token "" Position 31848, Token "" Position 0, Token "" Position 5
+Token "." Position 0, Token "" Position 130, Token "" Position 32127, Token "" Position 2, Token "" Position 12
+Token "." Position 0, Token "" Position 3, Token "" Position 1, Token "" Position 4, Token "" Position 2
+
+JS DIVERGENCES:
+tensor([0.0007, 0.0006, 0.0022, 0.0054, 0.0055, 0.0072, 0.0048, 0.0007, 0.0004,
+           nan,    nan], device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "The": 130.25, Token "It": 128.5, Token "They": 114.75, Token "Believe": 113.25, Token "But": 109.1875
+Token "The": 60.25, Token "It": 58.6875, Token "That": 35.21875, Token "But": 34.6875, Token "They": 32.8125
+Token "": -12.09375, Token "": -291.25, Token """: -303.75, Token "The": -352.5, Token "It": -369.5
+Token "": -143.625, Token """: -788.5, Token "": -829.5, Token "the": -1040.0, Token "The": -1087.0
+Token "": -273.0, Token """: -960.0, Token "": -968.5, Token "The": -1369.0, Token "the": -1377.0
+Token "": -308.75, Token "": -1214.0, Token """: -1377.0, Token "the": -1863.0, Token "The": -1871.0
+Token "": -224.25, Token "": -815.0, Token """: -1541.0, Token "The": -2094.0, Token "However": -2124.0
+Token "": -61.0, Token "": -107.3125, Token """: -1871.0, Token "The": -2354.0, Token "However": -2472.0
+Token "": 1587.0, Token "": -187.25, Token "They": -1932.0, Token """: -2208.0, Token "However": -2728.0
+Token "": 2486.0, Token "": -206.75, Token "They": -3878.0, Token """: -3952.0, Token "The": -4528.0
+Token "": 1990.0, Token "": 198.25, Token """: -5416.0, Token "The": -6164.0, Token "the": -6236.0
+Token "": 1.314453125, Token "They": -5.33984375, Token "G": -5.8046875, Token "The": -6.01171875, Token "": -6.48046875
+Token "": -0.0097503662109375, Token "": -inf, Token "": -inf, Token "X": -inf, Token "": -inf
+
+TRACKING TOKEN INDICES
+Token "" Position 50, Token "" Position 63, Token "" Position 32127, Token "X" Position 9711, Token "" Position 5975
+Token "" Position 16, Token "" Position 5, Token "" Position 32127, Token "X" Position 10467, Token "" Position 2308
+Token "" Position 1, Token "" Position 0, Token "" Position 32127, Token "X" Position 4839, Token "" Position 239
+Token "" Position 2, Token "" Position 0, Token "" Position 32127, Token "X" Position 4420, Token "" Position 69
+Token "" Position 2, Token "" Position 0, Token "" Position 32127, Token "X" Position 4034, Token "" Position 45
+Token "" Position 1, Token "" Position 0, Token "" Position 32127, Token "X" Position 4350, Token "" Position 34
+Token "" Position 1, Token "" Position 0, Token "" Position 32127, Token "X" Position 3138, Token "" Position 33
+Token "" Position 1, Token "" Position 0, Token "" Position 32127, Token "X" Position 4137, Token "" Position 45
+Token "" Position 0, Token "" Position 1, Token "" Position 32127, Token "X" Position 3245, Token "" Position 40
+Token "" Position 0, Token "" Position 1, Token "" Position 31945, Token "X" Position 2800, Token "" Position 24
+Token "" Position 0, Token "" Position 1, Token "" Position 31848, Token "X" Position 2435, Token "" Position 20
+Token "" Position 0, Token "" Position 4, Token "" Position 32127, Token "X" Position 2534, Token "" Position 58
+Token "" Position 0, Token "" Position 3, Token "" Position 1, Token "X" Position 4, Token "" Position 2
+
+Question: Explain Generative Adversarial Networks (GANs) to me using bullet points. Do not contain any commas in your response. End your response with a postscript indicated by P.P.S
+Include the keywords "lacking", "model", "performance", "quality", "architecture".
+
+Model Completion: GANs can be applied to architecture and performance quality metrics such as fault tolerance or throughput, which are lacking with models such as reinforcement learning or deep learning.
+
+
+100% 1/1 [04:22<00:00, 262.80s/it]
+Premature layer 2 was used 0 times, 0.0%
+Premature layer 4 was used 0 times, 0.0%
+Premature layer 6 was used 0 times, 0.0%
+Premature layer 8 was used 1 times, 2.94%
+Premature layer 10 was used 0 times, 0.0%
+Premature layer 12 was used 0 times, 0.0%
+Premature layer 14 was used 0 times, 0.0%
+Premature layer 16 was used 0 times, 0.0%
+Premature layer 18 was used 4 times, 11.76%
+Premature layer 20 was used 28 times, 82.35%
+Premature layer 22 was used 1 times, 2.94%

@@ -1,0 +1,644 @@
+MODE: DoLa decoding with mature layer: 24 and premature layers: [2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22]
+  0% 0/1 [00:00<?, ?it/s]Selected layer 6, token tensor([350], device='cuda:0')
+Selected layer 16, token tensor([5033], device='cuda:0')
+Selected layer 22, token tensor([7], device='cuda:0')
+Selected layer 22, token tensor([54], device='cuda:0')
+Selected layer 22, token tensor([36], device='cuda:0')
+Selected layer 22, token tensor([2930], device='cuda:0')
+Selected layer 12, token tensor([12], device='cuda:0')
+Selected layer 22, token tensor([4648], device='cuda:0')
+Selected layer 22, token tensor([11], device='cuda:0')
+Selected layer 22, token tensor([821], device='cuda:0')
+Selected layer 22, token tensor([463], device='cuda:0')
+Selected layer 22, token tensor([15905], device='cuda:0')
+Selected layer 22, token tensor([224], device='cuda:0')
+Selected layer 12, token tensor([38], device='cuda:0')
+Selected layer 22, token tensor([7828], device='cuda:0')
+Selected layer 22, token tensor([17313], device='cuda:0')
+Selected layer 22, token tensor([42], device='cuda:0')
+Selected layer 22, token tensor([190], device='cuda:0')
+Selected layer 22, token tensor([2562], device='cuda:0')
+Selected layer 22, token tensor([6], device='cuda:0')
+Selected layer 22, token tensor([84], device='cuda:0')
+Selected layer 22, token tensor([33], device='cuda:0')
+Selected layer 22, token tensor([16914], device='cuda:0')
+Selected layer 22, token tensor([28], device='cuda:0')
+Selected layer 22, token tensor([13080], device='cuda:0')
+Selected layer 22, token tensor([2250], device='cuda:0')
+Selected layer 22, token tensor([42], device='cuda:0')
+Selected layer 22, token tensor([14039], device='cuda:0')
+Selected layer 22, token tensor([4648], device='cuda:0')
+Selected layer 22, token tensor([5], device='cuda:0')
+Selected layer 12, token tensor([1], device='cuda:0')
+JS DIVERGENCES:
+tensor([0.0103, 0.0369, 0.0970, 0.0553, 0.0533, 0.0518, 0.0520, 0.0539, 0.0566,
+        0.0602, 0.0450], device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+2024-04-12 00:05:06.786490: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:9261] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2024-04-12 00:05:06.786545: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:607] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2024-04-12 00:05:06.787826: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1515] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2024-04-12 00:05:07.823687: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Token "": 1555.0, Token "superioara": 1398.0, Token "adanc": 1337.0, Token "gasest": 1279.0, Token "modificari": 1262.0
+Token "": 5472.0, Token "superioara": 5312.0, Token "locuinte": 5084.0, Token "adanc": 4996.0, Token "Județean": 4904.0
+Token "": 14264.0, Token "superioara": 14072.0, Token "locuinte": 13912.0, Token "Județean": 13736.0, Token "insotit": 13320.0
+Token "supprimer": -2564.0, Token "•": -3274.0, Token "": -3382.0, Token "rivers": -3732.0, Token "Verpflichtung": -4040.0
+Token "supprimer": -3112.0, Token "": -3470.0, Token "•": -3596.0, Token "rivers": -4044.0, Token "Verpflichtung": -4432.0
+Token "supprimer": -3534.0, Token "": -3542.0, Token "•": -3818.0, Token "rivers": -4268.0, Token "Verpflichtung": -4704.0
+Token "": -3632.0, Token "supprimer": -3758.0, Token "•": -3922.0, Token "rivers": -4380.0, Token "Verpflichtung": -4860.0
+Token "": -3656.0, Token "supprimer": -4328.0, Token "•": -4328.0, Token "rivers": -4688.0, Token "Verpflichtung": -5236.0
+Token "": -3586.0, Token "•": -4816.0, Token "rivers": -5228.0, Token "supprimer": -5232.0, Token "Verpflichtung": -5956.0
+Token "": -3396.0, Token "•": -5820.0, Token "rivers": -6096.0, Token """: -6920.0, Token "supprimer": -6936.0
+Token "": -2448.0, Token "•": -4924.0, Token "The": -5516.0, Token """: -5932.0, Token "rivers": -5948.0
+Token "G": 2.18359375, Token "The": 0.50341796875, Token "This": -0.340087890625, Token "A": -0.398681640625, Token "": -0.5029296875
+Token "G": 12552.0, Token "The": 12288.0, Token "": -inf, Token "": -inf, Token "": -inf
+
+JS DIVERGENCES:
+tensor([0.0018, 0.0021, 0.0075, 0.0189, 0.0230, 0.0269, 0.0330, 0.0361, 0.0353,
+        0.0158, 0.0100], device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "LAS": 364.25, Token "eek": 364.0, Token "ML": 353.0, Token "lor": 346.5, Token "RAF": 326.75
+Token "RO": 108.75, Token "eck": 50.1875, Token "CM": 45.65625, Token "oji": 42.875, Token "lor": 40.4375
+Token "": -370.5, Token "s": -520.0, Token "": -607.0, Token "a": -631.5, Token "'": -642.5
+Token "": -766.0, Token "s": -1263.0, Token "a": -1539.0, Token "'": -1557.0, Token "-": -1586.0
+Token "": -931.5, Token "s": -1688.0, Token "-": -1922.0, Token "'": -2016.0, Token "a": -2068.0
+Token "": -1026.0, Token "s": -2128.0, Token "-": -2340.0, Token "a": -2376.0, Token "'": -2518.0
+Token "": -1162.0, Token "s": -2642.0, Token "-": -2868.0, Token "a": -2902.0, Token "'": -2956.0
+Token "": -1238.0, Token "s": -2940.0, Token "-": -3452.0, Token "'": -3494.0, Token "a": -3684.0
+Token "": -1333.0, Token "s": -3960.0, Token "-": -3964.0, Token "n": -4240.0, Token ".": -4460.0
+Token "": -1580.0, Token "AN": -3594.0, Token "-": -4624.0, Token "n": -4692.0, Token "s": -5232.0
+Token "": -1561.0, Token "AN": -2822.0, Token "-": -5200.0, Token ",": -6492.0, Token "s": -6536.0
+Token "AN": 2.087890625, Token "ANS": -5.171875, Token "an": -6.875, Token "ans": -7.37890625, Token "AM": -7.76171875
+Token "AN": 4624.0, Token "": -inf, Token "": -inf, Token "": -inf, Token "": -inf
+
+JS DIVERGENCES:
+tensor([0.0025, 0.0024, 0.0024, 0.0052, 0.0053, 0.0038, 0.0042, 0.0030, 0.0038,
+        0.0066, 0.0079], device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "net": 151.75, Token "ISH": 141.625, Token "OL": 132.0, Token "Z": 126.625, Token "ZA": 123.3125
+Token "_": 32.5, Token "'": -37.5, Token "net": -94.25, Token "ITY": -107.5, Token "": -118.375
+Token "": -231.625, Token "'": -401.25, Token "s": -491.5, Token """: -544.0, Token ",": -574.5
+Token "": -537.0, Token "s": -1086.0, Token "'": -1254.0, Token """: -1369.0, Token ",": -1374.0
+Token "": -631.0, Token "s": -1140.0, Token "'": -1587.0, Token "-": -1740.0, Token ",": -1749.0
+Token "": -708.5, Token "s": -952.0, Token "'": -1931.0, Token "-": -2084.0, Token ",": -2170.0
+Token "": -777.0, Token "s": -1032.0, Token "'": -2262.0, Token "is": -2364.0, Token "-": -2540.0
+Token "s": -372.0, Token "": -1086.0, Token "'": -2160.0, Token "is": -2458.0, Token "-": -3172.0
+Token "s": 363.0, Token "": -796.0, Token "is": -2072.0, Token "'": -2410.0, Token "can": -3136.0
+Token "s": 2722.0, Token "": -654.5, Token "'": -1559.0, Token "is": -2354.0, Token ",": -4148.0
+Token "s": 2810.0, Token "": 320.75, Token "'": -2276.0, Token "is": -2796.0, Token ",": -4020.0
+Token "s": 2.7109375, Token "is": -0.51318359375, Token "are": -1.4677734375, Token "'": -2.232421875, Token "architecture": -2.416015625
+Token "s": -0.11407470703125, Token "": -inf, Token "": -inf, Token "": -inf, Token "": -inf
+
+JS DIVERGENCES:
+tensor([0.0009, 0.0014, 0.0046, 0.0109, 0.0146, 0.0175, 0.0196, 0.0198, 0.0193,
+        0.0298, 0.0434], device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "": 3.830078125, Token "igh": -8.3671875, Token "kir": -26.8125, Token "ever": -33.40625, Token "trug": -41.1875
+Token "": -56.59375, Token "'": -115.625, Token "no": -159.25, Token "_": -163.5, Token "]": -165.75
+Token "": -129.625, Token "'": -409.75, Token ",": -472.0, Token """: -481.5, Token "in": -503.5
+Token "": -293.0, Token ",": -1071.0, Token "'": -1091.0, Token "in": -1122.0, Token """: -1143.0
+Token "": -338.25, Token ",": -1380.0, Token "in": -1411.0, Token "'": -1550.0, Token "is": -1611.0
+Token "": -350.25, Token ",": -1626.0, Token "in": -1763.0, Token "is": -1892.0, Token """: -2052.0
+Token "": -338.5, Token ",": -1999.0, Token "in": -2050.0, Token "are": -2236.0, Token "is": -2280.0
+Token "": -138.875, Token "are": -1568.0, Token "can": -2190.0, Token ",": -2244.0, Token "is": -2366.0
+Token "": 187.625, Token "are": -552.5, Token "can": -1976.0, Token "have": -2136.0, Token ",": -2338.0
+Token "": 705.5, Token "are": -1004.0, Token "have": -2270.0, Token ",": -2646.0, Token "can": -2674.0
+Token "": 1053.0, Token "are": -2062.0, Token ",": -2822.0, Token "have": -3284.0, Token "can": -3450.0
+Token "are": 3.076171875, Token "can": 1.333984375, Token "have": 0.955078125, Token "use": 0.5185546875, Token ",": 0.282470703125
+Token "can": 4500.0, Token "have": 4332.0, Token "are": 3116.0, Token "": -inf, Token "": -inf
+
+JS DIVERGENCES:
+tensor([0.0008, 0.0008, 0.0034, 0.0091, 0.0116, 0.0145, 0.0180, 0.0167, 0.0182,
+        0.0261, 0.0381], device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "find": 143.0, Token "sign": 133.75, Token "replace": 132.0, Token "see": 122.0625, Token "produce": 119.875
+Token "be": 41.84375, Token "find": -0.359130859375, Token "see": -40.9375, Token "sign": -46.1875, Token "use": -48.875
+Token "": -98.5625, Token "be": -299.5, Token "de": -456.0, Token "'": -456.75, Token "do": -469.25
+Token "": -208.875, Token "be": -905.5, Token "'": -1071.0, Token "the": -1078.0, Token "in": -1095.0
+Token "": -243.875, Token "be": -1083.0, Token "in": -1366.0, Token "'": -1435.0, Token "the": -1438.0
+Token "": -254.75, Token "be": -1199.0, Token "in": -1801.0, Token ",": -1882.0, Token "'": -1889.0
+Token "": -242.625, Token "be": -1408.0, Token "in": -2098.0, Token "'": -2272.0, Token ",": -2432.0
+Token "": -123.25, Token "be": -650.0, Token "'": -2302.0, Token "in": -2554.0, Token "have": -2754.0
+Token "": 76.1875, Token "be": -164.0, Token "help": -2706.0, Token "'": -2956.0, Token "in": -3266.0
+Token "": 386.5, Token "be": -279.0, Token "'": -3612.0, Token "help": -3624.0, Token "have": -3944.0
+Token "": 1063.0, Token "be": -530.5, Token "'": -4704.0, Token "in": -4720.0, Token "help": -4872.0
+Token "be": 4.19140625, Token "help": 1.361328125, Token "provide": 0.7861328125, Token "perform": 0.59326171875, Token "have": 0.397705078125
+Token "be": 1593.0, Token "": -inf, Token "": -inf, Token "": -inf, Token "": -inf
+
+JS DIVERGENCES:
+tensor([0.0012, 0.0014, 0.0057, 0.0127, 0.0160, 0.0210, 0.0258, 0.0312, 0.0316,
+        0.0467, 0.0704], device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "replaced": 136.75, Token "used": 127.5625, Token "seen": 124.875, Token "found": 93.5625, Token "sold": 74.5
+Token "used": 41.1875, Token "": -17.359375, Token "considered": -38.3125, Token "seen": -44.3125, Token "found": -53.875
+Token "": -22.515625, Token "used": -450.75, Token "the": -460.25, Token "in": -470.0, Token "de": -501.25
+Token "": -144.25, Token "the": -1001.0, Token "in": -1026.0, Token """: -1120.0, Token "de": -1224.0
+Token "": -187.0, Token "in": -1248.0, Token "the": -1318.0, Token ",": -1515.0, Token "used": -1531.0
+Token "": -151.0, Token "in": -1629.0, Token "the": -1751.0, Token "used": -1826.0, Token ",": -1962.0
+Token "": -8.1640625, Token "used": -1926.0, Token "in": -1979.0, Token "the": -2298.0, Token "made": -2540.0
+Token "": 286.0, Token "used": -1936.0, Token "in": -2190.0, Token "the": -2862.0, Token """: -2864.0
+Token "": 544.0, Token "used": -1039.0, Token "made": -2706.0, Token "in": -2892.0, Token "created": -3248.0
+Token "": 1581.0, Token "used": -1702.0, Token "made": -3268.0, Token "created": -3652.0, Token "in": -3660.0
+Token "": 2720.0, Token "used": -3018.0, Token "the": -4572.0, Token "in": -4644.0, Token """: -5044.0
+Token "used": 4.7578125, Token "constructed": 3.560546875, Token "built": 3.169921875, Token "applied": 2.76953125, Token "": 2.765625
+Token "applied": 10424.0, Token "constructed": 9232.0, Token "built": 9104.0, Token "used": 5736.0, Token "": -3.06640625
+
+JS DIVERGENCES:
+tensor([0.0014, 0.0013, 0.0030, 0.0076, 0.0082, 0.0096, 0.0066, 0.0020, 0.0029,
+        0.0034, 0.0039], device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "forces": 92.5, Token "masculin": 82.5, Token "attention": 59.40625, Token "philosophy": 56.84375, Token "drama": 46.3125
+Token "masculin": -49.84375, Token "drama": -58.0625, Token "philosophy": -125.75, Token "worldwide": -139.875, Token "weight": -140.875
+Token "": -185.875, Token "in": -506.5, Token "to": -547.0, Token "the": -602.5, Token ",": -665.0
+Token "": -424.0, Token "in": -1167.0, Token "to": -1363.0, Token "the": -1417.0, Token ",": -1476.0
+Token "": -493.5, Token "in": -1379.0, Token "to": -1486.0, Token "the": -1676.0, Token ",": -1719.0
+Token "": -455.25, Token "in": -1581.0, Token "to": -1595.0, Token "the": -1973.0, Token ",": -2136.0
+Token "": -600.0, Token "to": -1290.0, Token "in": -1623.0, Token "the": -2550.0, Token "for": -2586.0
+Token "to": -575.5, Token "": -637.5, Token "in": -1475.0, Token "for": -2584.0, Token "as": -2776.0
+Token "to": 388.0, Token "": -396.0, Token "in": -1066.0, Token "for": -2282.0, Token "as": -2906.0
+Token "to": 703.0, Token "": -376.0, Token "in": -596.0, Token "for": -2560.0, Token "as": -3542.0
+Token "": 512.5, Token "to": 510.75, Token "in": -702.0, Token "for": -3252.0, Token "as": -4392.0
+Token "to": 1.958984375, Token "in": -0.689453125, Token "for": -1.6669921875, Token "either": -3.392578125, Token "across": -3.40234375
+Token "to": 1140.0, Token "": -inf, Token "": -inf, Token "": -inf, Token "": -inf
+
+JS DIVERGENCES:
+tensor([0.0019, 0.0020, 0.0063, 0.0139, 0.0177, 0.0236, 0.0311, 0.0386, 0.0554,
+        0.0750,    nan], device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "limit": 87.6875, Token "reduce": 64.0625, Token "form": 60.40625, Token "see": 55.4375, Token "construct": 53.34375
+Token "": -25.828125, Token "do": -44.28125, Token "find": -48.3125, Token "make": -48.53125, Token "see": -60.625
+Token "": -24.96875, Token "the": -239.125, Token """: -360.0, Token "do": -461.5, Token ",": -463.25
+Token "": -128.25, Token "the": -772.0, Token """: -909.5, Token "in": -1041.0, Token ",": -1070.0
+Token "": -161.5, Token "the": -997.0, Token "in": -1303.0, Token """: -1342.0, Token ",": -1366.0
+Token "": -85.6875, Token "the": -1224.0, Token "in": -1586.0, Token """: -1618.0, Token ",": -1677.0
+Token "": 67.9375, Token "the": -1481.0, Token "in": -2021.0, Token """: -2062.0, Token ",": -2108.0
+Token "": 356.0, Token "the": -1558.0, Token """: -2204.0, Token "in": -2486.0, Token ",": -2538.0
+Token "": 1514.0, Token "the": -1328.0, Token "in": -2490.0, Token """: -2774.0, Token ",": -3228.0
+Token "": 2470.0, Token "the": -1167.0, Token "in": -3430.0, Token """: -4086.0, Token "many": -4524.0
+Token "": 3936.0, Token "the": -1228.0, Token "in": -3876.0, Token """: -5104.0, Token ",": -5464.0
+Token "": 3.33203125, Token "many": 3.0234375, Token "any": 2.970703125, Token "the": 2.87109375, Token "models": 2.623046875
+Token "architecture": 17472.0, Token "improve": 15672.0, Token "learning": 14424.0, Token "models": 14000.0, Token "various": 13416.0
+
+JS DIVERGENCES:
+tensor([0.0023, 0.0016, 0.0053, 0.0096, 0.0117, 0.0117, 0.0117, 0.0106, 0.0114,
+        0.0149, 0.0185], device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "design": 239.5, Token "firm": 171.125, Token "Design": 171.125, Token "style": 127.625, Token "group": 114.8125
+Token "": 102.875, Token "design": 20.953125, Token "Design": 4.015625, Token "block": -6.43359375, Token "firm": -18.234375
+Token "": 54.21875, Token "s": -515.5, Token ",": -555.5, Token ".": -606.0, Token "and": -623.5
+Token "": -136.75, Token "s": -1139.0, Token ",": -1257.0, Token "in": -1379.0, Token "and": -1379.0
+Token "": -83.8125, Token "s": -1189.0, Token ",": -1557.0, Token "and": -1646.0, Token "in": -1649.0
+Token "": -139.375, Token "s": -1013.0, Token ",": -1677.0, Token "and": -1873.0, Token "in": -1908.0
+Token "": -75.3125, Token "s": -722.5, Token ",": -1639.0, Token "and": -1780.0, Token "in": -2001.0
+Token "s": -24.828125, Token "": -182.5, Token ",": -1642.0, Token "and": -2058.0, Token "in": -2340.0
+Token "": 157.75, Token "s": 141.375, Token ",": -1141.0, Token "and": -2106.0, Token "in": -2406.0
+Token "s": 531.0, Token "": 232.625, Token ",": -1213.0, Token "and": -2506.0, Token "in": -2680.0
+Token "": 1023.5, Token "s": 911.5, Token ",": -1083.0, Token "and": -2822.0, Token "in": -2886.0
+Token "s": 1.8427734375, Token ",": 0.916015625, Token "and": 0.3076171875, Token "of": -0.96923828125, Token "problems": -1.021484375
+Token "and": 3914.0, Token ",": 2174.0, Token "s": -0.72607421875, Token "": -inf, Token "": -inf
+
+JS DIVERGENCES:
+tensor([0.0016, 0.0024, 0.0072, 0.0147, 0.0202, 0.0256, 0.0321, 0.0410, 0.0518,
+        0.0596, 0.0751], device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "": 48.34375, Token "the": 25.84375, Token "then": 21.5, Token "vice": -19.53125, Token "do": -26.34375
+Token "": 12.203125, Token "the": -37.03125, Token "vice": -77.3125, Token "then": -95.625, Token "no": -116.5
+Token "": 18.234375, Token "the": -283.75, Token """: -404.0, Token "in": -462.25, Token ",": -478.75
+Token "": -66.75, Token "the": -783.0, Token "in": -957.0, Token """: -975.0, Token ",": -1014.5
+Token "": -54.5625, Token "the": -1096.0, Token "in": -1290.0, Token ",": -1377.0, Token """: -1449.0
+Token "": -62.21875, Token "the": -1463.0, Token "in": -1594.0, Token ",": -1686.0, Token """: -1929.0
+Token "": 5.828125, Token "the": -1944.0, Token "in": -2013.0, Token ",": -2286.0, Token """: -2350.0
+Token "": 99.6875, Token "the": -2254.0, Token "in": -2416.0, Token "to": -2542.0, Token """: -2828.0
+Token "": 954.5, Token "the": -2394.0, Token "in": -2468.0, Token "to": -2876.0, Token """: -3282.0
+Token "": 1446.0, Token "the": -2640.0, Token "in": -3174.0, Token "to": -3852.0, Token ",": -4328.0
+Token "": 2368.0, Token "the": -2810.0, Token "in": -3758.0, Token "to": -4696.0, Token ",": -4904.0
+Token "performance": 5.11328125, Token "design": 2.568359375, Token "quality": 2.359375, Token "model": 2.3125, Token "modeling": 1.1982421875
+Token "performance": 7944.0, Token "": -inf, Token "": -inf, Token "": -inf, Token "": -inf
+
+JS DIVERGENCES:
+tensor([0.0021, 0.0026, 0.0086, 0.0210, 0.0255, 0.0283, 0.0329, 0.0376, 0.0411,
+        0.0508, 0.0677], device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "rating": 165.875, Token "evaluation": 154.125, Token "ratings": 141.5, Token "Rating": 131.875, Token "analysis": 121.5625
+Token "rating": 61.71875, Token "ratings": 39.0, Token "evaluation": 18.953125, Token "measurement": 13.4765625, Token "awards": -36.53125
+Token "": -54.15625, Token ",": -542.5, Token "in": -591.0, Token """: -592.5, Token ".": -614.0
+Token "": -141.375, Token ",": -1273.0, Token "in": -1342.0, Token """: -1366.0, Token "-": -1498.0
+Token "": -203.625, Token ",": -1579.0, Token "in": -1678.0, Token "-": -1792.0, Token """: -1876.0
+Token "": -243.375, Token ",": -1630.0, Token "in": -1852.0, Token "-": -1995.0, Token ".": -2064.0
+Token "": -194.75, Token ",": -1697.0, Token "in": -2098.0, Token "-": -2212.0, Token ".": -2246.0
+Token "": -232.0, Token ",": -1757.0, Token "in": -2260.0, Token ".": -2528.0, Token "-": -2560.0
+Token "": 228.0, Token ",": -1970.0, Token "in": -2462.0, Token "-": -2778.0, Token ".": -2900.0
+Token "": 995.5, Token ",": -1796.0, Token "in": -2098.0, Token "-": -2458.0, Token ".": -3120.0
+Token "": 2068.0, Token ",": -1470.0, Token "in": -1950.0, Token "-": -2142.0, Token ".": -3104.0
+Token "problems": 2.861328125, Token "analysis": 2.802734375, Token ",": 2.791015625, Token "modeling": 2.74609375, Token "prediction": 2.1640625
+Token "quality": 12280.0, Token "metrics": 12160.0, Token "modeling": 11776.0, Token "modelling": 11552.0, Token "engineering": 10392.0
+
+JS DIVERGENCES:
+tensor([0.0036, 0.0033, 0.0085, 0.0188, 0.0232, 0.0263, 0.0301, 0.0328, 0.0370,
+        0.0471, 0.0638], device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "assurance": 276.75, Token "governance": 155.0, Token "score": 131.25, Token "ISO": 126.625, Token "standards": 115.625
+Token "score": 69.0, Token "assurance": 19.90625, Token "factor": -3.7890625, Token "chain": -29.40625, Token "film": -31.65625
+Token "": -47.9375, Token ",": -592.5, Token "in": -611.5, Token ".": -621.5, Token "of": -693.5
+Token "": -164.125, Token ",": -1288.0, Token "in": -1334.0, Token """: -1411.0, Token ".": -1427.0
+Token "": -117.8125, Token ",": -1525.0, Token "in": -1576.0, Token ".": -1741.0, Token """: -1817.0
+Token "": -113.5, Token ",": -1605.0, Token "in": -1747.0, Token ".": -1870.0, Token "the": -2174.0
+Token "": -82.3125, Token ",": -1626.0, Token "in": -1903.0, Token ".": -2031.0, Token "and": -2422.0
+Token "": -112.375, Token ",": -1762.0, Token "in": -1985.0, Token ".": -2254.0, Token "s": -2780.0
+Token "": 370.5, Token ",": -1676.0, Token "in": -2104.0, Token ".": -2312.0, Token "of": -3124.0
+Token "": 1116.0, Token ",": -1641.0, Token "in": -2126.0, Token ".": -2628.0, Token "issues": -3460.0
+Token "": 2082.0, Token ",": -1408.0, Token "in": -2198.0, Token ".": -2758.0, Token "of": -3768.0
+Token "problems": 3.806640625, Token ",": 3.025390625, Token ".": 2.20703125, Token "issues": 2.19921875, Token "and": 2.103515625
+Token "metrics": 13272.0, Token "models": 10136.0, Token "control": 8116.0, Token "analysis": 8100.0, Token "issues": 7444.0
+
+JS DIVERGENCES:
+tensor([0.0022, 0.0021, 0.0058, 0.0110, 0.0133, 0.0149, 0.0158, 0.0157, 0.0167,
+        0.0235, 0.0338], device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "grades": 146.25, Token "analysis": 123.75, Token "scale": 82.6875, Token "audit": 68.75, Token "level": 67.9375
+Token "": 4.76953125, Token """: -147.375, Token ",": -159.0, Token ".": -173.625, Token "audit": -206.125
+Token "": -4.828125, Token """: -500.5, Token ",": -511.75, Token ".": -561.0, Token "in": -613.5
+Token "": -165.375, Token ",": -1121.0, Token """: -1230.0, Token ".": -1272.0, Token "in": -1280.0
+Token "": -213.375, Token ",": -1349.0, Token """: -1501.0, Token ".": -1522.0, Token "in": -1626.0
+Token "": -342.0, Token ",": -1565.0, Token ".": -1738.0, Token "in": -1908.0, Token """: -1919.0
+Token "": -478.5, Token ",": -1691.0, Token ".": -1878.0, Token "in": -2088.0, Token """: -2420.0
+Token "": -561.0, Token ",": -1711.0, Token ".": -1863.0, Token "in": -2270.0, Token "to": -2774.0
+Token "": -352.25, Token ",": -1400.0, Token ".": -1479.0, Token "in": -2218.0, Token "to": -2568.0
+Token "": 303.75, Token ",": -1090.0, Token ".": -1484.0, Token "in": -2062.0, Token "to": -2118.0
+Token "": 1062.0, Token ",": -1142.0, Token ".": -1538.0, Token "in": -2340.0, Token "to": -2402.0
+Token ".": -0.417724609375, Token ",": -0.68212890625, Token "to": -1.115234375, Token "such": -1.6455078125, Token "and": -2.216796875
+Token "such": 8140.0, Token "that": 6740.0, Token "for": 5112.0, Token "and": 3866.0, Token "in": 3398.0
+
+JS DIVERGENCES:
+tensor([6.4039e-04, 2.8491e-04, 2.8648e-03, 7.8049e-03, 9.7351e-03, 1.1833e-02,
+        7.8125e-03, 9.8765e-05, 1.4865e-04, 1.7023e-04, 1.8072e-04],
+       device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "actors": 109.5625, Token "organ": 50.34375, Token "statute": 45.0, Token "as": 42.5, Token "dramatic": 41.71875
+Token """: -36.8125, Token "actors": -49.03125, Token "motion": -61.75, Token "as": -63.34375, Token "": -69.0625
+Token "": -72.125, Token """: -361.75, Token "as": -434.5, Token "in": -438.5, Token "the": -538.5
+Token "": -235.5, Token """: -1075.0, Token "in": -1201.0, Token "as": -1232.0, Token "the": -1309.0
+Token "": -236.625, Token """: -1359.0, Token "as": -1482.0, Token "in": -1530.0, Token "the": -1784.0
+Token "": -298.75, Token """: -1499.0, Token "as": -1813.0, Token "in": -1842.0, Token "the": -2078.0
+Token "": -483.25, Token "as": -1477.0, Token """: -2102.0, Token "in": -2198.0, Token "the": -2706.0
+Token "as": 473.5, Token "": -495.0, Token """: -2348.0, Token "in": -2740.0, Token "As": -3020.0
+Token "as": 1793.0, Token "": -788.0, Token """: -3460.0, Token "As": -3490.0, Token "in": -3622.0
+Token "as": 1372.0, Token "": -359.5, Token "in": -4224.0, Token "the": -4548.0, Token """: -4932.0
+Token "as": 600.5, Token "": -48.40625, Token "in": -4992.0, Token "the": -5004.0, Token ",": -5836.0
+Token "as": -0.28271484375, Token "that": -7.765625, Token "": -7.86328125, Token "the": -9.3671875, Token "in": -9.6953125
+Token "as": 1514.0, Token "": -inf, Token "": -inf, Token "": -inf, Token "": -inf
+
+JS DIVERGENCES:
+tensor([0.0021, 0.0033, 0.0079, 0.0174, 0.0212, 0.0255, 0.0338, 0.0404, 0.0527,
+        0.0696, 0.0937], device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "the": 76.5, Token "": 63.46875, Token """: 37.5, Token "bra": 10.1953125, Token "Lisa": -0.98828125
+Token "": 46.6875, Token "the": -32.90625, Token """: -71.5625, Token "part": -106.875, Token "an": -132.25
+Token "": 32.875, Token "the": -298.75, Token """: -302.75, Token "in": -422.0, Token ",": -490.5
+Token "": -4.98828125, Token """: -791.5, Token "the": -865.0, Token "in": -974.0, Token ",": -1137.0
+Token "": -154.25, Token """: -1068.0, Token "the": -1283.0, Token "in": -1395.0, Token ",": -1491.0
+Token "": -180.5, Token """: -1285.0, Token "the": -1536.0, Token "in": -1688.0, Token ",": -1791.0
+Token "": -117.3125, Token """: -1712.0, Token "the": -2046.0, Token "in": -2262.0, Token ",": -2312.0
+Token "": 178.25, Token """: -1610.0, Token "the": -2025.0, Token ",": -2474.0, Token "in": -2512.0
+Token "": 913.0, Token """: -2118.0, Token "the": -2212.0, Token ",": -2722.0, Token "in": -2824.0
+Token "": 1793.0, Token "the": -2338.0, Token """: -2798.0, Token ",": -3138.0, Token "in": -3272.0
+Token "": 2966.0, Token "the": -2290.0, Token ",": -3234.0, Token "in": -3688.0, Token """: -3740.0
+Token "the": 1.4140625, Token "performance": 1.3662109375, Token "quality": 1.349609375, Token "model": 1.2900390625, Token "": 1.23046875
+Token "fault": 13808.0, Token "through": 13368.0, Token "load": 12320.0, Token "accuracy": 12272.0, Token "network": 12248.0
+
+JS DIVERGENCES:
+tensor([0.0017, 0.0019, 0.0131, 0.0285, 0.0334, 0.0366, 0.0402, 0.0415, 0.0472,
+        0.0460, 0.0482], device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "Kreis": 219.375, Token "-": 210.5, Token "wave": 197.0, Token "smith": 196.375, Token "zone": 191.375
+Token "-": 66.6875, Token "zone": 61.125, Token "management": 54.65625, Token "lines": 47.625, Token "": 5.08203125
+Token "": -1.109375, Token "-": -468.0, Token "s": -574.5, Token "in": -652.0, Token ",": -733.0
+Token "": -124.25, Token "-": -1224.0, Token "s": -1262.0, Token "in": -1377.0, Token ",": -1480.0
+Token "": -158.625, Token "-": -1393.0, Token "s": -1482.0, Token "in": -1691.0, Token ",": -1796.0
+Token "": -266.25, Token "s": -1556.0, Token "-": -1594.0, Token "in": -2090.0, Token ",": -2180.0
+Token "": -171.875, Token "s": -1622.0, Token "-": -1746.0, Token "in": -2304.0, Token ",": -2470.0
+Token "": 95.9375, Token "s": -1742.0, Token "-": -1824.0, Token ",": -2346.0, Token "in": -2502.0
+Token "": 796.5, Token "s": -1471.0, Token "-": -1782.0, Token ",": -2198.0, Token "in": -2660.0
+Token "": 1501.0, Token "s": -1216.0, Token "-": -1228.0, Token ",": -1746.0, Token "rate": -2552.0
+Token "": 1757.0, Token ",": -1356.0, Token "s": -1778.0, Token "-": -2090.0, Token "rate": -2680.0
+Token "tolerance": 4.7734375, Token "detection": 1.359375, Token ",": 1.12109375, Token "and": 0.94580078125, Token "rates": 0.7568359375
+Token "tolerance": 6096.0, Token "": -inf, Token "": -inf, Token "": -inf, Token "": -inf
+
+JS DIVERGENCES:
+tensor([0.0024, 0.0019, 0.0044, 0.0100, 0.0129, 0.0128, 0.0132, 0.0105, 0.0099,
+        0.0148, 0.0202], device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "Glas": 219.5, Token "bre": 211.0, Token "lent": 173.5, Token "limits": 166.125, Token "levels": 140.25
+Token "s": 53.4375, Token "limits": -13.7421875, Token "limit": -43.0, Token "levels": -56.53125, Token "": -57.6875
+Token "": -86.5, Token "s": -220.25, Token ",": -512.0, Token ".": -620.5, Token "in": -676.0
+Token "": -182.125, Token "s": -995.5, Token ",": -1163.0, Token "in": -1378.0, Token ".": -1467.0
+Token "": -197.5, Token "s": -1408.0, Token ",": -1489.0, Token "in": -1767.0, Token ".": -1864.0
+Token "": -240.75, Token ",": -1445.0, Token "s": -1448.0, Token "in": -1904.0, Token ".": -1951.0
+Token "": -147.5, Token ",": -1360.0, Token "s": -1504.0, Token ".": -1965.0, Token "in": -2045.0
+Token "": -175.875, Token ",": -1006.0, Token "and": -1464.0, Token "s": -1501.0, Token ".": -1786.0
+Token "": 60.09375, Token ",": -271.5, Token ".": -1500.0, Token "and": -1548.0, Token "s": -1804.0
+Token "": 791.0, Token ",": 263.5, Token ".": -1367.0, Token "and": -1674.0, Token "in": -2440.0
+Token "": 1343.0, Token ",": 585.0, Token ".": -1468.0, Token "and": -1951.0, Token "in": -2530.0
+Token ",": 0.701171875, Token "and": -0.00415802001953125, Token ".": -0.58935546875, Token "or": -1.06640625, Token "to": -2.91796875
+Token "or": 5896.0, Token ".": 2810.0, Token "and": 2472.0, Token ",": 757.0, Token "": -inf
+
+JS DIVERGENCES:
+tensor([0.0023, 0.0030, 0.0091, 0.0173, 0.0220, 0.0267, 0.0356, 0.0448, 0.0582,
+        0.0737, 0.0974], device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "phan": 108.5, Token "": 67.0625, Token "vice": 52.25, Token "un": 40.25, Token "the": 3.18359375
+Token "": 43.40625, Token "vice": -44.9375, Token "the": -62.40625, Token "phan": -74.25, Token "un": -92.0
+Token "": 49.09375, Token "the": -341.5, Token "in": -423.0, Token """: -428.25, Token ",": -486.25
+Token "": -29.5, Token "the": -831.5, Token "in": -935.5, Token """: -953.5, Token ",": -1022.0
+Token "": -30.890625, Token "the": -1097.0, Token """: -1148.0, Token "in": -1180.0, Token ",": -1240.0
+Token "": -69.9375, Token "in": -1450.0, Token "the": -1451.0, Token ",": -1490.0, Token """: -1574.0
+Token "": 34.875, Token "the": -1852.0, Token "in": -1946.0, Token """: -2052.0, Token ",": -2078.0
+Token "": 388.5, Token "the": -2100.0, Token "in": -2234.0, Token """: -2312.0, Token ",": -2636.0
+Token "": 1203.0, Token "the": -2298.0, Token "in": -2482.0, Token """: -2770.0, Token ",": -2910.0
+Token "": 1816.0, Token "the": -2554.0, Token "in": -2922.0, Token """: -3640.0, Token ",": -3656.0
+Token "": 2850.0, Token "the": -2866.0, Token "in": -3402.0, Token """: -4456.0, Token ",": -4500.0
+Token "reliability": 2.765625, Token "fault": 2.6875, Token "": 2.3828125, Token "error": 2.11328125, Token "performance": 2.068359375
+Token "through": 13320.0, Token "architecture": 12400.0, Token "deviation": 12088.0, Token "network": 12072.0, Token "leak": 11968.0
+
+JS DIVERGENCES:
+tensor([0.0004, 0.0004, 0.0050, 0.0118, 0.0137, 0.0186, 0.0246, 0.0255, 0.0292,
+        0.0403, 0.0479], device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "put": 131.75, Token "adult": 51.59375, Token "the": 38.625, Token "Hart": 34.03125, Token "educational": 29.765625
+Token "put": -7.64453125, Token "the": -21.453125, Token "": -28.015625, Token "de": -124.0625, Token "transition": -125.6875
+Token "": -25.84375, Token "the": -268.25, Token """: -415.5, Token "de": -447.5, Token "in": -567.0
+Token "": -159.25, Token "the": -836.5, Token """: -1089.0, Token "in": -1136.0, Token "de": -1187.0
+Token "": -164.125, Token "the": -1126.0, Token "in": -1497.0, Token """: -1527.0, Token "-": -1547.0
+Token "": -145.625, Token "the": -1532.0, Token "-": -1838.0, Token "in": -1846.0, Token ",": -1951.0
+Token "": -8.4765625, Token "the": -1736.0, Token "-": -2182.0, Token "in": -2184.0, Token ",": -2342.0
+Token "": 117.875, Token "the": -1683.0, Token "-": -2190.0, Token "in": -2494.0, Token "t": -2586.0
+Token "": 516.0, Token "the": -1705.0, Token "-": -2218.0, Token "put": -2804.0, Token "in": -2830.0
+Token "": 1362.0, Token "the": -1497.0, Token "-": -1992.0, Token "in": -3258.0, Token "put": -3350.0
+Token "": 1949.0, Token "the": -1065.0, Token "-": -1832.0, Token "in": -3236.0, Token """: -3366.0
+Token "put": 5.4296875, Token "the": 1.5693359375, Token "": 0.9375, Token "fault": 0.73291015625, Token "flow": 0.490478515625
+Token "put": 5632.0, Token "": -inf, Token "": -inf, Token "": -inf, Token "": -inf
+
+JS DIVERGENCES:
+tensor([0.0031, 0.0024, 0.0050, 0.0104, 0.0142, 0.0188, 0.0196, 0.0189, 0.0207,
+        0.0275, 0.0376], device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "generation": 194.375, Token "cycle": 186.75, Token "numerical": 176.125, Token "relative": 171.25, Token "grid": 166.25
+Token "relative": -5.9140625, Token "generation": -30.890625, Token "streams": -53.6875, Token "stream": -55.625, Token "": -78.5625
+Token "": -95.4375, Token ",": -523.5, Token "s": -557.0, Token """: -558.5, Token "in": -624.5
+Token "": -241.5, Token ",": -1172.0, Token "s": -1271.0, Token "in": -1319.0, Token """: -1348.0
+Token "": -294.5, Token ",": -1547.0, Token "in": -1770.0, Token ".": -1817.0, Token "-": -1861.0
+Token "": -143.0, Token ",": -1930.0, Token "s": -2050.0, Token "in": -2132.0, Token ".": -2162.0
+Token "": 173.875, Token ".": -1627.0, Token ",": -1706.0, Token "s": -1782.0, Token "in": -2156.0
+Token "": 297.5, Token ".": -995.0, Token ",": -1690.0, Token "s": -1759.0, Token "in": -2196.0
+Token "": 555.0, Token ".": -678.5, Token ",": -1569.0, Token "s": -1940.0, Token "in": -2504.0
+Token "": 1306.0, Token ".": -421.25, Token ",": -1172.0, Token "s": -2234.0, Token "in": -2350.0
+Token "": 2062.0, Token ".": -618.5, Token ",": -958.0, Token "in": -2470.0, Token "s": -2596.0
+Token ".": 1.7880859375, Token ",": 0.288330078125, Token "and": -1.1142578125, Token "to": -1.291015625, Token "performance": -1.4189453125
+Token ",": 3018.0, Token ".": 2680.0, Token "": -inf, Token "": -inf, Token "": -inf
+
+JS DIVERGENCES:
+tensor([0.0008, 0.0013, 0.0043, 0.0088, 0.0107, 0.0137, 0.0182, 0.0223, 0.0291,
+        0.0446, 0.0654], device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "": 11.9296875, Token "but": -6.1875, Token "however": -8.9296875, Token "the": -27.484375, Token "including": -31.4375
+Token "": -15.71875, Token "but": -71.3125, Token "the": -90.625, Token "however": -113.6875, Token "don": -119.8125
+Token "": -27.484375, Token "the": -317.75, Token "but": -376.0, Token """: -378.75, Token "in": -420.5
+Token "": -158.0, Token "the": -803.5, Token "in": -896.5, Token """: -919.0, Token "but": -956.0
+Token "": -222.25, Token "but": -1081.0, Token "the": -1093.0, Token "in": -1152.0, Token """: -1175.0
+Token "": -219.125, Token "but": -1210.0, Token "in": -1415.0, Token "the": -1453.0, Token """: -1499.0
+Token "": -168.875, Token "but": -1336.0, Token "in": -1796.0, Token "the": -1900.0, Token ".": -2092.0
+Token "": -20.265625, Token "but": -1140.0, Token "in": -2170.0, Token "and": -2282.0, Token "as": -2390.0
+Token "": 416.0, Token "but": -1052.0, Token "and": -2314.0, Token "in": -2518.0, Token "as": -2700.0
+Token "": 1043.0, Token "but": -1894.0, Token "in": -2470.0, Token "and": -3036.0, Token "the": -3326.0
+Token "": 2422.0, Token "in": -2710.0, Token "but": -3152.0, Token "and": -3226.0, Token "the": -3450.0
+Token "but": 2.822265625, Token "and": 2.03515625, Token "or": 1.49609375, Token "which": 1.4384765625, Token "as": 1.4287109375
+Token "which": 8520.0, Token "or": 6336.0, Token "but": 5576.0, Token "to": 4996.0, Token "as": 4644.0
+
+JS DIVERGENCES:
+tensor([0.0018, 0.0018, 0.0047, 0.0101, 0.0126, 0.0161, 0.0207, 0.0249, 0.0306,
+        0.0411, 0.0550], device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "leads": 146.25, Token "leaves": 61.8125, Token "means": 60.8125, Token "causes": 24.328125, Token "allows": 19.28125
+Token "leads": 43.875, Token "is": -73.875, Token "leaves": -76.1875, Token "means": -91.9375, Token "causes": -104.8125
+Token "": -94.25, Token "is": -415.25, Token """: -466.5, Token "the": -468.0, Token "de": -500.5
+Token "": -212.75, Token "the": -960.5, Token """: -962.0, Token "in": -1020.5, Token "is": -1045.0
+Token "": -246.25, Token """: -1202.0, Token "in": -1212.0, Token "is": -1302.0, Token "the": -1320.0
+Token "": -275.25, Token "in": -1552.0, Token "is": -1649.0, Token """: -1679.0, Token "the": -1735.0
+Token "": -286.75, Token "in": -2016.0, Token "is": -2192.0, Token "the": -2370.0, Token "are": -2398.0
+Token "": -269.0, Token "are": -2552.0, Token "is": -2580.0, Token "in": -2640.0, Token "can": -2720.0
+Token "": 300.25, Token "can": -2230.0, Token "are": -2238.0, Token "is": -2442.0, Token "in": -2536.0
+Token "": 867.0, Token "in": -2406.0, Token "can": -2498.0, Token "is": -2520.0, Token "are": -2616.0
+Token "": 1492.0, Token "in": -2972.0, Token "is": -3092.0, Token "can": -3192.0, Token "are": -3288.0
+Token "are": 2.900390625, Token "can": 2.19140625, Token "is": 1.8837890625, Token "all": -0.04119873046875, Token "may": -0.063232421875
+Token "are": 4780.0, Token "is": 4580.0, Token "can": 3460.0, Token "": -inf, Token "": -inf
+
+JS DIVERGENCES:
+tensor([0.0014, 0.0020, 0.0061, 0.0125, 0.0166, 0.0202, 0.0280, 0.0343, 0.0439,
+        0.0594, 0.0831], device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "still": 77.75, Token "currently": 71.625, Token "used": 41.125, Token "": 39.78125, Token "not": 21.859375
+Token "": 38.125, Token "still": -3.326171875, Token "used": -45.03125, Token """: -49.96875, Token "currently": -53.75
+Token "": 21.765625, Token """: -326.0, Token "the": -371.5, Token "n": -377.5, Token "in": -415.75
+Token "": -86.875, Token """: -800.5, Token "the": -858.0, Token "in": -888.5, Token "n": -1041.0
+Token "": -146.875, Token """: -1098.0, Token "in": -1175.0, Token "the": -1180.0, Token "de": -1477.0
+Token "": -252.875, Token """: -1420.0, Token "in": -1466.0, Token "the": -1499.0, Token "de": -1888.0
+Token "": -8.1875, Token "in": -1761.0, Token "the": -1901.0, Token """: -2088.0, Token "n": -2386.0
+Token "": 121.125, Token "in": -1984.0, Token "the": -2278.0, Token "not": -2544.0, Token """: -2594.0
+Token "": 718.0, Token "not": -2464.0, Token "in": -2602.0, Token "the": -2772.0, Token "all": -2960.0
+Token "": 1433.0, Token "all": -2620.0, Token "the": -2786.0, Token "not": -2938.0, Token "in": -3528.0
+Token "": 2540.0, Token "the": -2694.0, Token "all": -3774.0, Token "not": -3780.0, Token "in": -4112.0
+Token "all": 2.72265625, Token "not": 2.28515625, Token "": 1.9306640625, Token "often": 1.845703125, Token "lacking": 1.408203125
+Token "lacking": 13040.0, Token "generally": 12376.0, Token "both": 11664.0, Token "missing": 11400.0, Token "critical": 10880.0
+
+JS DIVERGENCES:
+tensor([0.0016, 0.0025, 0.0060, 0.0112, 0.0139, 0.0152, 0.0174, 0.0160, 0.0162,
+        0.0189, 0.0266], device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "": 109.0, Token "holes": 59.28125, Token "luster": 47.53125, Token "fear": 42.0, Token "in": 40.09375
+Token "": 97.0, Token "in": -64.25, Token "the": -103.0, Token "character": -146.625, Token "due": -148.0
+Token "": 41.40625, Token "in": -432.0, Token "the": -515.0, Token ".": -673.0, Token """: -688.0
+Token "": -100.375, Token "in": -1034.0, Token "the": -1156.0, Token """: -1338.0, Token ".": -1442.0
+Token "": -74.6875, Token "in": -1229.0, Token "the": -1393.0, Token """: -1617.0, Token ".": -1711.0
+Token "": 85.6875, Token "in": -1014.5, Token "the": -1571.0, Token ".": -1773.0, Token """: -1884.0
+Token "": 213.25, Token "in": -900.5, Token "the": -1916.0, Token ".": -1942.0, Token "for": -2252.0
+Token "": 311.5, Token "in": -125.0625, Token "for": -2228.0, Token ".": -2488.0, Token "the": -2564.0
+Token "": 865.5, Token "in": 760.5, Token "for": -1869.0, Token "the": -2720.0, Token "with": -2904.0
+Token "": 1077.0, Token "in": 980.5, Token "for": -1722.0, Token "the": -3396.0, Token "with": -3416.0
+Token "": 1647.0, Token "in": 964.0, Token "for": -2064.0, Token "the": -3364.0, Token ".": -3782.0
+Token "in": 2.337890625, Token "for": 1.451171875, Token "with": 1.0947265625, Token "when": -0.35400390625, Token "from": -0.3544921875
+Token "with": 5984.0, Token "for": 3710.0, Token "in": 682.5, Token "": -inf, Token "": -inf
+
+JS DIVERGENCES:
+tensor([0.0024, 0.0024, 0.0068, 0.0145, 0.0180, 0.0232, 0.0289, 0.0345, 0.0469,
+        0.0632,    nan], device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "regard": 160.125, Token "respect": 120.9375, Token "regards": 75.0, Token "no": 30.59375, Token "minimal": 0.623046875
+Token "regard": 14.4375, Token "no": -0.71728515625, Token "": -5.375, Token "respect": -6.52734375, Token "regards": -43.1875
+Token "": 11.03125, Token "the": -295.75, Token "no": -387.5, Token """: -439.25, Token "respect": -458.25
+Token "": -56.4375, Token "the": -745.0, Token """: -915.0, Token "no": -949.5, Token "in": -1080.0
+Token "": -97.25, Token "the": -1050.0, Token """: -1138.0, Token "no": -1268.0, Token "respect": -1334.0
+Token "": -9.5078125, Token "respect": -1349.0, Token "the": -1378.0, Token """: -1476.0, Token "in": -1529.0
+Token "": 146.75, Token "the": -1462.0, Token """: -1500.0, Token "in": -1821.0, Token "no": -2308.0
+Token "": 517.5, Token "the": -1391.0, Token """: -1938.0, Token "normal": -2302.0, Token "in": -2350.0
+Token "": 1518.0, Token "the": -1185.0, Token "traditional": -1949.0, Token "conventional": -2182.0, Token "standard": -2364.0
+Token "": 2526.0, Token "the": -1190.0, Token "traditional": -2676.0, Token "standard": -2716.0, Token "conventional": -3402.0
+Token "": 3646.0, Token "the": -827.5, Token "in": -3826.0, Token """: -4384.0, Token "un": -5120.0
+Token "traditional": 2.998046875, Token "the": 2.287109375, Token "models": 1.7060546875, Token "other": 1.6884765625, Token "": 1.48046875
+Token "linear": 12616.0, Token "models": 11064.0, Token "existing": 10968.0, Token "conventional": 10704.0, Token "more": 10480.0
+
+JS DIVERGENCES:
+tensor([0.0041, 0.0061, 0.0116, 0.0249, 0.0295, 0.0348, 0.0382, 0.0405, 0.0449,
+        0.0484, 0.0559], device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "regression": 541.5, Token "path": 482.25, Token "motion": 466.5, Token "ized": 460.75, Token "ity": 456.0
+Token "ized": 480.75, Token "ity": 425.0, Token "ly": 308.25, Token "ization": 291.25, Token "regression": 196.375
+Token "": 17.34375, Token "-": -471.25, Token "ly": -605.0, Token "ity": -620.0, Token """: -655.5
+Token "": -154.5, Token "-": -1466.0, Token """: -1473.0, Token "in": -1501.0, Token "the": -1673.0
+Token "": -200.25, Token """: -1863.0, Token "-": -1909.0, Token "ly": -1976.0, Token "in": -2021.0
+Token "": -132.625, Token "-": -2104.0, Token """: -2196.0, Token "in": -2270.0, Token "ly": -2380.0
+Token "": 4.4765625, Token "-": -2092.0, Token "ity": -2284.0, Token """: -2332.0, Token "ly": -2392.0
+Token "": 249.75, Token "-": -2360.0, Token "in": -2828.0, Token "ly": -2888.0, Token """: -3018.0
+Token "": 685.0, Token "-": -2520.0, Token "in": -2866.0, Token ",": -3656.0, Token "ly": -3742.0
+Token "": 1190.0, Token "in": -3022.0, Token "-": -3226.0, Token ",": -3632.0, Token "model": -3850.0
+Token "": 2420.0, Token "in": -2592.0, Token "-": -2612.0, Token "model": -2766.0, Token "models": -3006.0
+Token "models": 3.3828125, Token "model": 0.91748046875, Token "regression": 0.373779296875, Token "architecture": 0.321533203125, Token "modeling": -0.0775146484375
+Token "models": 5424.0, Token "": -inf, Token "": -inf, Token "": -inf, Token "": -inf
+
+JS DIVERGENCES:
+tensor([0.0008, 0.0018, 0.0052, 0.0100, 0.0127, 0.0139, 0.0146, 0.0153, 0.0120,
+        0.0149, 0.0243], device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "": 62.59375, Token "draft": 39.1875, Token "nose": 37.59375, Token "+": 30.5, Token "prototype": 20.734375
+Token "": 109.8125, Token ",": -51.5, Token ".": -71.1875, Token "and": -93.0, Token "plot": -135.125
+Token "": 102.5625, Token ".": -472.25, Token "in": -482.25, Token ",": -484.75, Token "the": -601.5
+Token "": -32.09375, Token "in": -1097.0, Token ".": -1174.0, Token ",": -1310.0, Token "the": -1351.0
+Token "": -45.84375, Token "in": -1437.0, Token ".": -1515.0, Token ",": -1656.0, Token "for": -1757.0
+Token "": -123.4375, Token "in": -1590.0, Token ".": -1709.0, Token ",": -1945.0, Token "and": -2078.0
+Token "": -34.6875, Token ".": -1603.0, Token "in": -1774.0, Token ",": -2168.0, Token "and": -2216.0
+Token "": 146.625, Token ".": -1406.0, Token "in": -1655.0, Token "and": -2172.0, Token "of": -2404.0
+Token "": 258.0, Token ".": -594.0, Token "in": -1747.0, Token "and": -2026.0, Token ",": -2464.0
+Token "": 750.5, Token ".": -214.5, Token "in": -1775.0, Token "and": -2204.0, Token ",": -2506.0
+Token "": 1603.0, Token ".": -281.0, Token "in": -2252.0, Token ",": -2544.0, Token "and": -3060.0
+Token ".": 0.54541015625, Token "and": -1.765625, Token "or": -2.029296875, Token "of": -2.58203125, Token "that": -3.189453125
+Token "or": 5112.0, Token "and": 3456.0, Token ".": 1884.0, Token "": -inf, Token "": -inf
+
+JS DIVERGENCES:
+tensor([0.0021, 0.0028, 0.0081, 0.0157, 0.0207, 0.0264, 0.0337, 0.0415, 0.0545,
+        0.0768,    nan], device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "phan": 94.3125, Token "": 72.1875, Token "un": 36.03125, Token "vice": 32.09375, Token "the": 4.55859375
+Token "": 47.46875, Token "vice": -48.8125, Token "the": -73.5625, Token "phan": -82.5, Token "un": -101.5
+Token "": 45.1875, Token "the": -329.5, Token """: -402.25, Token "in": -408.75, Token "un": -502.0
+Token "": -63.84375, Token "the": -853.5, Token "in": -928.0, Token """: -951.0, Token "do": -1184.0
+Token "": -125.5, Token "the": -1223.0, Token """: -1294.0, Token "in": -1330.0, Token "do": -1571.0
+Token "": -148.625, Token "in": -1566.0, Token "the": -1649.0, Token """: -1771.0, Token "even": -2038.0
+Token "": -14.7265625, Token "in": -1821.0, Token "the": -1937.0, Token """: -2264.0, Token "other": -2342.0
+Token "": 271.75, Token "in": -1913.0, Token "the": -2302.0, Token "other": -2366.0, Token """: -2436.0
+Token "": 1198.0, Token "in": -1889.0, Token "the": -2496.0, Token """: -2634.0, Token "other": -2806.0
+Token "": 2356.0, Token "in": -1783.0, Token "the": -2842.0, Token """: -3678.0, Token "de": -4062.0
+Token "": 3112.0, Token "in": -1910.0, Token "the": -2986.0, Token "un": -3620.0, Token """: -4700.0
+Token "other": 2.595703125, Token "": 2.50390625, Token "traditional": 2.20703125, Token "models": 2.166015625, Token "architecture": 2.138671875
+Token "structured": 15072.0, Token "continuous": 14272.0, Token "fixed": 13568.0, Token "classical": 13072.0, Token "mixed": 13000.0
+
+JS DIVERGENCES:
+tensor([0.0034, 0.0041, 0.0126, 0.0245, 0.0305, 0.0365, 0.0406, 0.0466, 0.0546,
+        0.0655, 0.0844], device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "alphabet": 283.5, Token "nutrition": 263.25, Token "Penguin": 206.625, Token "language": 206.125, Token "pat": 177.625
+Token "paper": 107.6875, Token "alphabet": 104.25, Token "": 75.9375, Token "arch": 0.062408447265625, Token "pat": -17.109375
+Token "": 26.828125, Token "the": -580.0, Token "in": -630.0, Token ",": -672.5, Token """: -685.0
+Token "": -78.125, Token "in": -1372.0, Token "the": -1420.0, Token """: -1471.0, Token ",": -1567.0
+Token "": -27.28125, Token "in": -1684.0, Token "the": -1761.0, Token """: -1837.0, Token ",": -1925.0
+Token "": -39.15625, Token "in": -2070.0, Token "-": -2320.0, Token "the": -2330.0, Token """: -2396.0
+Token "": 32.5625, Token "in": -2148.0, Token "the": -2402.0, Token "-": -2470.0, Token ",": -2744.0
+Token "": 330.25, Token "in": -2072.0, Token "-": -2534.0, Token "the": -2852.0, Token "de": -2948.0
+Token "": 723.5, Token "in": -2356.0, Token "-": -2942.0, Token "data": -3028.0, Token """: -3286.0
+Token "": 1484.0, Token "in": -2250.0, Token "data": -2394.0, Token "-": -3244.0, Token "the": -3260.0
+Token "": 2386.0, Token "in": -1966.0, Token "-": -3298.0, Token "the": -3432.0, Token ",": -3538.0
+Token "data": 2.048828125, Token "architecture": 1.984375, Token "models": 1.330078125, Token "performance": 1.2119140625, Token "": 0.537109375
+Token "architecture": 9328.0, Token "information": 8736.0, Token "performance": 8496.0, Token "model": 7668.0, Token "models": 7372.0
+
+JS DIVERGENCES:
+tensor([0.0023, 0.0012, 0.0043, 0.0084, 0.0092, 0.0091, 0.0093, 0.0060, 0.0062,
+        0.0097, 0.0121], device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "design": 251.875, Token "Design": 188.625, Token "firm": 134.75, Token "style": 129.25, Token "group": 118.0625
+Token "": 97.625, Token "design": 22.96875, Token "Design": 10.5390625, Token "block": -11.6484375, Token "firm": -22.328125
+Token "": 58.5625, Token "s": -452.75, Token ".": -557.5, Token ",": -637.0, Token "in": -648.5
+Token "": -54.125, Token "s": -1096.0, Token ".": -1293.0, Token "in": -1393.0, Token ",": -1518.0
+Token "": -164.5, Token "s": -1259.0, Token ".": -1621.0, Token "in": -1710.0, Token "-": -1889.0
+Token "": -237.625, Token "s": -1243.0, Token ".": -1764.0, Token "in": -2033.0, Token "-": -2270.0
+Token "": -212.25, Token "s": -1217.0, Token ".": -1675.0, Token "in": -2266.0, Token ",": -2430.0
+Token "s": 282.25, Token "": -285.0, Token ".": -1389.0, Token "in": -2510.0, Token "-": -2900.0
+Token "s": 536.5, Token "": -51.625, Token ".": -1001.0, Token "in": -2808.0, Token ",": -3056.0
+Token "s": 1609.0, Token "": 130.375, Token ".": -807.5, Token "in": -3684.0, Token ",": -3812.0
+Token "s": 2224.0, Token "": 1636.0, Token ".": -651.0, Token ",": -3252.0, Token "in": -3736.0
+Token "s": 1.3349609375, Token ".": 0.47607421875, Token "models": -3.1640625, Token "": -3.380859375, Token ",": -3.576171875
+Token ".": 3318.0, Token "s": -0.4365234375, Token "": -inf, Token "": -inf, Token "": -inf
+
+JS DIVERGENCES:
+tensor([0.0008, 0.0006, 0.0024, 0.0055, 0.0060, 0.0078, 0.0054, 0.0018, 0.0008,
+        0.0012, 0.0014], device='cuda:0', dtype=torch.float16)
+
+TOKEN PREDICTIONS BY LAYER
+Token "The": 134.75, Token "It": 130.875, Token "They": 116.375, Token "But": 112.125, Token "This": 111.5625
+Token "The": 54.6875, Token "It": 51.125, Token "That": 29.171875, Token "": 28.53125, Token "But": 27.34375
+Token "": -5.69921875, Token "": -307.0, Token """: -322.0, Token "The": -356.5, Token "It": -372.0
+Token "": -140.375, Token """: -796.5, Token "": -836.5, Token "the": -1037.0, Token "It": -1054.0
+Token "": -281.75, Token """: -993.0, Token "": -1029.0, Token "the": -1383.0, Token "The": -1388.0
+Token "": -296.0, Token "": -1270.0, Token """: -1423.0, Token "the": -1866.0, Token "It": -1878.0
+Token "": -207.375, Token "": -855.5, Token """: -1654.0, Token "The": -2108.0, Token "the": -2146.0
+Token "": 14.8046875, Token "": -153.875, Token """: -1995.0, Token "The": -2312.0, Token "They": -2380.0
+Token "": 1569.0, Token "": -17.890625, Token "They": -1480.0, Token """: -2398.0, Token "The": -2682.0
+Token "": 2542.0, Token "": 16.90625, Token "They": -3324.0, Token """: -4324.0, Token "The": -4456.0
+Token "": 2102.0, Token "": 541.0, Token """: -5872.0, Token "They": -5948.0, Token "The": -5976.0
+Token "": 1.4931640625, Token "They": -4.42578125, Token "G": -4.4609375, Token "The": -5.30859375, Token "": -5.78125
+Token "": 974.0, Token "": -inf, Token "": -inf, Token "X": -inf, Token "": -inf
+
+Question: Explain Generative Adversarial Networks (GANs) to me using bullet points. Do not contain any commas in your response. End your response with a postscript indicated by P.P.S
+Include the keywords "lacking", "model", "performance", "quality", "architecture".
+
+Model Completion: GANs can be applied to architecture and performance quality metrics such as fault tolerance or throughput, which are lacking with linear models or structured architecture.
+
+
+100% 1/1 [00:04<00:00,  4.87s/it]
+Premature layer 2 was used 0 times, 0.0%
+Premature layer 4 was used 0 times, 0.0%
+Premature layer 6 was used 1 times, 3.23%
+Premature layer 8 was used 0 times, 0.0%
+Premature layer 10 was used 0 times, 0.0%
+Premature layer 12 was used 3 times, 9.68%
+Premature layer 14 was used 0 times, 0.0%
+Premature layer 16 was used 1 times, 3.23%
+Premature layer 18 was used 0 times, 0.0%
+Premature layer 20 was used 0 times, 0.0%
+Premature layer 22 was used 26 times, 83.87%
