@@ -1,0 +1,840 @@
+[ FLAN-T5-SMALL RESULTS ]
+
+Accuracy Scores:
+prompt-level: 0.09981515711645102
+instruction-level: 0.2038369304556355
+
+> Full Trace:
+
+(ifeval) ➜  IfEval git:(main) ✗ python3 evaluation_main.py \
+  --input_data=./data/input_data.jsonl \
+  --input_response_data=./data/flan-t5-small-ifeval.jsonl \
+  --output_dir=./data/
+I0409 21:03:07.171246 8233870592 evaluation_main.py:259] Generating eval_results_strict...
+E0409 21:03:07.364356 8233870592 instructions.py:161] Unable to detect language for text *** due to No features in text.
+E0409 21:03:07.393700 8233870592 instructions.py:161] Unable to detect language for text [] due to No features in text.
+I0409 21:03:07.393784 8233870592 evaluation_main.py:265] Accuracy: 0.099815
+I0409 21:03:07.398803 8233870592 evaluation_main.py:271] Generated: ./data/eval_results_strict.jsonl
+================================================================
+./data/eval_results_strict.jsonl Accuracy Scores:
+prompt-level: 0.09981515711645102
+instruction-level: 0.2038369304556355
+
+change_case 0.12359550561797752
+combination 0.015384615384615385
+detectable_content 0.07547169811320754
+detectable_format 0.01910828025477707
+keywords 0.25766871165644173
+language 0.0967741935483871
+length_constraints 0.36363636363636365
+punctuation 0.7424242424242424
+startend 0.07462686567164178
+
+change_case:capital_word_frequency 0.28
+change_case:english_capital 0.0
+change_case:english_lowercase 0.10256410256410256
+combination:repeat_prompt 0.0
+combination:two_responses 0.041666666666666664
+detectable_content:number_placeholders 0.1111111111111111
+detectable_content:postscript 0.038461538461538464
+detectable_format:constrained_response 0.2
+detectable_format:json_format 0.0
+detectable_format:multiple_sections 0.07142857142857142
+detectable_format:number_bullet_lists 0.0
+detectable_format:number_highlighted_sections 0.0
+detectable_format:title 0.0
+keywords:existence 0.10256410256410256
+keywords:forbidden_words 0.3877551020408163
+keywords:frequency 0.2619047619047619
+keywords:letter_frequency 0.24242424242424243
+language:response_language 0.0967741935483871
+length_constraints:nth_paragraph_first_word 0.0
+length_constraints:number_paragraphs 0.037037037037037035
+length_constraints:number_sentences 0.5769230769230769
+length_constraints:number_words 0.40384615384615385
+punctuation:no_comma 0.7424242424242424
+startend:end_checker 0.15384615384615385
+startend:quotation 0.024390243902439025
+I0409 21:03:07.399393 8233870592 evaluation_main.py:259] Generating eval_results_loose...
+E0409 21:03:07.525534 8233870592 instructions.py:161] Unable to detect language for text *** due to No features in text.
+E0409 21:03:07.585587 8233870592 instructions.py:161] Unable to detect language for text [] due to No features in text.
+I0409 21:03:07.585709 8233870592 evaluation_main.py:265] Accuracy: 0.099815
+I0409 21:03:07.591367 8233870592 evaluation_main.py:271] Generated: ./data/eval_results_loose.jsonl
+================================================================
+./data/eval_results_loose.jsonl Accuracy Scores:
+prompt-level: 0.09981515711645102
+instruction-level: 0.2038369304556355
+
+change_case 0.12359550561797752
+combination 0.015384615384615385
+detectable_content 0.07547169811320754
+detectable_format 0.01910828025477707
+keywords 0.25766871165644173
+language 0.0967741935483871
+length_constraints 0.36363636363636365
+punctuation 0.7424242424242424
+startend 0.07462686567164178
+
+change_case:capital_word_frequency 0.28
+change_case:english_capital 0.0
+change_case:english_lowercase 0.10256410256410256
+combination:repeat_prompt 0.0
+combination:two_responses 0.041666666666666664
+detectable_content:number_placeholders 0.1111111111111111
+detectable_content:postscript 0.038461538461538464
+detectable_format:constrained_response 0.2
+detectable_format:json_format 0.0
+detectable_format:multiple_sections 0.07142857142857142
+detectable_format:number_bullet_lists 0.0
+detectable_format:number_highlighted_sections 0.0
+detectable_format:title 0.0
+keywords:existence 0.10256410256410256
+keywords:forbidden_words 0.3877551020408163
+keywords:frequency 0.2619047619047619
+keywords:letter_frequency 0.24242424242424243
+language:response_language 0.0967741935483871
+length_constraints:nth_paragraph_first_word 0.0
+length_constraints:number_paragraphs 0.037037037037037035
+length_constraints:number_sentences 0.5769230769230769
+length_constraints:number_words 0.40384615384615385
+punctuation:no_comma 0.7424242424242424
+startend:end_checker 0.15384615384615385
+startend:quotation 0.024390243902439025
+
+[ FLAN-T5-SMALL-DoLa RESULTS ]
+
+Accuracy Scores:
+prompt-level: 0.11829944547134935
+instruction-level: 0.2290167865707434
+
+> Full Trace:
+
+(ifeval) ➜  IfEval git:(main) ✗ python3 evaluation_main.py \
+  --input_data=./data/input_data.jsonl \
+  --input_response_data=./data/flan-t5-small-ifeval-dola.jsonl \
+  --output_dir=./data/
+I0409 21:04:47.833186 8233870592 evaluation_main.py:259] Generating eval_results_strict...
+E0409 21:04:47.962871 8233870592 instructions.py:161] Unable to detect language for text . due to No features in text.
+E0409 21:04:48.014477 8233870592 instructions.py:161] Unable to detect language for text - ( - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - due to No features in text.
+E0409 21:04:48.053754 8233870592 instructions.py:161] Unable to detect language for text 2 due to No features in text.
+E0409 21:04:48.056975 8233870592 instructions.py:161] Unable to detect language for text . due to No features in text.
+E0409 21:04:48.069654 8233870592 instructions.py:161] Unable to detect language for text , due to No features in text.
+I0409 21:04:48.077095 8233870592 evaluation_main.py:265] Accuracy: 0.118299
+I0409 21:04:48.082028 8233870592 evaluation_main.py:271] Generated: ./data/eval_results_strict.jsonl
+================================================================
+./data/eval_results_strict.jsonl Accuracy Scores:
+prompt-level: 0.11829944547134935
+instruction-level: 0.2290167865707434
+
+change_case 0.1797752808988764
+combination 0.046153846153846156
+detectable_content 0.20754716981132076
+detectable_format 0.044585987261146494
+keywords 0.294478527607362
+language 0.2903225806451613
+length_constraints 0.34265734265734266
+punctuation 0.696969696969697
+startend 0.029850746268656716
+
+change_case:capital_word_frequency 0.32
+change_case:english_capital 0.0
+change_case:english_lowercase 0.20512820512820512
+combination:repeat_prompt 0.0
+combination:two_responses 0.125
+detectable_content:number_placeholders 0.14814814814814814
+detectable_content:postscript 0.2692307692307692
+detectable_format:constrained_response 0.2
+detectable_format:json_format 0.058823529411764705
+detectable_format:multiple_sections 0.0
+detectable_format:number_bullet_lists 0.0
+detectable_format:number_highlighted_sections 0.08333333333333333
+detectable_format:title 0.0
+keywords:existence 0.10256410256410256
+keywords:forbidden_words 0.46938775510204084
+keywords:frequency 0.21428571428571427
+keywords:letter_frequency 0.36363636363636365
+language:response_language 0.2903225806451613
+length_constraints:nth_paragraph_first_word 0.0
+length_constraints:number_paragraphs 0.0
+length_constraints:number_sentences 0.5576923076923077
+length_constraints:number_words 0.38461538461538464
+punctuation:no_comma 0.696969696969697
+startend:end_checker 0.07692307692307693
+startend:quotation 0.0
+I0409 21:04:48.082582 8233870592 evaluation_main.py:259] Generating eval_results_loose...
+E0409 21:04:48.093200 8233870592 instructions.py:161] Unable to detect language for text . due to No features in text.
+E0409 21:04:48.168829 8233870592 instructions.py:161] Unable to detect language for text - ( - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - due to No features in text.
+E0409 21:04:48.246253 8233870592 instructions.py:161] Unable to detect language for text 2 due to No features in text.
+E0409 21:04:48.252241 8233870592 instructions.py:161] Unable to detect language for text . due to No features in text.
+E0409 21:04:48.274202 8233870592 instructions.py:161] Unable to detect language for text , due to No features in text.
+I0409 21:04:48.289989 8233870592 evaluation_main.py:265] Accuracy: 0.118299
+I0409 21:04:48.295683 8233870592 evaluation_main.py:271] Generated: ./data/eval_results_loose.jsonl
+================================================================
+./data/eval_results_loose.jsonl Accuracy Scores:
+prompt-level: 0.11829944547134935
+instruction-level: 0.2290167865707434
+
+change_case 0.1797752808988764
+combination 0.046153846153846156
+detectable_content 0.20754716981132076
+detectable_format 0.044585987261146494
+keywords 0.294478527607362
+language 0.2903225806451613
+length_constraints 0.34265734265734266
+punctuation 0.696969696969697
+startend 0.029850746268656716
+
+change_case:capital_word_frequency 0.32
+change_case:english_capital 0.0
+change_case:english_lowercase 0.20512820512820512
+combination:repeat_prompt 0.0
+combination:two_responses 0.125
+detectable_content:number_placeholders 0.14814814814814814
+detectable_content:postscript 0.2692307692307692
+detectable_format:constrained_response 0.2
+detectable_format:json_format 0.058823529411764705
+detectable_format:multiple_sections 0.0
+detectable_format:number_bullet_lists 0.0
+detectable_format:number_highlighted_sections 0.08333333333333333
+detectable_format:title 0.0
+keywords:existence 0.10256410256410256
+keywords:forbidden_words 0.46938775510204084
+keywords:frequency 0.21428571428571427
+keywords:letter_frequency 0.36363636363636365
+language:response_language 0.2903225806451613
+length_constraints:nth_paragraph_first_word 0.0
+length_constraints:number_paragraphs 0.0
+length_constraints:number_sentences 0.5576923076923077
+length_constraints:number_words 0.38461538461538464
+punctuation:no_comma 0.696969696969697
+startend:end_checker 0.07692307692307693
+startend:quotation 0.0
+
+[ FLAN-T5-BASE RESULTS ]
+
+Accuracy Scores:
+prompt-level: 0.14417744916820702
+instruction-level: 0.2637889688249401
+
+> Full Trace:
+
+(ifeval) ➜  IfEval git:(main) ✗ python3 evaluation_main.py \
+  --input_data=./data/input_data.jsonl \
+  --input_response_data=./data/flan-t5-base-ifeval.jsonl\
+  --output_dir=./data/
+I0409 21:05:51.002762 8233870592 evaluation_main.py:259] Generating eval_results_strict...
+E0409 21:05:51.205401 8233870592 instructions.py:161] Unable to detect language for text *** due to No features in text.
+E0409 21:05:51.214865 8233870592 instructions.py:161] Unable to detect language for text " due to No features in text.
+I0409 21:05:51.235410 8233870592 evaluation_main.py:265] Accuracy: 0.144177
+I0409 21:05:51.241138 8233870592 evaluation_main.py:271] Generated: ./data/eval_results_strict.jsonl
+================================================================
+./data/eval_results_strict.jsonl Accuracy Scores:
+prompt-level: 0.14417744916820702
+instruction-level: 0.2637889688249401
+
+change_case 0.25842696629213485
+combination 0.046153846153846156
+detectable_content 0.11320754716981132
+detectable_format 0.03821656050955414
+keywords 0.3496932515337423
+language 0.22580645161290322
+length_constraints 0.40559440559440557
+punctuation 0.7878787878787878
+startend 0.11940298507462686
+
+change_case:capital_word_frequency 0.4
+change_case:english_capital 0.0
+change_case:english_lowercase 0.3333333333333333
+combination:repeat_prompt 0.024390243902439025
+combination:two_responses 0.08333333333333333
+detectable_content:number_placeholders 0.1111111111111111
+detectable_content:postscript 0.11538461538461539
+detectable_format:constrained_response 0.4
+detectable_format:json_format 0.0
+detectable_format:multiple_sections 0.07142857142857142
+detectable_format:number_bullet_lists 0.0
+detectable_format:number_highlighted_sections 0.020833333333333332
+detectable_format:title 0.0
+keywords:existence 0.1794871794871795
+keywords:forbidden_words 0.5306122448979592
+keywords:frequency 0.30952380952380953
+keywords:letter_frequency 0.3333333333333333
+language:response_language 0.22580645161290322
+length_constraints:nth_paragraph_first_word 0.0
+length_constraints:number_paragraphs 0.07407407407407407
+length_constraints:number_sentences 0.6153846153846154
+length_constraints:number_words 0.46153846153846156
+punctuation:no_comma 0.7878787878787878
+startend:end_checker 0.23076923076923078
+startend:quotation 0.04878048780487805
+I0409 21:05:51.241725 8233870592 evaluation_main.py:259] Generating eval_results_loose...
+E0409 21:05:51.360091 8233870592 instructions.py:161] Unable to detect language for text *** due to No features in text.
+E0409 21:05:51.379397 8233870592 instructions.py:161] Unable to detect language for text " due to No features in text.
+I0409 21:05:51.408124 8233870592 evaluation_main.py:265] Accuracy: 0.144177
+I0409 21:05:51.413836 8233870592 evaluation_main.py:271] Generated: ./data/eval_results_loose.jsonl
+================================================================
+./data/eval_results_loose.jsonl Accuracy Scores:
+prompt-level: 0.14417744916820702
+instruction-level: 0.2637889688249401
+
+change_case 0.25842696629213485
+combination 0.046153846153846156
+detectable_content 0.11320754716981132
+detectable_format 0.03821656050955414
+keywords 0.3496932515337423
+language 0.22580645161290322
+length_constraints 0.40559440559440557
+punctuation 0.7878787878787878
+startend 0.11940298507462686
+
+change_case:capital_word_frequency 0.4
+change_case:english_capital 0.0
+change_case:english_lowercase 0.3333333333333333
+combination:repeat_prompt 0.024390243902439025
+combination:two_responses 0.08333333333333333
+detectable_content:number_placeholders 0.1111111111111111
+detectable_content:postscript 0.11538461538461539
+detectable_format:constrained_response 0.4
+detectable_format:json_format 0.0
+detectable_format:multiple_sections 0.07142857142857142
+detectable_format:number_bullet_lists 0.0
+detectable_format:number_highlighted_sections 0.020833333333333332
+detectable_format:title 0.0
+keywords:existence 0.1794871794871795
+keywords:forbidden_words 0.5306122448979592
+keywords:frequency 0.30952380952380953
+keywords:letter_frequency 0.3333333333333333
+language:response_language 0.22580645161290322
+length_constraints:nth_paragraph_first_word 0.0
+length_constraints:number_paragraphs 0.07407407407407407
+length_constraints:number_sentences 0.6153846153846154
+length_constraints:number_words 0.46153846153846156
+punctuation:no_comma 0.7878787878787878
+startend:end_checker 0.23076923076923078
+startend:quotation 0.04878048780487805
+
+[ FLAN-T5-BASE-DoLa RESULTS ]
+
+Accuracy Scores:
+prompt-level: 0.12014787430683918
+instruction-level: 0.2302158273381295
+
+> Full Trace:
+
+(ifeval) ➜  IfEval git:(main) ✗ python3 evaluation_main.py \
+  --input_data=./data/input_data.jsonl \
+  --input_response_data=./data/flan-t5-base-ifeval-dola.jsonl\
+  --output_dir=./data/
+I0409 21:06:15.542394 8233870592 evaluation_main.py:259] Generating eval_results_strict...
+E0409 21:06:15.755115 8233870592 instructions.py:161] Unable to detect language for text *** due to No features in text.
+I0409 21:06:15.779772 8233870592 evaluation_main.py:265] Accuracy: 0.120148
+I0409 21:06:15.785176 8233870592 evaluation_main.py:271] Generated: ./data/eval_results_strict.jsonl
+================================================================
+./data/eval_results_strict.jsonl Accuracy Scores:
+prompt-level: 0.12014787430683918
+instruction-level: 0.2314148681055156
+
+change_case 0.25842696629213485
+combination 0.015384615384615385
+detectable_content 0.09433962264150944
+detectable_format 0.03821656050955414
+keywords 0.32515337423312884
+language 0.22580645161290322
+length_constraints 0.32867132867132864
+punctuation 0.7272727272727273
+startend 0.04477611940298507
+
+change_case:capital_word_frequency 0.32
+change_case:english_capital 0.0
+change_case:english_lowercase 0.38461538461538464
+combination:repeat_prompt 0.0
+combination:two_responses 0.041666666666666664
+detectable_content:number_placeholders 0.14814814814814814
+detectable_content:postscript 0.038461538461538464
+detectable_format:constrained_response 0.3
+detectable_format:json_format 0.0
+detectable_format:multiple_sections 0.07142857142857142
+detectable_format:number_bullet_lists 0.0
+detectable_format:number_highlighted_sections 0.041666666666666664
+detectable_format:title 0.0
+keywords:existence 0.2564102564102564
+keywords:forbidden_words 0.42857142857142855
+keywords:frequency 0.30952380952380953
+keywords:letter_frequency 0.2727272727272727
+language:response_language 0.22580645161290322
+length_constraints:nth_paragraph_first_word 0.0
+length_constraints:number_paragraphs 0.037037037037037035
+length_constraints:number_sentences 0.5384615384615384
+length_constraints:number_words 0.34615384615384615
+punctuation:no_comma 0.7272727272727273
+startend:end_checker 0.038461538461538464
+startend:quotation 0.04878048780487805
+I0409 21:06:15.785719 8233870592 evaluation_main.py:259] Generating eval_results_loose...
+E0409 21:06:15.933439 8233870592 instructions.py:161] Unable to detect language for text *** due to No features in text.
+I0409 21:06:15.987529 8233870592 evaluation_main.py:265] Accuracy: 0.120148
+I0409 21:06:15.993849 8233870592 evaluation_main.py:271] Generated: ./data/eval_results_loose.jsonl
+================================================================
+./data/eval_results_loose.jsonl Accuracy Scores:
+prompt-level: 0.12014787430683918
+instruction-level: 0.2302158273381295
+
+change_case 0.25842696629213485
+combination 0.015384615384615385
+detectable_content 0.09433962264150944
+detectable_format 0.03821656050955414
+keywords 0.31901840490797545
+language 0.22580645161290322
+length_constraints 0.32867132867132864
+punctuation 0.7272727272727273
+startend 0.04477611940298507
+
+change_case:capital_word_frequency 0.32
+change_case:english_capital 0.0
+change_case:english_lowercase 0.38461538461538464
+combination:repeat_prompt 0.0
+combination:two_responses 0.041666666666666664
+detectable_content:number_placeholders 0.14814814814814814
+detectable_content:postscript 0.038461538461538464
+detectable_format:constrained_response 0.3
+detectable_format:json_format 0.0
+detectable_format:multiple_sections 0.07142857142857142
+detectable_format:number_bullet_lists 0.0
+detectable_format:number_highlighted_sections 0.041666666666666664
+detectable_format:title 0.0
+keywords:existence 0.2564102564102564
+keywords:forbidden_words 0.42857142857142855
+keywords:frequency 0.30952380952380953
+keywords:letter_frequency 0.24242424242424243
+language:response_language 0.22580645161290322
+length_constraints:nth_paragraph_first_word 0.0
+length_constraints:number_paragraphs 0.037037037037037035
+length_constraints:number_sentences 0.5384615384615384
+length_constraints:number_words 0.34615384615384615
+punctuation:no_comma 0.7272727272727273
+startend:end_checker 0.038461538461538464
+startend:quotation 0.04878048780487805
+
+[ FLAN-T5-LARGE RESULTS ]
+
+Accuracy Scores:
+prompt-level: 0.1534195933456562
+instruction-level: 0.2685851318944844
+
+> Full Trace:
+
+(ifeval) ➜  IfEval git:(main) ✗ python3 evaluation_main.py \
+  --input_data=./data/input_data.jsonl \
+  --input_response_data=./data/flan-t5-large-ifeval.jsonl\
+  --output_dir=./data/
+I0409 21:06:47.129004 8233870592 evaluation_main.py:259] Generating eval_results_strict...
+E0409 21:06:47.331000 8233870592 instructions.py:161] Unable to detect language for text [ due to No features in text.
+I0409 21:06:47.351413 8233870592 evaluation_main.py:265] Accuracy: 0.153420
+I0409 21:06:47.356441 8233870592 evaluation_main.py:271] Generated: ./data/eval_results_strict.jsonl
+================================================================
+./data/eval_results_strict.jsonl Accuracy Scores:
+prompt-level: 0.1534195933456562
+instruction-level: 0.2685851318944844
+
+change_case 0.16853932584269662
+combination 0.13846153846153847
+detectable_content 0.20754716981132076
+detectable_format 0.050955414012738856
+keywords 0.36809815950920244
+language 0.25806451612903225
+length_constraints 0.38461538461538464
+punctuation 0.803030303030303
+startend 0.07462686567164178
+
+change_case:capital_word_frequency 0.32
+change_case:english_capital 0.0
+change_case:english_lowercase 0.1794871794871795
+combination:repeat_prompt 0.12195121951219512
+combination:two_responses 0.16666666666666666
+detectable_content:number_placeholders 0.1111111111111111
+detectable_content:postscript 0.3076923076923077
+detectable_format:constrained_response 0.7
+detectable_format:json_format 0.0
+detectable_format:multiple_sections 0.07142857142857142
+detectable_format:number_bullet_lists 0.0
+detectable_format:number_highlighted_sections 0.0
+detectable_format:title 0.0
+keywords:existence 0.3076923076923077
+keywords:forbidden_words 0.40816326530612246
+keywords:frequency 0.35714285714285715
+keywords:letter_frequency 0.3939393939393939
+language:response_language 0.25806451612903225
+length_constraints:nth_paragraph_first_word 0.0
+length_constraints:number_paragraphs 0.18518518518518517
+length_constraints:number_sentences 0.5769230769230769
+length_constraints:number_words 0.38461538461538464
+punctuation:no_comma 0.803030303030303
+startend:end_checker 0.11538461538461539
+startend:quotation 0.04878048780487805
+I0409 21:06:47.357016 8233870592 evaluation_main.py:259] Generating eval_results_loose...
+E0409 21:06:47.507734 8233870592 instructions.py:161] Unable to detect language for text [ due to No features in text.
+I0409 21:06:47.539901 8233870592 evaluation_main.py:265] Accuracy: 0.153420
+I0409 21:06:47.546077 8233870592 evaluation_main.py:271] Generated: ./data/eval_results_loose.jsonl
+================================================================
+./data/eval_results_loose.jsonl Accuracy Scores:
+prompt-level: 0.1534195933456562
+instruction-level: 0.2685851318944844
+
+change_case 0.16853932584269662
+combination 0.13846153846153847
+detectable_content 0.20754716981132076
+detectable_format 0.050955414012738856
+keywords 0.36809815950920244
+language 0.25806451612903225
+length_constraints 0.38461538461538464
+punctuation 0.803030303030303
+startend 0.07462686567164178
+
+change_case:capital_word_frequency 0.32
+change_case:english_capital 0.0
+change_case:english_lowercase 0.1794871794871795
+combination:repeat_prompt 0.12195121951219512
+combination:two_responses 0.16666666666666666
+detectable_content:number_placeholders 0.1111111111111111
+detectable_content:postscript 0.3076923076923077
+detectable_format:constrained_response 0.7
+detectable_format:json_format 0.0
+detectable_format:multiple_sections 0.07142857142857142
+detectable_format:number_bullet_lists 0.0
+detectable_format:number_highlighted_sections 0.0
+detectable_format:title 0.0
+keywords:existence 0.3076923076923077
+keywords:forbidden_words 0.40816326530612246
+keywords:frequency 0.35714285714285715
+keywords:letter_frequency 0.3939393939393939
+language:response_language 0.25806451612903225
+length_constraints:nth_paragraph_first_word 0.0
+length_constraints:number_paragraphs 0.18518518518518517
+length_constraints:number_sentences 0.5769230769230769
+length_constraints:number_words 0.38461538461538464
+punctuation:no_comma 0.803030303030303
+startend:end_checker 0.11538461538461539
+startend:quotation 0.04878048780487805
+
+
+[ FLAN-T5-LARGE-DoLa RESULTS ]
+
+Accuracy Scores:
+prompt-level: 0.1645101663585952
+instruction-level: 0.2673860911270983
+
+> Full Trace:
+
+(ifeval) ➜  IfEval git:(main) ✗ python3 evaluation_main.py \
+  --input_data=./data/input_data.jsonl \
+  --input_response_data=./data/flan-t5-large-ifeval-dola.jsonl\
+  --output_dir=./data/
+I0409 21:07:25.654639 8233870592 evaluation_main.py:259] Generating eval_results_strict...
+E0409 21:07:25.777765 8233870592 instructions.py:161] Unable to detect language for text ? due to No features in text.
+E0409 21:07:25.834072 8233870592 instructions.py:161] Unable to detect language for text . due to No features in text.
+E0409 21:07:25.853061 8233870592 instructions.py:161] Unable to detect language for text . due to No features in text.
+E0409 21:07:25.856400 8233870592 instructions.py:161] Unable to detect language for text "        . due to No features in text.
+E0409 21:07:25.856710 8233870592 instructions.py:161] Unable to detect language for text . due to No features in text.
+E0409 21:07:25.877989 8233870592 instructions.py:161] Unable to detect language for text . due to No features in text.
+I0409 21:07:25.880087 8233870592 evaluation_main.py:265] Accuracy: 0.164510
+I0409 21:07:25.886361 8233870592 evaluation_main.py:271] Generated: ./data/eval_results_strict.jsonl
+================================================================
+./data/eval_results_strict.jsonl Accuracy Scores:
+prompt-level: 0.1645101663585952
+instruction-level: 0.26618705035971224
+
+change_case 0.14606741573033707
+combination 0.1076923076923077
+detectable_content 0.16981132075471697
+detectable_format 0.06369426751592357
+keywords 0.4049079754601227
+language 0.41935483870967744
+length_constraints 0.3776223776223776
+punctuation 0.7424242424242424
+startend 0.014925373134328358
+
+change_case:capital_word_frequency 0.28
+change_case:english_capital 0.0
+change_case:english_lowercase 0.15384615384615385
+combination:repeat_prompt 0.0975609756097561
+combination:two_responses 0.125
+detectable_content:number_placeholders 0.14814814814814814
+detectable_content:postscript 0.19230769230769232
+detectable_format:constrained_response 0.6
+detectable_format:json_format 0.0
+detectable_format:multiple_sections 0.14285714285714285
+detectable_format:number_bullet_lists 0.0
+detectable_format:number_highlighted_sections 0.041666666666666664
+detectable_format:title 0.0
+keywords:existence 0.38461538461538464
+keywords:forbidden_words 0.42857142857142855
+keywords:frequency 0.35714285714285715
+keywords:letter_frequency 0.45454545454545453
+language:response_language 0.41935483870967744
+length_constraints:nth_paragraph_first_word 0.0
+length_constraints:number_paragraphs 0.1111111111111111
+length_constraints:number_sentences 0.5769230769230769
+length_constraints:number_words 0.40384615384615385
+punctuation:no_comma 0.7424242424242424
+startend:end_checker 0.038461538461538464
+startend:quotation 0.0
+I0409 21:07:25.886910 8233870592 evaluation_main.py:259] Generating eval_results_loose...
+E0409 21:07:25.888964 8233870592 instructions.py:161] Unable to detect language for text ? due to No features in text.
+E0409 21:07:25.979371 8233870592 instructions.py:161] Unable to detect language for text . due to No features in text.
+E0409 21:07:26.014904 8233870592 instructions.py:161] Unable to detect language for text . due to No features in text.
+E0409 21:07:26.018337 8233870592 instructions.py:161] Unable to detect language for text "        . due to No features in text.
+E0409 21:07:26.018728 8233870592 instructions.py:161] Unable to detect language for text . due to No features in text.
+E0409 21:07:26.062362 8233870592 instructions.py:161] Unable to detect language for text . due to No features in text.
+I0409 21:07:26.066462 8233870592 evaluation_main.py:265] Accuracy: 0.164510
+I0409 21:07:26.072901 8233870592 evaluation_main.py:271] Generated: ./data/eval_results_loose.jsonl
+================================================================
+./data/eval_results_loose.jsonl Accuracy Scores:
+prompt-level: 0.1645101663585952
+instruction-level: 0.2673860911270983
+
+change_case 0.15730337078651685
+combination 0.1076923076923077
+detectable_content 0.16981132075471697
+detectable_format 0.06369426751592357
+keywords 0.4049079754601227
+language 0.41935483870967744
+length_constraints 0.3776223776223776
+punctuation 0.7424242424242424
+startend 0.014925373134328358
+
+change_case:capital_word_frequency 0.28
+change_case:english_capital 0.04
+change_case:english_lowercase 0.15384615384615385
+combination:repeat_prompt 0.0975609756097561
+combination:two_responses 0.125
+detectable_content:number_placeholders 0.14814814814814814
+detectable_content:postscript 0.19230769230769232
+detectable_format:constrained_response 0.6
+detectable_format:json_format 0.0
+detectable_format:multiple_sections 0.14285714285714285
+detectable_format:number_bullet_lists 0.0
+detectable_format:number_highlighted_sections 0.041666666666666664
+detectable_format:title 0.0
+keywords:existence 0.38461538461538464
+keywords:forbidden_words 0.42857142857142855
+keywords:frequency 0.35714285714285715
+keywords:letter_frequency 0.45454545454545453
+language:response_language 0.41935483870967744
+length_constraints:nth_paragraph_first_word 0.0
+length_constraints:number_paragraphs 0.1111111111111111
+length_constraints:number_sentences 0.5769230769230769
+length_constraints:number_words 0.40384615384615385
+punctuation:no_comma 0.7424242424242424
+startend:end_checker 0.038461538461538464
+startend:quotation 0.0
+
+[ FLAN-T5-XL RESULTS ]
+
+Accuracy Scores:
+prompt-level: 0.15711645101663585
+instruction-level: 0.28776978417266186
+
+> Full Trace:
+
+(ifeval) ➜  IfEval git:(main) ✗ python3 evaluation_main.py \
+  --input_data=./data/input_data.jsonl \
+  --input_response_data=./data/flan-t5-xl-ifeval.jsonl\
+  --output_dir=./data/
+I0409 21:07:52.343778 8233870592 evaluation_main.py:259] Generating eval_results_strict...
+I0409 21:07:52.586886 8233870592 evaluation_main.py:265] Accuracy: 0.157116
+I0409 21:07:52.591909 8233870592 evaluation_main.py:271] Generated: ./data/eval_results_strict.jsonl
+================================================================
+./data/eval_results_strict.jsonl Accuracy Scores:
+prompt-level: 0.15711645101663585
+instruction-level: 0.28776978417266186
+
+change_case 0.2247191011235955
+combination 0.2
+detectable_content 0.3018867924528302
+detectable_format 0.044585987261146494
+keywords 0.3558282208588957
+language 0.22580645161290322
+length_constraints 0.4125874125874126
+punctuation 0.7878787878787878
+startend 0.11940298507462686
+
+change_case:capital_word_frequency 0.36
+change_case:english_capital 0.04
+change_case:english_lowercase 0.2564102564102564
+combination:repeat_prompt 0.24390243902439024
+combination:two_responses 0.125
+detectable_content:number_placeholders 0.14814814814814814
+detectable_content:postscript 0.46153846153846156
+detectable_format:constrained_response 0.3
+detectable_format:json_format 0.0
+detectable_format:multiple_sections 0.07142857142857142
+detectable_format:number_bullet_lists 0.0
+detectable_format:number_highlighted_sections 0.0625
+detectable_format:title 0.0
+keywords:existence 0.2564102564102564
+keywords:forbidden_words 0.42857142857142855
+keywords:frequency 0.30952380952380953
+keywords:letter_frequency 0.42424242424242425
+language:response_language 0.22580645161290322
+length_constraints:nth_paragraph_first_word 0.0
+length_constraints:number_paragraphs 0.18518518518518517
+length_constraints:number_sentences 0.5769230769230769
+length_constraints:number_words 0.46153846153846156
+punctuation:no_comma 0.7878787878787878
+startend:end_checker 0.2692307692307692
+startend:quotation 0.024390243902439025
+I0409 21:07:52.592475 8233870592 evaluation_main.py:259] Generating eval_results_loose...
+I0409 21:07:52.794051 8233870592 evaluation_main.py:265] Accuracy: 0.157116
+I0409 21:07:52.800019 8233870592 evaluation_main.py:271] Generated: ./data/eval_results_loose.jsonl
+================================================================
+./data/eval_results_loose.jsonl Accuracy Scores:
+prompt-level: 0.15711645101663585
+instruction-level: 0.28776978417266186
+
+change_case 0.2247191011235955
+combination 0.2
+detectable_content 0.3018867924528302
+detectable_format 0.044585987261146494
+keywords 0.3558282208588957
+language 0.22580645161290322
+length_constraints 0.4125874125874126
+punctuation 0.7878787878787878
+startend 0.11940298507462686
+
+change_case:capital_word_frequency 0.36
+change_case:english_capital 0.04
+change_case:english_lowercase 0.2564102564102564
+combination:repeat_prompt 0.24390243902439024
+combination:two_responses 0.125
+detectable_content:number_placeholders 0.14814814814814814
+detectable_content:postscript 0.46153846153846156
+detectable_format:constrained_response 0.3
+detectable_format:json_format 0.0
+detectable_format:multiple_sections 0.07142857142857142
+detectable_format:number_bullet_lists 0.0
+detectable_format:number_highlighted_sections 0.0625
+detectable_format:title 0.0
+keywords:existence 0.2564102564102564
+keywords:forbidden_words 0.42857142857142855
+keywords:frequency 0.30952380952380953
+keywords:letter_frequency 0.42424242424242425
+language:response_language 0.22580645161290322
+length_constraints:nth_paragraph_first_word 0.0
+length_constraints:number_paragraphs 0.18518518518518517
+length_constraints:number_sentences 0.5769230769230769
+length_constraints:number_words 0.46153846153846156
+punctuation:no_comma 0.7878787878787878
+startend:end_checker 0.2692307692307692
+startend:quotation 0.024390243902439025
+
+[ FLAN-T5-XL-DoLa RESULTS ]
+
+Accuracy Scores:
+prompt-level: 0.1423290203327172
+instruction-level: 0.2529976019184652
+
+> Full Trace:
+
+(ifeval) ➜  IfEval git:(main) ✗ python3 evaluation_main.py \
+  --input_data=./data/input_data.jsonl \
+  --input_response_data=./data/flan-t5-xl-ifeval-dola.jsonl\
+  --output_dir=./data/
+I0409 21:08:20.559437 8233870592 evaluation_main.py:259] Generating eval_results_strict...
+E0409 21:08:20.720138 8233870592 instructions.py:161] Unable to detect language for text -   -. due to No features in text.
+E0409 21:08:20.720453 8233870592 instructions.py:161] Unable to detect language for text . due to No features in text.
+E0409 21:08:20.731825 8233870592 instructions.py:161] Unable to detect language for text [ :                                                                                                                                                                                                                                                                                                                                                                                                                              . due to No features in text.
+E0409 21:08:20.734428 8233870592 instructions.py:161] Unable to detect language for text . due to No features in text.
+E0409 21:08:20.740384 8233870592 instructions.py:161] Unable to detect language for text . due to No features in text.
+E0409 21:08:20.745583 8233870592 instructions.py:161] Unable to detect language for text . due to No features in text.
+E0409 21:08:20.747071 8233870592 instructions.py:161] Unable to detect language for text : due to No features in text.
+I0409 21:08:20.763550 8233870592 evaluation_main.py:265] Accuracy: 0.142329
+I0409 21:08:20.768846 8233870592 evaluation_main.py:271] Generated: ./data/eval_results_strict.jsonl
+================================================================
+./data/eval_results_strict.jsonl Accuracy Scores:
+prompt-level: 0.1423290203327172
+instruction-level: 0.2517985611510791
+
+change_case 0.3146067415730337
+combination 0.12307692307692308
+detectable_content 0.09433962264150944
+detectable_format 0.025477707006369428
+keywords 0.38650306748466257
+language 0.2903225806451613
+length_constraints 0.34265734265734266
+punctuation 0.5909090909090909
+startend 0.07462686567164178
+
+change_case:capital_word_frequency 0.28
+change_case:english_capital 0.0
+change_case:english_lowercase 0.5384615384615384
+combination:repeat_prompt 0.17073170731707318
+combination:two_responses 0.041666666666666664
+detectable_content:number_placeholders 0.07407407407407407
+detectable_content:postscript 0.11538461538461539
+detectable_format:constrained_response 0.4
+detectable_format:json_format 0.0
+detectable_format:multiple_sections 0.0
+detectable_format:number_bullet_lists 0.0
+detectable_format:number_highlighted_sections 0.0
+detectable_format:title 0.0
+keywords:existence 0.28205128205128205
+keywords:forbidden_words 0.673469387755102
+keywords:frequency 0.2857142857142857
+keywords:letter_frequency 0.21212121212121213
+language:response_language 0.2903225806451613
+length_constraints:nth_paragraph_first_word 0.0
+length_constraints:number_paragraphs 0.1111111111111111
+length_constraints:number_sentences 0.5576923076923077
+length_constraints:number_words 0.3269230769230769
+punctuation:no_comma 0.5909090909090909
+startend:end_checker 0.15384615384615385
+startend:quotation 0.024390243902439025
+I0409 21:08:20.769407 8233870592 evaluation_main.py:259] Generating eval_results_loose...
+E0409 21:08:20.831624 8233870592 instructions.py:161] Unable to detect language for text -   -. due to No features in text.
+E0409 21:08:20.831829 8233870592 instructions.py:161] Unable to detect language for text . due to No features in text.
+E0409 21:08:20.850551 8233870592 instructions.py:161] Unable to detect language for text [ :                                                                                                                                                                                                                                                                                                                                                                                                                              . due to No features in text.
+E0409 21:08:20.854372 8233870592 instructions.py:161] Unable to detect language for text . due to No features in text.
+E0409 21:08:20.865337 8233870592 instructions.py:161] Unable to detect language for text . due to No features in text.
+E0409 21:08:20.874031 8233870592 instructions.py:161] Unable to detect language for text . due to No features in text.
+E0409 21:08:20.875506 8233870592 instructions.py:161] Unable to detect language for text : due to No features in text.
+I0409 21:08:20.907179 8233870592 evaluation_main.py:265] Accuracy: 0.142329
+I0409 21:08:20.913116 8233870592 evaluation_main.py:271] Generated: ./data/eval_results_loose.jsonl
+================================================================
+./data/eval_results_loose.jsonl Accuracy Scores:
+prompt-level: 0.1423290203327172
+instruction-level: 0.2529976019184652
+
+change_case 0.3258426966292135
+combination 0.12307692307692308
+detectable_content 0.09433962264150944
+detectable_format 0.025477707006369428
+keywords 0.38650306748466257
+language 0.2903225806451613
+length_constraints 0.34265734265734266
+punctuation 0.5909090909090909
+startend 0.07462686567164178
+
+change_case:capital_word_frequency 0.28
+change_case:english_capital 0.0
+change_case:english_lowercase 0.5641025641025641
+combination:repeat_prompt 0.17073170731707318
+combination:two_responses 0.041666666666666664
+detectable_content:number_placeholders 0.07407407407407407
+detectable_content:postscript 0.11538461538461539
+detectable_format:constrained_response 0.4
+detectable_format:json_format 0.0
+detectable_format:multiple_sections 0.0
+detectable_format:number_bullet_lists 0.0
+detectable_format:number_highlighted_sections 0.0
+detectable_format:title 0.0
+keywords:existence 0.28205128205128205
+keywords:forbidden_words 0.673469387755102
+keywords:frequency 0.2857142857142857
+keywords:letter_frequency 0.21212121212121213
+language:response_language 0.2903225806451613
+length_constraints:nth_paragraph_first_word 0.0
+length_constraints:number_paragraphs 0.1111111111111111
+length_constraints:number_sentences 0.5576923076923077
+length_constraints:number_words 0.3269230769230769
+punctuation:no_comma 0.5909090909090909
+startend:end_checker 0.15384615384615385
+startend:quotation 0.024390243902439025
