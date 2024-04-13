@@ -87,7 +87,7 @@ class DoLa:
                 outputs = self.model.generate(input_ids, max_length=max_len, num_return_sequences=1,
                                         output_scores=True, return_dict_in_generate=True, dola_decoding=True,
                                         top_p=top_p, top_k=top_k, temperature=temperature, stopping_criteria=self.stopping_criteria, relative_top=relative_top, 
-                                        mature_layer=mature_layer, premature_layer=None, candidate_premature_layers=candidate_premature_layers, **kwargs,)
+                                        mature_layer=mature_layer, premature_layer=None, candidate_premature_layers=candidate_premature_layers, print_logits=print_logits, **kwargs,)
                 premature_layer_dist = outputs.premature_layer_dist
             sequences, scores = outputs.sequences, outputs.scores
             js_divs, logits_by_layer = outputs.js_divs, outputs.logits_by_layer
