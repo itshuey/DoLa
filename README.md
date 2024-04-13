@@ -25,14 +25,21 @@ pip install accelerate
 ```
 
 ## Main Files (with Detailed Docs)
-- `dola_t5.py` A class DoLaT5 is defined for working with a T5 model, supporting various generation and scoring methods, including baseline, DOLA-static, and DOLA modes. It's designed to run on either CPU or GPU, with support for multi-GPU setups.
-- `ifeval_eval.py` Script to evaluate the language model's performance on a given dataset. Uses the Hugging Face Transformers library to load and interact with pre-trained models. It handles different configurations and modes of operation, including parallel processing and early exit strategies for efficient inference.
-- `memotrap_dataset_eval.py` Script to evaluate the performance of language models, specifically focusing on their ability to generate correct endings for given prompts. It utilizes a dataset loaded from a CSV file and supports different configurations and modes for the language model, including the use of DoLa and DoLaT5 models for improved factuality.
 
-## Repository Structure and Key Components
-- `Scripts and Usage:` The provided scripts are straightforward to use, requiring only the specification of the model, dataset paths, and the desired decoding strategy through command-line arguments. This design makes it easy to replicate the experiments or apply DoLA to new models and tasks.
+- `dola_t5.py` The class DoLaT5 is defined for working with a T5 model, supporting various generation and scoring methods, including baseline, DOLA-static, and DOLA modes. It's designed to run on either CPU or GPU, with support for multi-GPU setups.
 
-- `Evaluation Framework:` The inclusion of evaluation scripts for specific tasks and datasets, along with instructions for using external tools for response comparison, offers a comprehensive framework for assessing the effectiveness of DoLA in enhancing the factuality of LLMs.
+- `ifeval_eval.py` Script to evaluate the language model's performance on ifeval. Uses the Hugging Face Transformers library to load and interact with pre-trained models. It handles different configurations and modes of operation, including parallel processing and early exit strategies for efficient inference.
+
+- `memotrap_dataset_eval.py` Script to evaluate the performance of language models, specifically focusing on their ability to generate correct endings for given prompts. It utilizes a dataset loaded from a CSV file and supports different configurations and modes for the language model, including the use of DoLa and DoLaT5 models for improved factuality.
+
+## Repository Structure and Key Components
+
+- `Results:` Model outputs, evaluations of the outputs and logit analyses can be found [here](/results/)
+
+- `Scripts and Usage:` The provided scripts are straightforward to use, requiring only the specification of the model, dataset paths, and the desired decoding strategy through command-line arguments. This design makes it easy to replicate the experiments or apply DoLA to new models and tasks.
+
+- `Evaluation Framework:` The inclusion of evaluation scripts for specific tasks and datasets, along with instructions for using external tools for response comparison, offers a comprehensive framework for assessing the effectiveness of DoLA in enhancing the factuality of LLMs.
+
 
 ### Arguments
 
@@ -56,37 +63,37 @@ The `--early-exit-layers` argument takes a string containing a sequence of layer
 | >2                         | `0,2,4,6,8,10,12,14,32`    | **DoLa decoding** with the last specified layer (i.e. `32`) as the `mature_layer` and all the preceding layers (i.e. `0,2,4,6,8,10,12,14`) as `candidate_premature_layers`. |
 
 ### `dola_t5.py` Docs
-The `dola_t5.py` script defines a class DoLaT5 for working with a T5 model, supporting various generation and scoring methods, including baseline, DOLA-static, and DOLA modes. It's designed to run on either CPU or GPU, with support for multi-GPU setups. The script is structured into several key components:
+The `dola_t5.py` script defines a class DoLaT5 for working with a T5 model, supporting various generation and scoring methods, including baseline, DOLA-static, and DOLA modes. It's designed to run on either CPU or GPU, with support for multi-GPU setups. The script is structured into several key components:
 
-1. Initialization: The __init__ method initializes the class with model details, device configuration, and loads the model and tokenizer.
+1. Initialization: The __init__ method initializes the class with model details, device configuration, and loads the model and tokenizer.
 
-2. Model Loading: `load_model` loads the T5 model and tokenizer. It configures the model for efficient memory usage on GPUs and supports distributing the model across multiple GPUs if specified.
+2. Model Loading: `load_model` loads the T5 model and tokenizer. It configures the model for efficient memory usage on GPUs and supports distributing the model across multiple GPUs if specified.
 
-3. Stopping Criteria: `set_stop_words` allows setting custom stopping criteria for generation, using the T5StoppingCriteria.
+3. Stopping Criteria: `set_stop_words` allows setting custom stopping criteria for generation, using the T5StoppingCriteria.
 
-4. Text Generation: The `generate` method supports text generation in three modes:
+4. Text Generation: The `generate` method supports text generation in three modes:
 
-- `baseline`: Standard text generation.
+   - `baseline`: Standard text generation.
 
-- `dola-static`: Uses specified mature and premature layers for DOLA decoding.
+   - `dola-static`: Uses specified mature and premature layers for DOLA decoding.
 
-- `dola`: Dynamically selects the premature layer based on divergence from the mature layer's output.
+   - `dola`: Dynamically selects the premature layer based on divergence from the mature layer's output.
 
-It supports various generation parameters like `max_new_tokens, top_p, top_k`, and temperature. The method can also remove specified stop words from the output.
+   It supports various generation parameters like `max_new_tokens, top_p, top_k`, and `temperature`. The method can also remove specified stop words from the output.
 
-5. Relative Top Filtering: `get_relative_top_filter` is a utility for applying a relative top filter based on the scores' softmax values, used in DOLA modes for filtering logits.
+5. Relative Top Filtering: `get_relative_top_filter` is a utility for applying a relative top filter based on the scores' softmax values, used in DOLA modes for filtering logits.
 
-6. Language Modeling Score: `lm_score` calculates the language modeling score for a given text, supporting the same three modes as text generation. It can compute scores based on the difference in logits between layers (for DOLA modes) and supports PMI calculation.
+6. Language Modeling Score: `lm_score` calculates the language modeling score for a given text, supporting the same three modes as text generation. It can compute scores based on the difference in logits between layers (for DOLA modes) and supports PMI calculation.
 
-7. Utility Methods: The script includes methods for softmax normalization, KL divergence calculation, and JS divergence calculation for selecting the premature layer in DOLA mode.
+7. Utility Methods: The script includes methods for softmax normalization, KL divergence calculation, and JS divergence calculation for selecting the premature layer in DOLA mode.
 
-Key functionalities include:
+Key functionalities include:
 
-- DOLA Decoding: Dynamically selects layers for decoding based on divergence, aiming to improve generation quality.
+   - DOLA Decoding: Dynamically selects layers for decoding based on divergence, aiming to improve generation quality.
 
-- Efficient Memory Usage: Configures the model for low memory usage on CPUs and efficient distribution across multiple GPUs.
+   - Efficient Memory Usage: Configures the model for low memory usage on CPUs and efficient distribution across multiple GPUs.
 
-- Custom Stopping Criteria: Allows specifying custom stopping words for generation tasks.
+   - Custom Stopping Criteria: Allows specifying custom stopping words for generation tasks.
 
 ### IfEval
 The input prompts can be found in data/ifeval-input-data.jsonl. Further instructions for analyzing model output can be found in evaluation/IfEval
@@ -108,46 +115,47 @@ python ifeval_eval.py --model-name google/flan-t5-xl --early-exit-layers 0,2,4,6
 ```
 
 #### `ifeval_eval.py` Docs
-Script to evaluate the language model's performance on a given dataset. Uses the Hugging Face Transformers library to load and interact with pre-trained models. It handles different configurations and modes of operation, including parallel processing and early exit strategies for efficient inference.
+Script to evaluate the language model's performance on a given dataset. Uses the Hugging Face Transformers library to load and interact with pre-trained models. It handles different configurations and modes of operation, including parallel processing and early exit strategies for efficient inference.
 
 It is structured as follows:
-1. Imports and Setup: The script imports necessary libraries and sets up regular expressions and constants. It suppresses logging messages from the Transformers library to reduce clutter.
 
-2. Functions:
+1. **Imports and Setup**: The script imports necessary libraries and sets up regular expressions and constants. It suppresses logging messages from the Transformers library to reduce clutter.
 
-- load_jsonl(file_path): Loads a JSONL file and returns a list of prompts extracted from it.
+2. **Functions**:
 
-- create_demo_text(): Creates a demonstration text with questions and answers to be prepended to the input prompts.
+   - load_jsonl(file_path): Loads a JSONL file and returns a list of prompts extracted from it.
 
-- build_prompt(input_text): Builds the final prompt by appending the input text to the demonstration text.
+   - create_demo_text(): Creates a demonstration text with questions and answers to be prepended to the input prompts.
 
-3. Argument Parsing: The script uses argparse to parse command-line arguments, allowing users to specify the model name, device, data path, and other configurations.
+   - build_prompt(input_text): Builds the final prompt by appending the input text to the demonstration text.
 
-4. Data Preparation: It loads the dataset from a specified path and optionally limits the number of prompts for debugging or splits the dataset for parallel processing.
+3. **Argument Parsing**: The script uses argparse to parse command-line arguments, allowing users to specify the model name, device, data path, and other configurations.
 
-5. Model Initialization: Depending on the model name, it initializes either DoLa or DoLaT5 class, which are presumably custom classes for handling language model inference. The script sets stop words to signal the end of a generation.
+4. **Data Preparation**: It loads the dataset from a specified path and optionally limits the number of prompts for debugging or splits the dataset for parallel processing.
 
-6. Early Exit Layers Configuration: It configures early exit layers for the model, which is a technique to improve inference efficiency by exiting the model's forward pass early under certain conditions. The script supports three modes:
+5. **Model Initialization**: Depending on the model name, it initializes either DoLa or DoLaT5 class, which are presumably custom classes for handling language model inference. The script sets stop words to signal the end of a generation.
 
-- baseline: Standard decoding without early exit.
+6. **Early Exit Layers Configuration**: It configures early exit layers for the model, which is a technique to improve inference efficiency by exiting the model's forward pass early under certain conditions. The script supports three modes:
 
-- early_exit_contrastive: Uses a specific mature and premature layer for early exit.
+   - baseline: Standard decoding without early exit.
 
-- dola: Dynamically chooses from a set of candidate premature layers based on certain criteria.
+   - early_exit_contrastive: Uses a specific mature and premature layer for early exit.
 
-7. Inference Loop: For each prompt in the dataset, the script:
+   - dola: Dynamically chooses from a set of candidate premature layers based on certain criteria.
 
-- Builds the full prompt using build_prompt.
+7. **Inference Loop**: For each prompt in the dataset, the script:
 
-- Generates a completion using the model with specified generation parameters.
+   - Builds the full prompt using build_prompt.
 
-- Cleans up the generated text by removing stop words.
+   - Generates a completion using the model with specified generation parameters.
 
-- Optionally, tracks the usage of premature layers in dola mode.
+   - Cleans up the generated text by removing stop words.
 
-- Results Handling: The script collects the prompts and their corresponding model completions in a list of dictionaries.
+   - Optionally, tracks the usage of premature layers in dola mode.
 
-9. Output: Finally, it saves the results to a JSONL file in the specified output path. If parallel processing is enabled, it appends the shard ID to the output filename.
+   - Results Handling: The script collects the prompts and their corresponding model completions in a list of dictionaries.
+
+8. **Output**: Finally, it saves the results to a JSONL file in the specified output path. If parallel processing is enabled, it appends the shard ID to the output filename.
 
 ### Memo Trap
 The input prompts can be found in data/memotrap-input-data.jsonl. Further instructions for analyzing model output can be found in evaluation/MemoTrap
@@ -169,44 +177,45 @@ python memo_trap_eval.py --model-name google/flan-t5-xl --early-exit-layers 0,2,
 ```
 
 #### `memotrap_dataset_eval.py` Docs
-Script to evaluate the performance of language models, specifically focusing on their ability to generate correct endings for given prompts. It utilizes a dataset loaded from a CSV file and supports different configurations and modes for the language model, including the use of DoLa and DoLaT5 models for improved factuality.
-1. Imports and Initial Setup: The script imports necessary libraries and sets up logging and constants. It defines regular expressions for parsing answers and initializes flags for debugging and other configurations.
+Script to evaluate the performance of language models, specifically focusing on their ability to generate correct endings for given prompts. It utilizes a dataset loaded from a CSV file and supports different configurations and modes for the language model, including the use of DoLa and DoLaT5 models for improved factuality.
 
-2. Utility Functions:
+1. Imports and Initial Setup: The script imports necessary libraries and sets up logging and constants. It defines regular expressions for parsing answers and initializes flags for debugging and other configurations.
 
-- parse_classes: Parses a string representation of a list into an actual list of strings.
+2. Utility Functions:
 
-- load_csv: Loads data from a CSV file, parsing each line into a dictionary with keys for the prompt, possible classes (answers), and the correct answer index.
+   - parse_classes: Parses a string representation of a list into an actual list of strings.
 
-- extract_and_compare_answer: Extracts the model's generated answer ending and compares it with the correct answer to determine correctness.
+   - load_csv: Loads data from a CSV file, parsing each line into a dictionary with keys for the prompt, possible classes (answers), and the correct answer index.
 
-- create_demo_text: Generates a demo text with example questions and answers to be used in the prompt construction.
+   - extract_and_compare_answer: Extracts the model's generated answer ending and compares it with the correct answer to determine correctness.
 
-- build_prompt: Constructs the input prompt for the model by appending the demo text and the specific question to be answered.
+   - create_demo_text: Generates a demo text with example questions and answers to be used in the prompt construction.
 
-3. Argument Parsing: The script uses argparse to handle command-line arguments for model configuration, dataset paths, and evaluation settings.
+   - build_prompt: Constructs the input prompt for the model by appending the demo text and the specific question to be answered.
 
-4. Model Selection and Configuration: Based on the provided model name, the script selects between the DoLa and DoLaT5 models. It also sets up model-specific configurations like stop words, early exit layers, and repetition penalties.
+3. Argument Parsing: The script uses argparse to handle command-line arguments for model configuration, dataset paths, and evaluation settings.
 
-5. Data Preparation: The script loads the dataset from a CSV file. It supports debugging mode (which limits the data to the first 10 samples) and parallel processing mode (which divides the dataset into chunks based on shard IDs).
+4. Model Selection and Configuration: Based on the provided model name, the script selects between the DoLa and DoLaT5 models. It also sets up model-specific configurations like stop words, early exit layers, and repetition penalties.
 
-6. Evaluation Loop:
+5. Data Preparation: The script loads the dataset from a CSV file. It supports debugging mode (which limits the data to the first 10 samples) and parallel processing mode (which divides the dataset into chunks based on shard IDs).
 
-- For each sample in the dataset, it constructs the input prompt and generates model completions based on the provided arguments.
+6. Evaluation Loop:
 
-- It then cleans the model completion by removing any stop words and trims whitespace.
+   - For each sample in the dataset, it constructs the input prompt and generates model completions based on the provided arguments.
 
-- The script extracts the model's answer ending and compares it with the correct answer to determine correctness.
+   - It then cleans the model completion by removing any stop words and trims whitespace.
 
-- It accumulates results, including the model's completions, the generated answer endings, the correct answers, and correctness flags.
+   - The script extracts the model's answer ending and compares it with the correct answer to determine correctness.
 
-7. Results Reporting and Saving:
+   - It accumulates results, including the model's completions, the generated answer endings, the correct answers, and correctness flags.
 
-- Calculates the overall accuracy of the model based on the correctness flags.
+7. Results Reporting and Saving:
 
-- In "dola" mode with debugging enabled, it reports the usage statistics of premature layers.
+   - Calculates the overall accuracy of the model based on the correctness flags.
 
-- Saves the evaluation results to a JSON file, with the filename optionally including the shard ID for parallel processing setups.
+   - In "dola" mode with debugging enabled, it reports the usage statistics of premature layers.
+
+   - Saves the evaluation results to a JSON file, with the filename optionally including the shard ID for parallel processing setups.
 
 ## Reference Repositories
 - DoLa: https://github.com/voidism/DoLa
