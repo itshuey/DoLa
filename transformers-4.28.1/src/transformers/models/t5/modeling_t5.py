@@ -19,7 +19,7 @@ import copy
 import math
 import os
 import warnings
-from typing import Optional, Tuple, Union
+from typing import Optional, Tuple, Union, List
 
 import torch
 from torch import nn
@@ -1632,6 +1632,7 @@ class T5ForConditionalGeneration(T5PreTrainedModel):
         output_attentions: Optional[bool] = None,
         output_hidden_states: Optional[bool] = None,
         return_dict: Optional[bool] = None,
+        early_exit_layers: Optional[List[int]] = None,
     ) -> Union[Tuple[torch.FloatTensor], Seq2SeqLMOutput]:
         r"""
         labels (`torch.LongTensor` of shape `(batch_size,)`, *optional*):
@@ -1724,11 +1725,12 @@ class T5ForConditionalGeneration(T5PreTrainedModel):
             cross_attn_head_mask=cross_attn_head_mask,
             use_cache=use_cache,
             output_attentions=output_attentions,
-            output_hidden_states=output_hidden_states,
+            output_hidden_states=output_hidden_states or early_exit_layers is not None,
             return_dict=return_dict,
         )
 
         sequence_output = decoder_outputs[0]
+        decoder_hidden_states = decoder_outputs.hidden_states
 
         # Set device for model parallelism
         if self.model_parallel:
@@ -1741,31 +1743,61 @@ class T5ForConditionalGeneration(T5PreTrainedModel):
             # See https://github.com/tensorflow/mesh/blob/fa19d69eafc9a482aff0b59ddd96b025c0cb207d/mesh_tensorflow/transformer/transformer.py#L586
             sequence_output = sequence_output * (self.model_dim**-0.5)
 
-        lm_logits = self.lm_head(sequence_output)
+        if early_exit_layers is not None:
+            logits_dict = {}
+            # loss_dict = {}
+            for i, early_exit_layer in enumerate(early_exit_layers):
+                layer_output = decoder_hidden_states[early_exit_layer].to(self.lm_head.weight.device).half()
+                lm_logits = self.lm_head(layer_output)
+                logits_dict[early_exit_layer] = lm_logits
+            loss = None
+            if labels is not None:
+                loss_fct = CrossEntropyLoss(ignore_index=-100)
+                # move labels to correct device to enable PP
+                labels = labels.to(lm_logits.device)
+                loss = loss_fct(lm_logits.view(-1, lm_logits.size(-1)), labels.view(-1))
+                # TODO(thom): Add z_loss https://github.com/tensorflow/mesh/blob/fa19d69eafc9a482aff0b59ddd96b025c0cb207d/mesh_tensorflow/layers.py#L666
 
-        loss = None
-        if labels is not None:
-            loss_fct = CrossEntropyLoss(ignore_index=-100)
-            # move labels to correct device to enable PP
-            labels = labels.to(lm_logits.device)
-            loss = loss_fct(lm_logits.view(-1, lm_logits.size(-1)), labels.view(-1))
-            # TODO(thom): Add z_loss https://github.com/tensorflow/mesh/blob/fa19d69eafc9a482aff0b59ddd96b025c0cb207d/mesh_tensorflow/layers.py#L666
+            final_outputs = Seq2SeqLMOutput(
+                loss=loss,
+                logits=lm_logits,
+                past_key_values=decoder_outputs.past_key_values,
+                decoder_hidden_states=decoder_outputs.hidden_states,
+                decoder_attentions=decoder_outputs.attentions,
+                cross_attentions=decoder_outputs.cross_attentions,
+                encoder_last_hidden_state=encoder_outputs.last_hidden_state,
+                encoder_hidden_states=encoder_outputs.hidden_states,
+                encoder_attentions=encoder_outputs.attentions,
+            )
+        
+            return logits_dict, final_outputs
+        else: 
+            lm_logits = self.lm_head(sequence_output)
 
-        if not return_dict:
-            output = (lm_logits,) + decoder_outputs[1:] + encoder_outputs
-            return ((loss,) + output) if loss is not None else output
+            loss = None
+            if labels is not None:
+                loss_fct = CrossEntropyLoss(ignore_index=-100)
+                # move labels to correct device to enable PP
+                labels = labels.to(lm_logits.device)
+                loss = loss_fct(lm_logits.view(-1, lm_logits.size(-1)), labels.view(-1))
+                # TODO(thom): Add z_loss https://github.com/tensorflow/mesh/blob/fa19d69eafc9a482aff0b59ddd96b025c0cb207d/mesh_tensorflow/layers.py#L666
 
-        return Seq2SeqLMOutput(
-            loss=loss,
-            logits=lm_logits,
-            past_key_values=decoder_outputs.past_key_values,
-            decoder_hidden_states=decoder_outputs.hidden_states,
-            decoder_attentions=decoder_outputs.attentions,
-            cross_attentions=decoder_outputs.cross_attentions,
-            encoder_last_hidden_state=encoder_outputs.last_hidden_state,
-            encoder_hidden_states=encoder_outputs.hidden_states,
-            encoder_attentions=encoder_outputs.attentions,
-        )
+            if not return_dict:
+                # output = (lm_logits,) + decoder_outputs[1:] + encoder_outputs
+                output = (lm_logits,) + decoder_outputs[1:]
+                return ((loss,) + output) if loss is not None else output
+
+            return Seq2SeqLMOutput(
+                loss=loss,
+                logits=lm_logits,
+                past_key_values=decoder_outputs.past_key_values,
+                decoder_hidden_states=decoder_outputs.hidden_states,
+                decoder_attentions=decoder_outputs.attentions,
+                cross_attentions=decoder_outputs.cross_attentions,
+                encoder_last_hidden_state=encoder_outputs.last_hidden_state,
+                encoder_hidden_states=encoder_outputs.hidden_states,
+                encoder_attentions=encoder_outputs.attentions,
+            )
 
     def prepare_inputs_for_generation(
         self,
