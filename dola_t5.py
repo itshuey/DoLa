@@ -1,122 +1,67 @@
-import argparse
-import time
-import csv
-import tqdm
-import os
-import json
-
+import logging
+from typing import List, Tuple, Optional, Dict
 import torch
-import torch.nn.functional as F
-from transformers import AutoTokenizer, AutoModelForCausalLM, AutoModelForSeq2SeqLM
+from torch import nn
+from transformers import AutoTokenizer, AutoModelForCausalLM, AutoModelForSeq2SeqLM, PreTrainedTokenizer, PreTrainedModel
 from transformers.generation.stopping_criteria import StoppingCriteriaList, T5StoppingCriteria
 
-import argparse
-import warnings
-import pandas as pd
-import numpy as np
+# Setup logging
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 class DoLa:
-    def __init__(self, model_name, device, num_gpus, max_gpu_memory=27):
+    def __init__(self, model_name: str, device: str = 'cuda', num_gpus: int = 1, max_gpu_memory: int = 27):
         self.model_name = model_name
-        self.device = device
+        self.device = self._setup_device(device)
         self.num_gpus = num_gpus
-        self.stopping_criteria = None
         self.max_gpu_memory = max_gpu_memory
-
-        self.model, self.tokenizer = self.load_model(model_name)
-
-    def load_model(self, model_name):
-        if self.device == "cuda":
-            kwargs = {"torch_dtype": torch.float16, "offload_folder": f"{model_name}/offload"}
-            if self.num_gpus == "auto":
-                kwargs["device_map"] = "auto"
-            else:
-                self.num_gpus = int(self.num_gpus)
-                if self.num_gpus != 1:
-                    kwargs.update({
-                        "device_map": "auto",
-                        "max_memory": {i: f"{self.max_gpu_memory}GiB" for i in range(self.num_gpus)},
-                    })
-        elif self.device == "cpu":
-            kwargs = {}
-        else:
-            raise ValueError(f"Invalid device: {self.device}")
-        
-        tokenizer = AutoTokenizer.from_pretrained(model_name if not 'vicuna' in model_name else 'huggyllama/llama-7b')
-        if 't5' in model_name:
-            model = AutoModelForSeq2SeqLM.from_pretrained(model_name, low_cpu_mem_usage=True, **kwargs)
-        else:
-            model = AutoModelForCausalLM.from_pretrained(model_name,
-                low_cpu_mem_usage=True, **kwargs)
-
-        if self.device == "cuda" and self.num_gpus == 1:
-            model.cuda()
-        
-        return model, tokenizer
-
-    def set_stop_words(self, stop_words):
-        self.stop_words = stop_words
+        self.tokenizer, self.model = self._load_model()
         self.stopping_criteria = StoppingCriteriaList()
-        list_stop_word_ids = []
-        for stop_word in self.stop_words:
-            stop_word_ids = self.tokenizer.encode('\n' + stop_word)[3:]
-            list_stop_word_ids.append(stop_word_ids)
-            print("Added stop word: ", stop_word, 'with the ids', stop_word_ids, flush=True)
-        self.stopping_criteria.append(T5StoppingCriteria(list_stop_word_ids))
 
-    def generate(self, input_text, max_new_tokens=256, top_p=0.95, top_k=0, temperature=0.8, mature_layer=None, premature_layer=None, candidate_premature_layers=[], mode='baseline', verbose=True, remove_stop_words=False, relative_top=0.1, print_logits=False, **kwargs):
-        with torch.no_grad():
-
-            input_ids = self.tokenizer(input_text, return_tensors="pt").input_ids.to(self.device)
-            max_len = input_ids.shape[-1] + max_new_tokens
-
-            if mode == 'baseline':
-                outputs = self.model.generate(input_ids, max_length=max_len, num_return_sequences=1,
-                                    output_scores=True, return_dict_in_generate=True, dola_decoding=False,
-                                    top_p=top_p, top_k=top_k, temperature=temperature, stopping_criteria=self.stopping_criteria, **kwargs)
-            elif mode == 'dola-static':
-                assert mature_layer is not None, "mature_layer must be specified"
-                assert premature_layer is not None, "premature_layer must be specified"
-                outputs = self.model.generate(input_ids, max_length=max_len, num_return_sequences=1,
-                                    output_scores=True, return_dict_in_generate=True, dola_decoding=True,
-                                    mature_layer=mature_layer, premature_layer=premature_layer,
-                                    top_p=top_p, top_k=top_k, temperature=temperature, stopping_criteria=self.stopping_criteria, relative_top=relative_top, **kwargs)
-            elif mode == 'dola':
-                assert mature_layer is not None, "mature_layer must be specified"
-                assert candidate_premature_layers is not None, "candidate_premature_layers must be specified"
-                outputs = self.model.generate(input_ids, max_length=max_len, num_return_sequences=1,
-                                        output_scores=True, return_dict_in_generate=True, dola_decoding=True,
-                                        top_p=top_p, top_k=top_k, temperature=temperature, stopping_criteria=self.stopping_criteria, relative_top=relative_top, 
-                                        mature_layer=mature_layer, premature_layer=None, candidate_premature_layers=candidate_premature_layers, **kwargs,)
-                premature_layer_dist = outputs.premature_layer_dist
-            sequences, scores = outputs.sequences, outputs.scores
-            js_divs, logits_by_layer = outputs.js_divs, outputs.logits_by_layer
-
-            if print_logits and js_divs is not None and logits_by_layer is not None:
-                self.print_detailed_layer_stats(js_divs, logits_by_layer)
-
-            # skip the tokens in the input prompt
-            # gen_sequences = sequences[:, input_ids.shape[-1]:][0, :]
-            gen_sequences = sequences[:, 0:][0, :]
-            gen_arr = gen_sequences.cpu().numpy()
-
-            output_str = self.tokenizer.decode(gen_sequences, skip_special_tokens=True)
-
-            # if verbose:
-            #     print('MODEL OUTPUT: \n{0}'.format(output_str))
-
-            if remove_stop_words:
-                for stop_word in self.stop_words:
-                    length_to_remove = len(stop_word)
-                    if output_str[-length_to_remove:] == stop_word:
-                        output_str = output_str[:-length_to_remove]
-                output_str = output_str.strip()
-
-        if self.device:
-            torch.cuda.empty_cache()
-
-        return output_str, (premature_layer_dist if mode == 'dola' else None)
+    def _setup_device(self, device: str) -> str:
+        """Configure the device for model deployment."""
+        if 'cuda' in device and torch.cuda.is_available():
+            return device
+        return 'cpu'
     
+    def _load_model(self) -> Tuple[PreTrainedTokenizer, PreTrainedModel]:
+        """Load tokenizer and model with appropriate device and memory settings."""
+        kwargs = {'torch_dtype': torch.float16}
+        if self.device.startswith('cuda') and self.num_gpus > 1:
+            kwargs['device_map'] = 'auto'
+            kwargs['max_memory'] = {i: f'{self.max_gpu_memory}GiB' for i in range(self.num_gpus)}
+        
+        try:
+            tokenizer = AutoTokenizer.from_pretrained(self.model_name)
+            model_class = AutoModelForSeq2SeqLM if 't5' in self.model_name else AutoModelForCausalLM
+            model = model_class.from_pretrained(self.model_name, **kwargs)
+            model.to(self.device)
+            return tokenizer, model
+        except Exception as e:
+            logging.error(f"Failed to load the model or tokenizer: {e}")
+            raise
+
+
+    def set_stop_words(self, stop_words: List[str]):
+        """Add stop words to the generation stopping criteria."""
+        for word in stop_words:
+            ids = self.tokenizer.encode(word, add_special_tokens=False)
+            self.stopping_criteria.add(T5StoppingCriteria(ids))
+            logging.info(f"Added stop word: {word} with IDs: {ids}")
+
+    def generate(self, input_text: str, max_new_tokens: int = 256, **kwargs) -> str:
+        """Generate text based on the input using configured model."""
+        input_ids = self.tokenizer(input_text, return_tensors="pt").input_ids.to(self.device)
+        max_length = input_ids.shape[-1] + max_new_tokens
+        outputs = self.model.generate(input_ids, max_length=max_length, stopping_criteria=self.stopping_criteria, **kwargs)
+        return self.tokenizer.decode(outputs[0], skip_special_tokens=True)
+
+    def get_relative_top_filter(self, scores: torch.FloatTensor, relative_top: float = 0.1, min_tokens_to_keep: int = 1) -> torch.BoolTensor:
+        """Calculate a filter for selecting the top relative scores."""
+        scores_log_softmax = scores.log_softmax(dim=-1)
+        sorted_logits, _ = torch.sort(scores_log_softmax, descending=True)
+        threshold = sorted_logits[..., min_tokens_to_keep-1] + torch.log(torch.tensor([relative_top]))
+        return scores_log_softmax < threshold.unsqueeze(-1)
+
     def print_detailed_layer_stats(self, js_divergences, logits_by_layer):
         k = 5 # The number of results to show for each layer
         for token_idx in range(len(js_divergences)):
@@ -143,16 +88,6 @@ class DoLa:
                     position_str += f'Token "{token}" Position {position}, '
                 print(position_str[:-2])
             print()
-
-    def get_relative_top_filter(self, scores: torch.FloatTensor, relative_top: float = 0.1, min_tokens_to_keep: int = 1):
-        scores_normalized = scores.log_softmax(dim=-1) 
-        sorted_logits, sorted_indices = torch.sort(scores_normalized, descending=True)
-        min_thresh = sorted_logits[..., min_tokens_to_keep-1] 
-        probs_max = torch.max(scores_normalized, dim=-1).values
-        probs_thresh = probs_max + np.log(relative_top)
-        probs_thresh = torch.min(min_thresh, probs_thresh)
-        probs_thresh = probs_thresh.unsqueeze(-1)
-        return scores_normalized < probs_thresh
 
     def lm_score(self, input_text1, input_text2, pmi=False, max_new_tokens=256, top_p=0.95, top_k=0, temperature=0.8, mature_layer=None, premature_layer=None, candidate_premature_layers=[], mode='baseline', verbose=True, remove_stop_words=False, relative_top=0.1, relative_top_value=-1000.0, post_softmax=True, **kwargs):
         with torch.no_grad():
