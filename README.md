@@ -35,6 +35,7 @@ pip install accelerate
 | `--output-path`   | `output-path.json` | Where to store the output results. |
 | `--num-gpus`      | `1` | Number of GPUs to use |
 | `--max_gpu_memory`| `27` | Maximum GPU memory size (in GiB) to allocate. Default: 27 (for 32G V100).  |
+| `--print-logits`| | Adding this argument prints the top 5 logits in the premature layers for each token generated |
 
 ### Understanding `--early-exit-layers`
 
