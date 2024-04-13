@@ -1,0 +1,73 @@
+➜  python3 memo_trap_eval.py --data-path flan-t5-small-memo.jsonl
+
+Results for flan-t5-small-memo.jsonl
+Accuracy: 0.678614, 568/837
+
+Breakdown:
+Options: 27/40
+Sentences: 458/657
+Both: 83/140
+
+➜  python3 memo_trap_eval.py --data-path flan-t5-small-memo-dola.jsonl
+
+Results for flan-t5-small-memo-dola.jsonl
+Accuracy: 0.489845, 410/837
+
+Breakdown:
+Options: 106/162
+Sentences: 287/631
+Both: 17/44
+
+➜  python3 memo_trap_eval.py --data-path flan-t5-base-memo.jsonl
+Results for flan-t5-base-memo.jsonl
+Accuracy: 0.448029, 375/837
+
+Breakdown:
+Options: 38/41
+Sentences: 193/566
+Both: 144/230
+
+➜  python3 memo_trap_eval.py --data-path flan-t5-base-memo-dola.jsonl
+Results for flan-t5-base-memo-dola.jsonl
+Accuracy: 0.114695, 96/837
+
+Breakdown:
+Options: 43/48
+Sentences: 40/764
+Both: 13/25
+
+➜  python3 memo_trap_eval.py --data-path flan-t5-large-memo.jsonl
+Results for flan-t5-large-memo.jsonl
+Accuracy: 0.581840, 487/837
+
+Breakdown:
+Options: 487/825
+Sentences: 0/12
+Both: 0/0
+
+➜  python3 memo_trap_eval.py --data-path flan-t5-large-memo-dola.jsonl
+Results for flan-t5-large-memo-dola.jsonl
+Accuracy: 0.522103, 437/837
+
+Breakdown:
+Options: 432/814
+Sentences: 4/17
+Both: 1/6
+
+➜  python3 memo_trap_eval.py --data-path flan-t5-xl-memo.jsonl   
+Results for flan-t5-xl-memo.jsonl
+Accuracy: 0.873357, 731/837
+
+Breakdown:
+Options: 731/837
+Sentences: 0/0
+Both: 0/0
+
+➜  python3 memo_trap_eval.py --data-path flan-t5-xl-memo-dola.jsonl
+Results for flan-t5-xl-memo-dola.jsonl
+Accuracy: 0.814815, 682/837
+
+Breakdown:
+Options: 682/837
+Sentences: 0/0
+Both: 0/0
