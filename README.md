@@ -26,19 +26,19 @@ pip install accelerate
 
 ## Main Files (with Detailed Docs)
 
-- `dola_t5.py` The class DoLaT5 is defined for working with a T5 model, supporting various generation and scoring methods, including baseline, DOLA-static, and DOLA modes. It's designed to run on either CPU or GPU, with support for multi-GPU setups.
+- `dola_t5.py` The class DoLa supports various generation and scoring methods, including baseline, DoLa-static, and DoLa modes. It's designed to run on either CPU or GPU, with support for multi-GPU setups.
 
-- `ifeval_eval.py` Script to evaluate the language model's performance on ifeval. Uses the Hugging Face Transformers library to load and interact with pre-trained models. It handles different configurations and modes of operation, including parallel processing and early exit strategies for efficient inference.
+- `ifeval_eval.py` Script to evaluate the language model's performance on IFEval. It uses the Hugging Face Transformers library to load and interact with pre-trained models. It handles different configurations and modes of operation, including parallel processing and early exit strategies for efficient inference.
 
-- `memotrap_dataset_eval.py` Script to evaluate the performance of language models, specifically focusing on their ability to generate correct endings for given prompts. It utilizes a dataset loaded from a CSV file and supports different configurations and modes for the language model, including the use of DoLa and DoLaT5 models for improved factuality.
+- `memotrap_dataset_eval.py` Script to evaluate the performance of language models, specifically focusing on their ability to generate correct endings for given prompts. It utilizes a dataset loaded from a CSV file and supports different configurations
 
 ## Repository Structure and Key Components
 
 - `Results:` Model outputs, evaluations of the outputs and logit analyses can be found [here](/results/)
 
-- `Scripts and Usage:` The provided scripts are straightforward to use, requiring only the specification of the model, dataset paths, and the desired decoding strategy through command-line arguments. This design makes it easy to replicate the experiments or apply DoLA to new models and tasks.
+- `Scripts and Usage:` The provided scripts are straightforward to use, requiring only the specification of the model, dataset paths, and the desired decoding strategy through command-line arguments. This design makes it easy to replicate the experiments or apply DoLa to new models and tasks.
 
-- `Evaluation Framework:` The inclusion of evaluation scripts for specific tasks and datasets, along with instructions for using external tools for response comparison, offers a comprehensive framework for assessing the effectiveness of DoLA in enhancing the factuality of LLMs.
+- `Evaluation Framework:` The inclusion of evaluation scripts for specific tasks and datasets, along with instructions for using external tools for response comparison, offers a comprehensive framework for assessing the effectiveness of DoLa in enhancing the factuality of LLMs.
 
 
 ### Arguments
@@ -90,14 +90,14 @@ The `dola_t5.py` script defines a class DoLaT5 for working with a T5 model, supp
 
 Key functionalities include:
 
-   - DOLA Decoding: Dynamically selects layers for decoding based on divergence, aiming to improve generation quality.
+   - DoLa Decoding: Dynamically selects layers for decoding based on divergence, aiming to improve generation quality.
 
    - Efficient Memory Usage: Configures the model for low memory usage on CPUs and efficient distribution across multiple GPUs.
 
    - Custom Stopping Criteria: Allows specifying custom stopping words for generation tasks.
 
 ### IfEval
-The input prompts can be found in [data/ifeval-input-data.jsonl](data/ifeval-input-data.jsonl). Further instructions for analyzing model output can be found in evaluation/IfEval
+The input prompts can be found in [data/ifeval-input-data.jsonl](/data/ifeval-input-data.jsonl). Further instructions for analyzing model output can be found in evaluation/IfEval
 
 #### Baseline
 ```bash
@@ -134,7 +134,7 @@ It is structured as follows:
 
 4. **Data Preparation**: It loads the dataset from a specified path and optionally limits the number of prompts for debugging or splits the dataset for parallel processing.
 
-5. **Model Initialization**: Depending on the model name, it initializes either DoLa or DoLaT5 class, which are presumably custom classes for handling language model inference. The script sets stop words to signal the end of a generation.
+5. **Model Initialization**: Depending on the model name, it initializes DoLaT5 class to handle language model inference. The script sets stop words to signal the end of a generation.
 
 6. **Early Exit Layers Configuration**: It configures early exit layers for the model, which is a technique to improve inference efficiency by exiting the model's forward pass early under certain conditions. The script supports three modes:
 
@@ -159,7 +159,7 @@ It is structured as follows:
 8. **Output**: Finally, it saves the results to a JSONL file in the specified output path. If parallel processing is enabled, it appends the shard ID to the output filename.
 
 ### Memo Trap
-The input prompts can be found in [data/memotrap-input-data.jsonl](data/memotrap-input-data.jsonl). Further instructions for analyzing model output can be found in evaluation/MemoTrap
+The input prompts can be found in [data/memotrap-input-data.jsonl](/data/memotrap-input-data.jsonl). Further instructions for analyzing model output can be found in evaluation/MemoTrap
 
 #### Baseline
 ```bash
