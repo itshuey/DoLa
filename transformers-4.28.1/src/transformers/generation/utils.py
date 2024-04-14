@@ -1139,6 +1139,7 @@ class GenerationMixin:
         contrastive_decoding: Optional[bool] = None,
         student_model = None,
         streamer: Optional["BaseStreamer"] = None,
+        print_logits: Optional[bool] = None,
         **kwargs,
     ) -> Union[GenerateOutput, torch.LongTensor]:
         r"""
@@ -1465,6 +1466,7 @@ class GenerationMixin:
                 candidate_premature_layers=candidate_premature_layers,
                 relative_top=relative_top,
                 streamer=streamer,
+                output_jsd_and_logits= print_logits,
                 **model_kwargs,
             )
 
@@ -2487,7 +2489,7 @@ class GenerationMixin:
         return_dict_in_generate: Optional[bool] = None,
         synced_gpus: Optional[bool] = False,
         streamer: Optional["BaseStreamer"] = None,
-        output_jsd_and_logits: Optional[bool] = True,
+        output_jsd_and_logits: Optional[bool] = False,
         **model_kwargs,
     ) -> Union[GreedySearchOutput, torch.LongTensor]:
         r"""
