@@ -15,7 +15,7 @@ $^\dagger$ University College London
 
 ![DoLa](figure.png)
 
-We adapted the DoLa to T5 and instruction-tuned FLAN-T5 models, and investigated how DoLa can improve keyword inclusion by analysing logit evolution through the model layers.
+We adapted the DoLa to T5 and instruction-tuned FLAN-T5 models, and investigated how DoLa can improve keyword inclusion by analysing logit evolution through the model layers. You can upload [running_dola.ipynb](running_dola.ipynb) to Google Colab to test it out yourself.
 ## Setup
 
 ```
@@ -97,7 +97,7 @@ Key functionalities include:
    - Custom Stopping Criteria: Allows specifying custom stopping words for generation tasks.
 
 ### IfEval
-The input prompts can be found in data/ifeval-input-data.jsonl. Further instructions for analyzing model output can be found in evaluation/IfEval
+The input prompts can be found in [data/ifeval-input-data.jsonl](data/ifeval-input-data.jsonl). Further instructions for analyzing model output can be found in evaluation/IfEval
 
 #### Baseline
 ```bash
@@ -159,7 +159,7 @@ It is structured as follows:
 8. **Output**: Finally, it saves the results to a JSONL file in the specified output path. If parallel processing is enabled, it appends the shard ID to the output filename.
 
 ### Memo Trap
-The input prompts can be found in data/memotrap-input-data.jsonl. Further instructions for analyzing model output can be found in evaluation/MemoTrap
+The input prompts can be found in [data/memotrap-input-data.jsonl](data/memotrap-input-data.jsonl). Further instructions for analyzing model output can be found in evaluation/MemoTrap
 
 #### Baseline
 ```bash
