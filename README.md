@@ -5,7 +5,7 @@ Enhancing Instruction-Following Capabilities in Seq2Seq Models: A Novel Adaptati
 [![Hugging Face Transformers](https://img.shields.io/badge/%F0%9F%A4%97-Transformers-blue)](https://github.com/huggingface/transformers)
 
 
-Code for the paper "Enhancing Instruction-Following Capabilities in Seq2Seq Models: A Novel Adaptation of DoLA in T5 and FLAN-T5"
+Code for the [paper](paper.pdf) "Enhancing Instruction-Following Capabilities in Seq2Seq Models: A Novel Adaptation of DoLA in T5 and FLAN-T5"
 
 Authors: **Huey Sun** $^\dagger$, **Lorenzo Gilly** $^\dagger$, **Anabel Yong** $^\dagger$, **Felipe Jin** $^\dagger$
 
