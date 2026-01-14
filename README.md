@@ -1,11 +1,11 @@
-Enhancing Instruction-Following Capabilities in Seq2Seq Models: A Novel Adaptation of DoLA in T5 and FLAN-T5
+Enhancing Instruction-Following Capabilities in Seq2Seq Models: DoLa Adaptations for T5
 ===
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-g.svg)](https://opensource.org/licenses/MIT)
 [![Hugging Face Transformers](https://img.shields.io/badge/%F0%9F%A4%97-Transformers-blue)](https://github.com/huggingface/transformers)
 
 
-Code for the [paper](paper.pdf) "Enhancing Instruction-Following Capabilities in Seq2Seq Models: A Novel Adaptation of DoLA in T5 and FLAN-T5"
+Code for the [paper](arxiv.pdf) "Enhancing Instruction-Following Capabilities in Seq2Seq Models: DoLa Adaptations for T5"
 
 Authors: **Huey Sun** $^\dagger$, **Lorenzo Gilly** $^\dagger$, **Anabel Yong** $^\dagger$, **Felipe Jin** $^\dagger$
 
@@ -15,7 +15,7 @@ $^\dagger$ University College London
 
 ![DoLa](figure.png)
 
-We adapted the DoLa to T5 and instruction-tuned FLAN-T5 models, and investigated how DoLa can improve keyword inclusion by analysing logit evolution through the model layers. You can upload [running_dola.ipynb](running_dola.ipynb) to Google Colab to test it out yourself.
+We adapted the DoLa to T5 and instruction-tuned FLAN-T5 models, and investigated how DoLa can improve keyword inclusion by analysing logit evolution through the model layers. You can upload [running_dola.ipynb](running_dola.ipynb) to Google Colab to test DoLa out yourself, or [steering.ipynb](steering.ipynb) to test out gradient steering.
 ## Setup
 
 ```
@@ -24,9 +24,11 @@ pip install datasets
 pip install accelerate
 ```
 
-## Main Files (with Detailed Docs)
+## Main Files
 
 - `dola_t5.py` The class DoLa supports various generation and scoring methods, including baseline, DoLa-static, and DoLa modes. It's designed to run on either CPU or GPU, with support for multi-GPU setups.
+
+- `steering.ipynb` Notebook for mining and applying gradient-based steering vectors to sequence-to-sequence language models. It computes contrastive gradient directions, injects these vectors into specified decoder layers via forward hooks, and evaluates baseline versus steered accuracy.
 
 - `ifeval_eval.py` Script to evaluate the language model's performance on IFEval. It uses the Hugging Face Transformers library to load and interact with pre-trained models. It handles different configurations and modes of operation, including parallel processing and early exit strategies for efficient inference.
 
