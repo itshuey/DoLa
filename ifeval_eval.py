@@ -3,17 +3,10 @@
 # Ref: https://github.com/sylinrl/TruthfulQA/blob/main/truthfulqa/utilities.py
 
 import re
-import os
 import json
-import random
 import transformers
 from tqdm import tqdm
 import argparse
-import pandas as pd
-
-import ssl
-import urllib.request
-import zipfile
 
 from dola_t5 import DoLa
 

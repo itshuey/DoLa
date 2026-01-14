@@ -2,21 +2,14 @@
 # Ref: https://github.com/sylinrl/TruthfulQA/blob/main/truthfulqa/metrics.py
 # Ref: https://github.com/sylinrl/TruthfulQA/blob/main/truthfulqa/utilities.py
 
-import re
-import os
 import ast
-import json
-import random
-import transformers
-from tqdm import tqdm
 import argparse
-import pandas as pd
-
-import ssl
-import urllib.request
-import zipfile
+import json
+import re
+import transformers
 
 from dola_t5 import DoLa
+from tqdm import tqdm
 
 transformers.logging.set_verbosity(40)
 

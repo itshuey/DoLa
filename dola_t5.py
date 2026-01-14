@@ -1,18 +1,7 @@
-import argparse
-import time
-import csv
-import tqdm
-import os
-import json
-
 import torch
 import torch.nn.functional as F
 from transformers import AutoTokenizer, AutoModelForCausalLM, AutoModelForSeq2SeqLM
 from transformers.generation.stopping_criteria import StoppingCriteriaList, T5StoppingCriteria
-
-import argparse
-import warnings
-import pandas as pd
 import numpy as np
 
 class DoLa:
@@ -112,7 +101,7 @@ class DoLa:
                         output_str = output_str[:-length_to_remove]
                 output_str = output_str.strip()
 
-        if self.device:
+        if self.device == 'gpu':
             torch.cuda.empty_cache()
 
         return output_str, (premature_layer_dist if mode == 'dola' else None)
@@ -194,7 +183,7 @@ class DoLa:
                 log_probs = diff_logits[range(diff_logits.shape[0]), continue_ids].sum().item()
 
             elif mode == 'dola':
-                print('DOLA DOLA DOLA')
+                print('Running DoLA!')
                 premature_layer_dist = {l:0 for l in candidate_premature_layers}
                 picked_logits = []
                 result_dict = {}

@@ -1,18 +1,7 @@
-import argparse
-import time
-import csv
-import tqdm
-import os
-import json
-
 import torch
 import torch.nn.functional as F
 from transformers import AutoTokenizer, AutoModelForCausalLM, LlamaTokenizer
 from transformers.generation.stopping_criteria import StoppingCriteriaList, LLamaQaStoppingCriteria
-
-import argparse
-import warnings
-import pandas as pd
 import numpy as np
 
 class DoLa:
@@ -104,7 +93,7 @@ class DoLa:
                         output_str = output_str[:-length_to_remove]
                 output_str = output_str.strip()
 
-        if self.device:
+        if self.device == 'cuda':
             torch.cuda.empty_cache()
 
         return output_str, (premature_layer_dist if mode == 'dola' else None)
